@@ -45,7 +45,7 @@ const general_fetch = async ({ url, full_url, method, headers, body, is_form_dat
 		if (full_url) {
 			url = full_url;
 		} else {
-			url = `${SERVER_PATH}${url}`;
+			url = `${SERVER_PATH}/enterprise_api/${url}`;
 		}
 		if (!url) {
 			throw 'invalid url provided';
@@ -97,7 +97,7 @@ const upload_file = async ({ data, url, data_field }) => {
         }
 
         let config = {
-            url: `${SERVER_PATH}${url}`,
+            url: `${SERVER_PATH}/enterprise_api/${url}`,
             headers: {
                 'infurnia-access-token': ACCESS_TOKEN,
                 'infurnia-email': EMAIL,
