@@ -379,7 +379,7 @@ const get_all_sub_categories = async () => {
     @param
 
 */
-const get_groups = async ({ sku_sub_category_id }) => {
+const get_groups = async (sku_sub_category_id) => {
     try {
         const data = await general_fetch({ url: 'inventory/get_groups', body: { sku_sub_category_id } });
         console.log(`succesfully fetched all the sku groups for sku sub category id: ${sku_sub_category_id} -> `, data)
@@ -397,9 +397,9 @@ const get_groups = async ({ sku_sub_category_id }) => {
     @params
     id: a single sku id (string) or multiple sku ids (array of strings)
 */
-const remove_skus = async ({ id }) => {
+const remove_skus = async (id) => {
     try {
-        await general_fetch({ url: 'sku/remove_from_store', body: { identifiers: JSON.stringify(id) } });
+        await general_fetch({ url: 'sku/remove_from_store', body: { identifiers: JSON.stringify({id}) } });
         console.log('successfully removed skus with IDs -> ', id);
         return "OK";
     } catch(err) {
@@ -415,9 +415,9 @@ const remove_skus = async ({ id }) => {
     @params
     id: a single sku group id (string) or multiple sku group ids (array of strings)
 */
-const remove_sku_group = async ({ id }) => {
+const remove_sku_group = async (id) => {
     try {
-        await general_fetch({ url: 'sku_group/remove_from_store', body: { identifiers: JSON.stringify(id) } });
+        await general_fetch({ url: 'sku_group/remove_from_store', body: { identifiers: JSON.stringify({id}) } });
         console.log('successfully removed sku group with ID -> ', id);
         return "OK";
     } catch(err) {
@@ -433,7 +433,7 @@ const remove_sku_group = async ({ id }) => {
     @params
     id: a given sku sub category id
 */
-const remove_sku_sub_category = async ({ id }) => {
+const remove_sku_sub_category = async (id) => {
     try {
         await general_fetch({ url: 'sku_sub_category/deprecate', body: { id } });
         console.log('successfully removed sku sub category with ID -> ', id);
@@ -451,7 +451,7 @@ const remove_sku_sub_category = async ({ id }) => {
     @params
     id: a given sku category id
 */
-const remove_sku_category = async ({ id }) => {
+const remove_sku_category = async (id) => {
     try {
         await general_fetch({ url: 'sku_category/deprecate', body: { id } });
         console.log('successfully removed sku category with ID -> ', id);
@@ -482,4 +482,5 @@ module.exports = {
     remove_sku_group,
     remove_sku_sub_category,
     remove_sku_category,
+    STORE_ID
 }

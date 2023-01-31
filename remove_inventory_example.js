@@ -4,10 +4,11 @@ const {
     remove_skus,
     remove_sku_group,
     remove_sku_sub_category,
-    remove_sku_category
+    remove_sku_category,
+    STORE_ID
 } = require('./utils');
 
-const MY_STORE_ID = 'your_store_id';
+const MY_STORE_ID = STORE_ID;
 
 const remove_complete_inventory = async () => {
     try {
@@ -43,12 +44,12 @@ const remove_complete_inventory = async () => {
         */
         
         // Now you can parse through individual sub categories and find corresponding groups and skus in it
-        hierarchy.forEach(sku_division => [
-            sku_division.sku_category.forEach(category => [
-                category.forEach(async sub_category => {
+        for (sku_division of hierarchy) {
+            for (category of sku_division.sku_category) {
+                for (sub_category of category.sku_sub_category) {
                     try {
                         const sku_sub_category_id = sub_category.id;
-                        const sku_group_hierarchy = await get_groups({ sku_sub_category_id });
+                        const sku_group_hierarchy = await get_groups(sku_sub_category_id);
 
                         /*
                             sku_group_hierarchy looks like this:
@@ -76,7 +77,7 @@ const remove_complete_inventory = async () => {
                         const all_owned_sku_group_ids = sku_group_hierarchy.filter(obj => obj.store_id == MY_STORE_ID).map(obj => obj.id);
 
                         // removing all owned sku groups
-                        await remove_sku_group({ id: all_owned_sku_group_ids });
+                        remove_sku_group(all_owned_sku_group_ids);
 
                         // To remove non-owned sku groups, you must remove all the skus mapped within the groups. 
                         // This will automatically unmap the (non-owned) sku groups too
@@ -92,38 +93,37 @@ const remove_complete_inventory = async () => {
                         })
 
                         // remove all the sku ids
-                        await remove_skus({ id: to_remove_sku_ids });
-
+                        await remove_skus(to_remove_sku_ids);
+                        
                         if (sub_category.store_id == MY_STORE_ID) {
                             // Owned sku sub categories do not get removed automatically
                             // To remove them, do the following
-                            await remove_sku_sub_category({ id: sub_category.id });
+                            await remove_sku_sub_category(sub_category.id);
                         }
                     } catch (err) {
                         console.error('Failed to fetch groups for sub category', sub_category.id);
                         console.error(err);
                     }
-                })
-            ])
-        ]);
-
+                }
+            }
+        }
 
         // Owned sku caetgories do not get removed automatically even after removing all the underlying sku sub categories, sku groups and skus
         // To remove them, do the following => 
 
-        hierarchy.forEach(sku_division => {
-            sku_division.sku_category.forEach(async sku_category => {
+        for (const sku_division of hierarchy) {
+            for (const sku_category of sku_division.sku_category) {
                 try {
                     if (sku_category.store_id == MY_STORE_ID) {
-                        await remove_sku_category({ id: sku_category.id });
+                        await remove_sku_category(sku_category.id);
                     }
                 } 
                 catch (err) {
                     console.error('Error in removing category', sku_category.id);
                     console.error(err);
                 }
-            });
-        })
+            }
+        }
     }
     catch (error) {
         console.error(error);
