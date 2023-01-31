@@ -1,0 +1,142 @@
+const {
+    get_all_sub_categories,
+    get_groups,
+    remove_skus,
+    remove_sku_group,
+    remove_sku_sub_category,
+    remove_sku_category
+} = require('./utils');
+
+const MY_STORE_ID = 'your_store_id';
+
+const remove_complete_inventory = async () => {
+    try {
+        // fetch the complete sub category map
+        // this includes all owned sub categories and and non owned sub categories in which at least one sku is added to your store
+        const hierarchy = await get_all_sub_categories();
+        /*
+            hierarchy looks like =>
+            heirarchy: [
+                {
+                    id: <sku_division_id>,
+                    sku_category: [
+                        {
+                            id: <sku_category_id>,
+                            name: <sku_category_name>,
+                            store_id: <sku_category_store_id>,
+                            sku_sub_category: [
+                                {
+                                    id: <sku_sub_category_id>,
+                                    name: <sku_sub_category_name>,
+                                    store_id: <sku_sub_category_store_id>,
+                                },
+                                ...
+                            ]
+                        }, 
+                        ...
+                    ]
+                },
+                ...
+            ]
+
+            At every level, you can distinguish if the inventory item is owned by your store or by another by comparing the 'store_id' attribute
+        */
+        
+        // Now you can parse through individual sub categories and find corresponding groups and skus in it
+        hierarchy.forEach(sku_division => [
+            sku_division.sku_category.forEach(category => [
+                category.forEach(async sub_category => {
+                    try {
+                        const sku_sub_category_id = sub_category.id;
+                        const sku_group_hierarchy = await get_groups({ sku_sub_category_id });
+
+                        /*
+                            sku_group_hierarchy looks like this:
+                            sku_group_hierarchy: [
+                                {
+                                    id: <sku_group_id>,
+                                    name: <sku_group_name>,
+                                    store_id: <sku_group_store_id>,
+                                    sku: [
+                                        {
+                                            id: <sku_category_id>,
+                                            name: <sku_category_name>,
+                                            store_id: <sku_category_store_id>,
+                                            diplay_pic_id,
+                                        }, 
+                                        ...
+                                    ]
+                                },
+                                ...
+                            ]
+                            At every level, you can distinguish if the inventory item is owned by your store or by another by comparing the 'store_id' attribute
+                        */
+
+                        // Collecting all owned sku group ids
+                        const all_owned_sku_group_ids = sku_group_hierarchy.filter(obj => obj.store_id == MY_STORE_ID).map(obj => obj.id);
+
+                        // removing all owned sku groups
+                        await remove_sku_group({ id: all_owned_sku_group_ids });
+
+                        // To remove non-owned sku groups, you must remove all the skus mapped within the groups. 
+                        // This will automatically unmap the (non-owned) sku groups too
+                        // Once all the sku groups gets unmapped, the corresponding (non-owned) sku sub category will also get unmapped
+                        // Similarly once all the sku sub categories gets unmapped, the corresponding (non-owned) sku category will also get unmapped
+
+                        // Collecting all the SKU IDs of non-owned sku groups
+                        const to_remove_sku_ids = [];
+                        sku_group_hierarchy.filter(obj => obj.store_id != MY_STORE_ID).forEach(sku_group => {
+                            sku_group.sku.forEach(sku => {
+                                to_remove_sku_ids.push(sku.id);
+                            })
+                        })
+
+                        // remove all the sku ids
+                        await remove_skus({ id: to_remove_sku_ids });
+
+                        if (sub_category.store_id == MY_STORE_ID) {
+                            // Owned sku sub categories do not get removed automatically
+                            // To remove them, do the following
+                            await remove_sku_sub_category({ id: sub_category.id });
+                        }
+                    } catch (err) {
+                        console.error('Failed to fetch groups for sub category', sub_category.id);
+                        console.error(err);
+                    }
+                })
+            ])
+        ]);
+
+
+        // Owned sku caetgories do not get removed automatically even after removing all the underlying sku sub categories, sku groups and skus
+        // To remove them, do the following => 
+
+        hierarchy.forEach(sku_division => {
+            sku_division.sku_category.forEach(async sku_category => {
+                try {
+                    if (sku_category.store_id == MY_STORE_ID) {
+                        await remove_sku_category({ id: sku_category.id });
+                    }
+                } 
+                catch (err) {
+                    console.error('Error in removing category', sku_category.id);
+                    console.error(err);
+                }
+            });
+        })
+    }
+    catch (error) {
+        console.error(error);
+    }
+}
+
+
+remove_complete_inventory()
+.then(() => {
+    console.log("SUCCESS");
+    process.exit(0);
+})
+.catch((error) => {
+    console.error(error);
+    process.exit(1);
+});

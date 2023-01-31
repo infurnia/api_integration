@@ -357,6 +357,112 @@ const bulk_create_skus = async ({ sku_data, sku_category_id }) => {
 }
 
 
+/*
+    FETCH ALL SUB CATEGORIES
+    this function is used to fetch sub category tree for a given store (both owned/non-owned)
+*/
+const get_all_sub_categories = async () => {
+    try {
+        const data = await general_fetch({ url: 'inventory/get_all_sub_categories' });
+        console.log('succesfully fetched the complete sub categories tree -> ', data)
+        return data;
+    } catch(err) {
+        console.error('Error in get_all_sub_categories ->', err);
+        return Promise.reject({ err, info: 'Error in get_all_sub_categories' })
+    }
+}
+
+
+/*
+    FETCH GROUP TREE
+    this function is used to fetch sku group and underlying skus for a given sku category id
+    @param
+
+*/
+const get_groups = async ({ sku_sub_category_id }) => {
+    try {
+        const data = await general_fetch({ url: 'inventory/get_groups', body: { sku_sub_category_id } });
+        console.log(`succesfully fetched all the sku groups for sku sub category id: ${sku_sub_category_id} -> `, data)
+        return data;
+    } catch(err) {
+        console.error('Error in get_groups ->', err);
+        return Promise.reject({ err, info: 'Error in get_groups' })
+    }
+}
+
+
+/*
+    BULK REMOVE SKUs
+    this function is used to remove skus from store
+    @params
+    id: a single sku id (string) or multiple sku ids (array of strings)
+*/
+const remove_skus = async ({ id }) => {
+    try {
+        await general_fetch({ url: 'sku/remove_from_store', body: { identifiers: JSON.stringify(id) } });
+        console.log('successfully removed skus with IDs -> ', id);
+        return "OK";
+    } catch(err) {
+        console.error('Error in remove_skus ->', err);
+        return Promise.reject({ err, info: 'Error in remove_skus' })
+    }
+}
+
+
+/*
+    BULK REMOVE SKU GROUPs (only owned)
+    this function is used to remove owned sku groups 
+    @params
+    id: a single sku group id (string) or multiple sku group ids (array of strings)
+*/
+const remove_sku_group = async ({ id }) => {
+    try {
+        await general_fetch({ url: 'sku_group/remove_from_store', body: { identifiers: JSON.stringify(id) } });
+        console.log('successfully removed sku group with ID -> ', id);
+        return "OK";
+    } catch(err) {
+        console.error('Error in remove_sku_group ->', err);
+        return Promise.reject({ err, info: 'Error in remove_sku_group' })
+    }
+}
+
+/*
+    REMOVE SKU SUB CATEGORY (only owned)
+    this function is used to remove a given sku sub category id
+    this function will only work when all sku groups mapped to this sku sub category are removed first
+    @params
+    id: a given sku sub category id
+*/
+const remove_sku_sub_category = async ({ id }) => {
+    try {
+        await general_fetch({ url: 'sku_sub_category/deprecate', body: { id } });
+        console.log('successfully removed sku sub category with ID -> ', id);
+        return "OK";
+    } catch(err) {
+        console.error('Error in remove_sku_sub_category ->', err);
+        return Promise.reject({ err, info: 'Error in remove_sku_sub_category' })
+    }
+}
+
+/*
+    REMOVE SKU CATEGORY (only owned)
+    this function is used to remove a given sku category id
+    this function will only work when all sku sub categories mapped to this sku category are removed first
+    @params
+    id: a given sku category id
+*/
+const remove_sku_category = async ({ id }) => {
+    try {
+        await general_fetch({ url: 'sku_category/deprecate', body: { id } });
+        console.log('successfully removed sku category with ID -> ', id);
+        return "OK";
+    } catch(err) {
+        console.error('Error in remove_sku_category ->', err);
+        return Promise.reject({ err, info: 'Error in remove_sku_category' })
+    }
+}
+
+
 module.exports = {
     generate_id,
     fetch_sku_category_types,
@@ -369,5 +475,11 @@ module.exports = {
     create_material,
     create_display_pic,
     create_model_3d,
-    bulk_create_skus
+    bulk_create_skus,
+    get_all_sub_categories,
+    get_groups,
+    remove_skus,
+    remove_sku_group,
+    remove_sku_sub_category,
+    remove_sku_category,
 }
