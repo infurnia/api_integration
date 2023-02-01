@@ -125,13 +125,10 @@ const {
 } = require('../utils');
 
 
-// const SKU_GROUP_ID = 'valid_sku_group_id';
-// const DISPLAY_PIC_ID_1 = 'valid_display_pic_id';
-// const DISPLAY_PIC_ID_2 = 'valid_display_pic_id';
-
-const SKU_GROUP_ID = 'fd7232eba5b06c1f';
-const DISPLAY_PIC_ID_1 = '7250e884988aeebc';
-const DISPLAY_PIC_ID_2 = '7250e884988aeebc';
+const SKU_GROUP_ID_1 = 'valid_sku_group_id';
+const SKU_GROUP_ID_2 = 'valid_sku_group_id';
+const DISPLAY_PIC_ID_1 = 'valid_display_pic_id';
+const DISPLAY_PIC_ID_2 = 'valid_display_pic_id';
 
 const component_info_1 = require('./example1.json');
 const component_info_2 = require('./example2.json');
@@ -140,14 +137,14 @@ const create_cabinet_skus = async () => {
     try {
         const sku_1_data = {
             name: 'dummy_sku_1',
-            sku_group_id: SKU_GROUP_ID,
+            sku_group_id: SKU_GROUP_ID_1,
             display_pic_id: DISPLAY_PIC_ID_1,
             height: 10,
             component_info: component_info_1
         };
         const sku_2_data = {
             name: 'dummy_sku_2',
-            sku_group_id: SKU_GROUP_ID,
+            sku_group_id: SKU_GROUP_ID_2,
             display_pic_id: DISPLAY_PIC_ID_2,
             height: 10,
             component_info: component_info_2
