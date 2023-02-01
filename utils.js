@@ -356,6 +356,50 @@ const bulk_create_skus = async ({ sku_data, sku_category_id }) => {
     }
 }
 
+/*
+    CREATE CABINET SKUs
+    this function is used to bulk create cabinet skus
+    @params
+        sku_data: data of the skus to be created
+    @return
+        request id (which can be used to fetch the status)
+*/
+const create_cabinets = async (sku_data) => {
+    try {
+        let create_cabinet_resp = await general_fetch({ url: 'production_detail/create_cabinet_skus', body: { data: sku_data }});
+        console.log('successfully created an attempt to bulk create cabinets with request id -> ', create_cabinet_resp.request_batch_id);
+        return create_cabinet_resp;
+    } catch(err) {
+        console.error('Error in create_cabinets ->', err);
+        return Promise.reject({ err, info: 'Error in create_cabinets' });
+    }
+}
+
+
+/*
+    GET STATUS OF CREATE CABINET SKUs
+    this function is used to fetch the status of create cabinet skus request
+    @params
+        id: id of create cabinet request
+    @return
+        {
+            status: 'completed' | 'ongoing' | 'failed'
+            sku_ids: [<successfully created sku ids>] | []
+        }
+*/
+const get_create_cabinet_status = async (id) => {
+    try {
+        let resp = await general_fetch({ url: 'production_detail/get_bulk_create_sku_status', body: { id }});
+        console.log('successfully requested the status of create cabinets with request id -> ', id, 'with status ->', resp.status);
+        return resp;
+    } catch(err) {
+        console.error('Error in get_create_cabinet_status ->', err);
+        return Promise.reject({ err, info: 'Error in get_create_cabinet_status' })
+    }
+}
+
+
+
 
 /*
     FETCH ALL SUB CATEGORIES
@@ -476,6 +520,8 @@ module.exports = {
     create_display_pic,
     create_model_3d,
     bulk_create_skus,
+    create_cabinets,
+    get_create_cabinet_status,
     get_all_sub_categories,
     get_groups,
     remove_skus,

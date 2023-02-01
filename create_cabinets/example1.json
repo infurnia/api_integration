@@ -1,0 +1,19 @@
+{
+    "width": 500,
+    "depth": 1000,
+    "height": 1000,
+    "carcass_top_finish_material_id": "1479702803899",
+    "carcass_bottom_finish_material_id": "1479702803899",
+    "carcass_core_panel_sku_id": "5c29af56da025254",
+    "skirting_core_panel_sku_id": "5c29af56da025254",
+    "partitions": [
+        {
+            "partition_id": "partition_1",
+            "no_of_shelves": 1
+        },
+        {
+            "partition_id": "partition_1_1",
+            "no_of_drawers": 2
+        }
+    ]
+}
