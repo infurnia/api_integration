@@ -40,9 +40,9 @@
     internal_drawer_system: boolean
 
     For Drawers:
-        For every partition, we accept an array of drawers (key of array: “drawers”) where each drawer supports the following fields. 
         For a given partition, one can either attach a shelf or drawers, but not both. 
-        The size of the drawer array should be the lesser than/equal to the field “no_of_drawers” for that particular partition, only if drawer
+        The size of the drawer array should be the lesser than/equal to the field “no_of_drawers” for that particular partition.
+        For every partition, we accept an array of drawers (key of array: “drawers”) where each drawer supports the following fields. 
 
     drawer_id: int (mandatory)
     tandem_box_sku_id: string
