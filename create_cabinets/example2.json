@@ -1,43 +1,50 @@
 {
-    "width": 100,
-    "depth": 500,
-    "height": 1000,
-    "carcass_top_finish_material_id": "1479702803899",
-    "carcass_bottom_finish_material_id": "1479702803899",
-    "carcass_core_panel_sku_id": "5c29af56da025254",
-    "drawer_fascia_top_finish_material_id": "1479702803899",
-    "partitions": [
+  "width": 100,
+  "depth": 500,
+  "height": 1000,
+  "sku_id": "dummy_sku_id2",
+  "carcass_top_finish_material_id": "1479702803899",
+  "carcass_bottom_finish_material_id": "1479702803899",
+  "carcass_core_panel_sku_id": "5c29af56da025254",
+  "drawer_fascia_top_finish_material_id": "1479702803899",
+  "partitions": [
+    {
+      "partition_id": "partition_1",
+      "no_of_shelves": 1
+    },
+    {
+      "partition_id": "partition_1_2",
+      "no_of_shelves": 2,
+      "built_in_appliances": [
         {
-            "partition_id": "partition_1",
-            "no_of_shelves": 1
-        },
-        {
-            "partition_id": "partition_1_2",
-            "no_of_shelves": 2
-        },
-        {
-            "partition_id": "partition_1_1",
-            "no_of_drawers": 2,
-            "drawer_system_construction_type": "drawer_box"
-        },
-        {
-            "partition_id": "partition_1_2_1",
-            "no_of_vertical_partitions": 3
-        },
-        {
-            "partition_id": "partition_1_2_2",
-            "no_of_drawers": 2,
-            "internal_drawer_system": true,
-            "drawers": [
-                {
-                    "drawer_id": 1,
-                    "tandem_box_sku_id": "9cac39d10ea9be14"
-                },
-                {
-                    "drawer_id": 2,
-                    "channel_sku_id": "f2iJKqOVjyPSErcXWQB3"
-                }
-            ]
+          "sku_id": "7a9e15d616d6fd05",
+          "name": "test tap"
         }
-    ]
+      ]
+    },
+    {
+      "partition_id": "partition_1_1",
+      "no_of_drawers": 2,
+      "drawer_system_construction_type": "drawer_box"
+    },
+    {
+      "partition_id": "partition_1_2_1",
+      "no_of_vertical_partitions": 3
+    },
+    {
+      "partition_id": "partition_1_2_2",
+      "no_of_drawers": 2,
+      "internal_drawer_system": true,
+      "drawers": [
+        {
+          "drawer_id": 1,
+          "tandem_box_sku_id": "9cac39d10ea9be14"
+        },
+        {
+          "drawer_id": 2,
+          "channel_sku_id": "f2iJKqOVjyPSErcXWQB3"
+        }
+      ]
+    }
+  ]
 }
