@@ -1,123 +1,128 @@
 /*
-    Input: json object
-    Output: component file of the cabinet
 
-    Fields supported for Cabinet:
+Input: json object
+Output: component file of the cabinet
 
-    width : double
-    depth: double
-    height: double
-    carcass_core_panel_sku_id: string
-    carcass_top_finish_material_id: string
-    carcass_edge_band_material_id: string
-    carcass_bottom_finish_material_id: string
-    skirting_core_panel_sku_id: string
-    skirting_top_finish_material_id: string
-    skirting_edge_band_material_id: string
-    skirting_bottom_finish_material_id: string
-    shutter_core_panel_sku_id: string
-    shutter_top_finish_material_id: string
-    shutter_edge_band_material_id: string
-    shutter_bottom_finish_material_id: string
-    shutter_design_material_id: string
-    drawer_fascia_core_panel_sku_id: string
-    drawer_fascia_top_finish_material_id: string
-    drawer_fascia_edge_band_material_id: string
-    drawer_fascia_bottom_finish_material_id: string
-    drawer_fascia_design_material_id: string
+Fields supported:
 
-    For Partition:
-        We take an array of partitions (key of array: “partitions”) where each partitions supports the following fields. The order of partitions (according to their id is from top to bottom, and left to right for sub-partitions within the same partition). 
-        For example, partition with partition_id: “partition_1” is the outermost partition. “partition_1_1” denotes the lower/left most sub-partition of the outermost partition.
+For Cabinet
 
-    partition_id: string (mandatory)
-    shutter_system_type: string
-    no_of_shelves: int
-    no_of_vertical_partitions: int
-    no_of_drawers: int
-    drawer_system_construction_type: string
-    drawer_system_offset_from_top: double
-    internal_drawer_system: boolean
+width : double
+depth: double
+height: double
+sku_id: string (mandatory)
+carcass_core_panel_sku_id: string
+carcass_top_finish_material_id: string
+carcass_edge_band_material_id: string
+carcass_bottom_finish_material_id: string
+skirting_core_panel_sku_id: string
+skirting_top_finish_material_id: string
+skirting_edge_band_material_id: string
+skirting_bottom_finish_material_id: string
+shutter_core_panel_sku_id: string
+shutter_top_finish_material_id: string
+shutter_edge_band_material_id: string
+shutter_bottom_finish_material_id: string
+shutter_design_material_id: string
+drawer_fascia_core_panel_sku_id: string
+drawer_fascia_top_finish_material_id: string
+drawer_fascia_edge_band_material_id: string
+drawer_fascia_bottom_finish_material_id: string
+drawer_fascia_design_material_id: string
 
-    For Drawers:
-        For a given partition, one can either attach a shelf or drawers, but not both. 
-        The size of the drawer array should be the lesser than/equal to the field “no_of_drawers” for that particular partition.
-        For every partition, we accept an array of drawers (key of array: “drawers”) where each drawer supports the following fields. 
+For Partition:
 
-    drawer_id: int (mandatory)
-    tandem_box_sku_id: string
-    channel_sku_id: string
-    
+We take an array of partitions (key of array: “partitions”) where each partitions supports the following fields. The order of partitions (according to their id is from bottom to top, and left to right for sub-partitions within the same partition). For example, partition with partition_id: “partition_1” is the outermost partition. “partition_1_1” denotes the lower/left most sub-partition of the outermost partition.
 
-    Example Json 1:
-    {
-        "width": 500,
-        "depth": 1000,
-        "height": 1000,
-        "sku_id": "dummy_sku_id",
-        "carcass_top_finish_material_id": "1479702803899",
-        "carcass_bottom_finish_material_id": "1479702803899",
-        "carcass_core_panel_sku_id": "5c29af56da025254",
-        "skirting_core_panel_sku_id": "5c29af56da025254",
-        "partitions": [
-            {
-                "partition_id": "partition_1",
-                "no_of_shelves": 1
-            },
-            {
-                "partition_id": "partition_1_1",
-                "no_of_drawers": 2
-            }
-        ]
+partition_id: string (mandatory)
+shutter_system_type: string
+no_of_shelves: int
+no_of_vertical_partitions: int
+no_of_drawers: int
+drawer_system_construction_type: string
+drawer_system_offset_from_top: double
+internal_drawer_system: boolean
+
+built_in_appliances :  array 
+
+Each object in the array has the structure (sku_id is mandatory):
+
+"built_in_appliances": [
+  {
+    "sku_id": "dummy_sku_id",
+    "name": "dummy_name",
+  },
+  {
+    "sku_id": "dummy_sku_id2",
+    "name": "",
+  }
+]
+
+For Drawers:
+
+For every partition, we accept an array of drawers (key of array: “drawers”) where each drawer supports the following fields. For a given partition, one can either attach a shelf or drawers, but not both. The size of the drawer array should be the lesser than/equal to the field “no_of_drawers” for that particular partition, only if drawer
+
+drawer_id: int (mandatory)
+tandem_box_sku_id: string
+channel_sku_id: string
+
+
+
+Example Json 1:
+
+
+
+{
+  "width":500,
+  "depth":1000,
+  "height":1000,
+  "sku_id":"dummy_sku_id",
+  "carcass_top_finish_material_id":"1479702803899",
+  "carcass_bottom_finish_material_id":"1479702803899",
+  "carcass_core_panel_sku_id":"5c29af56da025254",
+  "skirting_core_panel_sku_id":"5c29af56da025254",
+  
+  "partitions":[
+    {"partition_id":"partition_1", "no_of_shelves":1},
+    {"partition_id":"partition_1_1", "no_of_drawers":2}
+  ]
+}
+
+In this example, even though we have 2 drawers in sub-partition 1 of the outermost partition, since we don’t need tandem box/drawer channel, we have not specified a separate array for drawers. Similarly, even though we have an existing partition “partition_1_2”, since we don’t need custom properties, we do not mention it in the array.
+
+Example Json 2:
+
+{
+  "width":100,
+  "depth":500,
+  "height":1000,
+  "sku_id":"dummy_sku_id2",
+  "carcass_top_finish_material_id":"1479702803899",
+  "carcass_bottom_finish_material_id":"1479702803899",
+  "carcass_core_panel_sku_id":"5c29af56da025254",
+  "drawer_fascia_top_finish_material_id":"1479702803899",
+  "partitions":[
+    {"partition_id":"partition_1", "no_of_shelves":1},
+    {"partition_id":"partition_1_2", "no_of_shelves":2, 
+    "built_in_appliances":[
+      {
+      "sku_id" : "7a9e15d616d6fd05",
+      "name": "test tap"
+      }
+    ]},
+    {"partition_id":"partition_1_1", "no_of_drawers":2, "drawer_system_construction_type":"drawer_box"},
+    {"partition_id":"partition_1_2_1", "no_of_vertical_partitions":3},
+    {"partition_id":"partition_1_2_2", "no_of_drawers":2, "internal_drawer_system":true,
+      "drawers":[
+      {"drawer_id":1, "tandem_box_sku_id":"9cac39d10ea9be14"},
+      {"drawer_id":2, "channel_sku_id":"f2iJKqOVjyPSErcXWQB3"}
+      ] 
     }
-    In this example, even though we have 2 drawers in sub-partition 1 of the outermost partition, since we don’t need tandem box/drawer channel, we have not specified a separate array for drawers. Similarly, even though we have an existing partition “partition_1_2”, since we don’t need custom properties, we do not mention it in the array.
+  ]
+}
 
-    Example Json 2:
-    {
-        "width": 100,
-        "depth": 500,
-        "height": 1000,
-        "sku_id": "dummy_sku_id2",
-        "carcass_top_finish_material_id": "1479702803899",
-        "carcass_bottom_finish_material_id": "1479702803899",
-        "carcass_core_panel_sku_id": "5c29af56da025254",
-        "drawer_fascia_top_finish_material_id": "1479702803899",
-        "partitions": [
-            {
-                "partition_id": "partition_1",
-                "no_of_shelves": 1
-            },
-            {
-                "partition_id": "partition_1_2",
-                "no_of_shelves": 2
-            },
-            {
-                "partition_id": "partition_1_1",
-                "no_of_drawers": 2,
-                "drawer_system_construction_type": "drawer_box"
-            },
-            {
-                "partition_id": "partition_1_2_1",
-                "no_of_vertical_partitions": 3
-            },
-            {
-                "partition_id": "partition_1_2_2",
-                "no_of_drawers": 2,
-                "internal_drawer_system": true,
-                "drawers": [
-                    {
-                        "drawer_id": 1,
-                        "tandem_box_sku_id": "9cac39d10ea9be14"
-                    },
-                    {
-                        "drawer_id": 2,
-                        "channel_sku_id": "f2iJKqOVjyPSErcXWQB3"
-                    }
-                ]
-            }
-        ]
-    }
 */
+
 
 const {
     create_cabinets,
