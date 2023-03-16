@@ -9,10 +9,10 @@ const format = require('biguint-format');
     CREDENTIALS
     set your credentials here
 */
-const ACCESS_TOKEN = "xxxx";
-const EMAIL = "xxxx";
-const SERVER_PATH = "xxxx";
-const STORE_ID = "xxxx";
+const ACCESS_TOKEN = "";
+const EMAIL = "";
+const SERVER_PATH = "";
+const STORE_ID = "";
 
 
 /*
@@ -23,7 +23,9 @@ const generate_id = () => {
     var id = crypto.randomBytes(8);
     return format(id, 'hex');
 }
-  
+
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 /*
     GENERAL FETCH
@@ -398,7 +400,47 @@ const get_create_cabinet_status = async (id) => {
     }
 }
 
+/*
+    REQUEST PRICING QUOTATION IN JSON FORMAT
+    this function is used to find pricing quotation for a design branch in json format
+    @params
+        sku_data: data of the skus to be created
+    @return
+        request id (which can be used to fetch the status)
+*/
+const init_pricing_quotation_json = async (body) => {
+    try {
+        let resp = await general_fetch({ url: 'production_detail/get_output', body});
+        console.log('successfully created an attempt to request pricing quotation in json  with request id -> ', resp.request_batch_id);
+        return resp;
+    } catch(err) {
+        console.error('Error in init_pricing_quotation_json ->', err);
+        return Promise.reject({ err, info: 'Error in init_pricing_quotation_json' });
+    }
+}
 
+
+/*
+    GET STATUS OF CREATE CABINET SKUs
+    this function is used to fetch the status of create cabinet skus request
+    @params
+        id: id of create cabinet request
+    @return
+        {
+            status: 'completed' | 'ongoing' | 'failed'
+            sku_ids: [<successfully created sku ids>] | []
+        }
+*/
+const get_pricing_quotation_json_status = async (id) => {
+    try {
+        let resp = await general_fetch({ url: 'production_detail/get_status', body: { ids: [id] }});
+        console.log('successfully requested the status of pricing quotation in json with request id -> ', id, 'with status ->', resp.status);
+        return resp[0];
+    } catch(err) {
+        console.error('Error in get_pricing_quotation_json_status ->', err);
+        return Promise.reject({ err, info: 'Error in get_pricing_quotation_json_status' })
+    }
+}
 
 
 /*
@@ -509,6 +551,7 @@ const remove_sku_category = async (id) => {
 
 module.exports = {
     generate_id,
+    sleep,
     fetch_sku_category_types,
     fetch_sales_channels,
     fetch_material_templates,
@@ -522,11 +565,14 @@ module.exports = {
     bulk_create_skus,
     create_cabinets,
     get_create_cabinet_status,
+    init_pricing_quotation_json,
+    get_pricing_quotation_json_status,
     get_all_sub_categories,
     get_groups,
     remove_skus,
     remove_sku_group,
     remove_sku_sub_category,
     remove_sku_category,
-    STORE_ID
+    STORE_ID,
+    SERVER_PATH
 }
