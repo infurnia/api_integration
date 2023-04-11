@@ -1,3 +1,34 @@
+/*
+    Example for brand creation
+    This script creates a brand with the following details:
+    1. Brand Name: "Brand 1"
+
+    let new_brand = await add_brand('Brand 1');
+    console.log(new_brand);
+
+
+    Example for fetching brands
+    This script fetches all brands
+    let all_brands = await get_brands();
+    console.log(all_brands);
+
+
+    Example for sku updation
+    This script updates the following details of a sku:
+    1. Name: "SKU 1"
+    3. Model No: "model_no1"
+    4. Brand: "brand_1"
+
+    let sku_id = "sku_id";
+    let updated_sku = await update_sku(sku_id, {
+        name: "SKU 1",
+        model_no: "model_no1",
+        brand_id: "brand_1"
+    });
+    console.log(updated_sku);
+*/
+
+
 const {
     generate_id,
     fetch_sku_category_types,
@@ -10,7 +41,10 @@ const {
     create_material,
     create_display_pic,
     create_model_3d,
-    bulk_create_skus
+    bulk_create_skus,
+    update_sku,
+    add_brand,
+    get_brands
 } = require('./utils');
 
 const create_inventory = async () => {
