@@ -506,6 +506,58 @@ const remove_sku_category = async (id) => {
     }
 }
 
+/*
+    ADD BRAND
+    this function is used to add a new brand
+    @params
+    name: name of the brand
+*/
+const add_brand = async (name) => {
+    try {
+        const data = await general_fetch({ url: 'brand/add', body: { name } });
+        console.log('successfully added brand -> ', brand_name);
+        return data;
+    } catch(err) {
+        console.error('Error in add_brand ->', err);
+        return Promise.reject({ err, info: 'Error in add_brand' })
+    }
+}
+
+/*
+    GET BRANDS
+    this function is used to get all the brands
+*/
+const get_brands = async () => {
+    try {
+        const data = await general_fetch({ url: 'brand/get' });
+        console.log('successfully fetched all the brands -> ', data);
+        return data;
+    } catch(err) {
+        console.error('Error in get_brands ->', err);
+        return Promise.reject({ err, info: 'Error in get_brands' })
+    }
+}
+
+/*
+    UPDATE SKU
+    this function is used to update a given sku
+    @params
+    sku_id: id of the sku to be updated
+    sku_data: data to be updated
+*/
+const update_sku = async (sku_id, sku_data) => {
+    try {
+        let form = new FormData();
+        form.append('identifiers', JSON.stringify({ id: sku_id }));
+        form.append('updates', JSON.stringify(sku_data));
+        const data = await upload_file({ url: 'sku/update', body: form });
+        console.log('successfully updated sku -> ', sku_id);
+        return data;
+    } catch(err) {
+        console.error('Error in update_sku ->', err);
+        return Promise.reject({ err, info: 'Error in update_sku' })
+    }
+}
 
 module.exports = {
     generate_id,
@@ -528,5 +580,8 @@ module.exports = {
     remove_sku_group,
     remove_sku_sub_category,
     remove_sku_category,
+    get_brands,
+    add_brand,
+    update_sku,
     STORE_ID
 }
