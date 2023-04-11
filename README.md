@@ -21,3 +21,7 @@ display_unit field for price_types must be in agreement with pricing_dimension f
   }
 ```
 If category_type has the pricing_dimension 'per_unit_length', display_unit for price_types can be 'millimetre', 'metre' or 'foot'.
+
+
+### Generate Pricing Quoation
+Please check the [pricing quotation code](get_pricing_quotation_json.js) to know more about supported commands and file formats to generate pricing quotation.

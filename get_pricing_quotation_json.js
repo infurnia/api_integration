@@ -14,8 +14,18 @@ const _main = async () => {
          * Request body must be a JSON 
          * It must have `commands` as an array with one string element called "GetPricingQuotationDetailsJSON"
          *      i.e. "commands": ["GetPricingQuotationDetailsJSON"]
+         * 
          * It must have `design_branch_id` as a valid design branch id (string)
          *      for example, "design_branch_id": "d57e969750c4078"
+         * 
+         * 
+         * Other supported commands are the following:
+         *  GetPricingQuotationDetailsJSON  -> Get pricing quotation in JSON
+         *  GetPricingQuotationXlsx         -> Get pricing quotation in XLSX
+         *  GetPricingQuotationCsv          -> Get pricing quotation in CSV
+         *  GetCabinetCompositeBoq          -> Get Cabinet Composite BOQ
+         * 
+         * You can send a subset of these commands as an array in the `commands` argument in the below API
          */
         const req_body = {
             "commands": ["GetPricingQuotationDetailsJSON"],
