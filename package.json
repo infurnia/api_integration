@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^1.2.2",
     "biguint-format": "^1.0.2",
+    "dotenv": "^16.0.3",
     "form-data": "^4.0.0"
   }
 }

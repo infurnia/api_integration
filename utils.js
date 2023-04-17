@@ -3,16 +3,16 @@ const axios = require('axios');
 const crypto = require('crypto');
 const FormData = require('form-data');
 const format = require('biguint-format');
-
+require('dotenv').config()
 
 /*
     CREDENTIALS
     set your credentials here
 */
-const ACCESS_TOKEN = "";
-const EMAIL = "";
-const SERVER_PATH = "";
-const STORE_ID = "";
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN || "";
+const EMAIL = process.env.EMAIL || "";
+const SERVER_PATH = process.env.SERVER_PATH || "";
+const STORE_ID = process.env.STORE_ID || "";
 
 
 /*
@@ -408,14 +408,14 @@ const get_create_cabinet_status = async (id) => {
     @return
         request id (which can be used to fetch the status)
 */
-const init_pricing_quotation_json = async (body) => {
+const init_core_request = async (body) => {
     try {
         let resp = await general_fetch({ url: 'production_detail/get_output', body});
-        console.log('successfully created an attempt to request pricing quotation in json  with request id -> ', resp.request_batch_id);
+        console.log('successfully created an attempt to request download reports from core with id -> ', resp.request_batch_id);
         return resp;
     } catch(err) {
-        console.error('Error in init_pricing_quotation_json ->', err);
-        return Promise.reject({ err, info: 'Error in init_pricing_quotation_json' });
+        console.error('Error in init_core_request ->', err);
+        return Promise.reject({ err, info: 'Error in init_core_request' });
     }
 }
 
@@ -431,14 +431,14 @@ const init_pricing_quotation_json = async (body) => {
             sku_ids: [<successfully created sku ids>] | []
         }
 */
-const get_pricing_quotation_json_status = async (id) => {
+const get_status_for_core_request = async (id) => {
     try {
         let resp = await general_fetch({ url: 'production_detail/get_status', body: { ids: [id] }});
-        console.log('successfully requested the status of pricing quotation in json with request id -> ', id, 'with status ->', resp.status);
+        console.log('successfully found the status of download reports request from core with id -> ', id, 'and status ->', resp.status);
         return resp[0];
     } catch(err) {
-        console.error('Error in get_pricing_quotation_json_status ->', err);
-        return Promise.reject({ err, info: 'Error in get_pricing_quotation_json_status' })
+        console.error('Error in get_status_for_core_request ->', err);
+        return Promise.reject({ err, info: 'Error in get_status_for_core_request' })
     }
 }
 
@@ -617,8 +617,8 @@ module.exports = {
     bulk_create_skus,
     create_cabinets,
     get_create_cabinet_status,
-    init_pricing_quotation_json,
-    get_pricing_quotation_json_status,
+    init_core_request,
+    get_status_for_core_request,
     get_all_sub_categories,
     get_groups,
     remove_skus,
