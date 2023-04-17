@@ -23,6 +23,7 @@ const _main = async () => {
          *  GetPricingQuotationDetailsJSON  -> Get pricing quotation in JSON
          *  GetPricingQuotationXlsx         -> Get pricing quotation in XLSX
          *  GetPricingQuotationCsv          -> Get pricing quotation in CSV
+         *  GetPricingQuotationPdf          -> Get pricing quotation in PDF
          *  GetCabinetCompositeBoq          -> Get Cabinet Composite BOQ
          * 
          * You can send a subset of these commands as an array in the `commands` argument in the below API
