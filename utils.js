@@ -104,7 +104,7 @@ const upload_file = async ({ data, url, data_field }) => {
                 'infurnia-access-token': ACCESS_TOKEN,
                 'infurnia-email': EMAIL,
                 'infurnia-store-id': STORE_ID,
-                ...data.getHeaders()
+                ...(data ? data.getHeaders() : {})
             },
             data,
             method: 'POST'
@@ -592,7 +592,7 @@ const update_sku = async (sku_id, sku_data) => {
         let form = new FormData();
         form.append('identifiers', JSON.stringify({ id: sku_id }));
         form.append('updates', JSON.stringify(sku_data));
-        const data = await upload_file({ url: 'sku/update', body: form });
+        const data = await upload_file({ url: 'sku/update', data: form });
         console.log('successfully updated sku -> ', sku_id);
         return data;
     } catch(err) {

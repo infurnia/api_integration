@@ -224,6 +224,16 @@ const create_inventory = async () => {
                         sku_category_id: sku_category.id, 
                         sku_data: all_sku_data 
                     });
+                    console.log(`created_skus`, created_skus);
+                    
+                    // Update a SKU metadata, For example it's `name`, `order`, `model_no`
+                    let sku_data_0 = created_skus[0];
+                    sku_data_0.name = "updated_sku_name";
+                    sku_data_0.order = 20;
+                    sku_data_0.model_no = "Model 32";
+                    sku_data_0.additional_properties = JSON.stringify(sku_data_0.additional_properties); // note: always stringify additional properties if it exists
+                    let updated_sku = await update_sku(created_skus[0].id, sku_data_0);
+                    console.log(`updated_sku_id`, updated_sku);
                 }
             }
         }

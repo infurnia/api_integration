@@ -25,3 +25,6 @@ If category_type has the pricing_dimension 'per_unit_length', display_unit for p
 
 ### Generate Pricing Quoation
 Please check the [pricing quotation code](get_pricing_quotation_json.js) to know more about supported commands and file formats to generate pricing quotation.
+
+### SKU Update
+Use the `update_sku` function in the utils folder to update any SKU's details. Only mention the fields supposed to be updated in the body of the API.  Please stringify the `additional_roperties` field if it exists before calling the API.
