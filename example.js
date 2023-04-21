@@ -26,6 +26,28 @@
         brand_id: "brand_1"
     });
     console.log(updated_sku);
+    
+    To update Material for an SKU:
+
+    1. Create texture
+    let texture = await create_texture({ 
+        path: texture.file, //path to texture file
+        name: "sample texture" 
+    });
+    
+    2. create material
+    let material = await create_material({
+        name: "sample material name",
+        material_template_id: material_template_id, //relevant material_template_id - use fetch_material_templates() to get all material templates
+        properties: material_templates_map[material_template_id].properties, // properties of material template as returned by fetch_material_templates()
+        texture_id: texture ? texture?.id??null : null
+    });
+    
+    let sku_data = {}
+    sku_data.material_id = material.id;
+    let sku_id = "sku_id";
+    let updated_sku = await update_sku(sku_id, sku_data);
+    console.log(updated_sku);
 */
 
 
