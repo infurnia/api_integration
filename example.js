@@ -223,8 +223,7 @@ const create_inventory = async () => {
                             let material = await create_material({
                                 name: sample_sku.material.name,
                                 material_template_id: sample_sku.material.material_template_id,
-                                properties: material_templates_map[sample_sku.material.material_template_id].properties,
-                                texture_id: texture ? texture?.id??null : null
+                                properties: { ...material_templates_map[sample_sku.material.material_template_id].properties, ...((texture && texture.id) ? {map: texture.id} : {}) }
                             });
 
                             sku_data.material_id = material.id;
