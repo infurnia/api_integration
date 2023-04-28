@@ -238,7 +238,7 @@ const create_inventory = async () => {
                         if (sample_sku.model_3d) {
                             //create model 3d
                             let model_3d = await create_model_3d({ path: sample_sku.model_3d.file });
-                            sku_data.low_model_3d = model_3d.id;
+                            sku_data.low_model_3d_id = model_3d.id;
                         }
                         all_sku_data.push(sku_data);
                     }

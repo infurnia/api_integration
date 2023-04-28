@@ -26,5 +26,18 @@ If category_type has the pricing_dimension 'per_unit_length', display_unit for p
 ### Generate Pricing Quoation
 Please check the [pricing quotation code](get_pricing_quotation_json.js) to know more about supported commands and file formats to generate pricing quotation.
 
+The following commands are supported in the production details API;
+1. GetPricingQuotationDetailsJSON - To get pricing quotation in JSON format
+2. GetPricingQuotationXlsx - To get pricing quotation in XLSX format
+3. GetPricingQuotationCsv - To get pricing quotation in CSV format
+4. GetPricingQuotationPdf - To get pricing quotation in PDF format
+5. GetCabinetCompositeBoq - To get Cabinet Composite BOQ (XLSX format)
+6. PrintElevationViews - To get elevation view (PDF format)
+
+
 ### SKU Update
 Use the `update_sku` function in the utils folder to update any SKU's details. Only mention the fields supposed to be updated in the body of the API.  Please stringify the `additional_roperties` field if it exists before calling the API.
+
+
+### Disable rendering for a design branch
+Use the `disable_rendering` function in the utils folder to disable rendering for a given design branch. Alternatively, use the `enable_rendering` function in the utils folder to enable rendering for a given design branch. By default, a design branch has rendering enabled.

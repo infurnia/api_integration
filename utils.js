@@ -601,6 +601,38 @@ const update_sku = async (sku_id, sku_data) => {
     }
 }
 
+/**
+ * Disable rendering on a design branch
+ * @param {*} design_branch_id 
+ * @returns 
+ */
+const disable_rendering = async (design_branch_id) => {
+    try {
+        const data = await general_fetch({ url: 'design/disable_branch_rendering', body: { design_branch_id } });
+        console.log('successfully disabled rendering on design branch with id -> ', design_branch_id);
+        return data;
+    } catch(err) {
+        console.error('Error in disable_rendering ->', err);
+        return Promise.reject({ err, info: 'Error in disable_rendering' })
+    }
+}
+
+/**
+ * Enable rendering on a design branch
+ * @param {*} design_branch_id 
+ * @returns 
+ */
+const enable_rendering = async (design_branch_id) => {
+    try {
+        const data = await general_fetch({ url: 'design/enable_branch_rendering', body: { design_branch_id } });
+        console.log('successfully enabled rendering on design branch with id -> ', design_branch_id);
+        return data;
+    } catch(err) {
+        console.error('Error in enable_rendering ->', err);
+        return Promise.reject({ err, info: 'Error in enable_rendering' })
+    }
+}
+
 module.exports = {
     generate_id,
     sleep,
@@ -628,6 +660,8 @@ module.exports = {
     get_brands,
     add_brand,
     update_sku,
+    disable_rendering,
+    enable_rendering,
     STORE_ID,
     SERVER_PATH
 }
