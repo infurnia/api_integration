@@ -26,7 +26,7 @@ If category_type has the pricing_dimension 'per_unit_length', display_unit for p
 ### Generate Pricing Quoation
 Please check the [pricing quotation code](get_pricing_quotation_json.js) to know more about supported commands and file formats to generate pricing quotation.
 
-The following commands are supported in the production details API;
+The following commands are supported in the production details API
 1. GetPricingQuotationDetailsJSON - To get pricing quotation in JSON format
 2. GetPricingQuotationXlsx - To get pricing quotation in XLSX format
 3. GetPricingQuotationCsv - To get pricing quotation in CSV format
