@@ -392,7 +392,7 @@ const create_cabinets = async (sku_data) => {
 const get_create_cabinet_status = async (id) => {
     try {
         let resp = await general_fetch({ url: 'production_detail/get_bulk_create_sku_status', body: { id }});
-        console.log('successfully requested the status of create cabinets with request id -> ', id, 'with status ->', resp.status);
+        console.log('successfully requested the status of create cabinets with request id -> ', id, 'with status ->', resp?.[0]?.status);
         return resp;
     } catch(err) {
         console.error('Error in get_create_cabinet_status ->', err);
