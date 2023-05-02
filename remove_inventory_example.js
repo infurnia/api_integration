@@ -1,4 +1,5 @@
 const {
+    get_store_info,
     get_all_sub_categories,
     get_groups,
     remove_skus,
@@ -12,9 +13,18 @@ const MY_STORE_ID = STORE_ID;
 
 const remove_complete_inventory = async () => {
     try {
-        // fetch the complete sub category map
+        // fetch the complete sub category map in the Default Business Unit
+        // get the default Business Unit Id from the store/get_info API
+        const store_info = await get_store_info();
+        const default_business_unit_id = store_info.default_business_unit_id;
+
+        // this includes all owned sub categories and and non owned sub categories in which at least one sku is added to the default Business Unit Id
+        const hierarchy = await get_all_sub_categories(default_business_unit_id);
+        
         // this includes all owned sub categories and and non owned sub categories in which at least one sku is added to your store
-        const hierarchy = await get_all_sub_categories();
+        // const hierarchy = await get_all_sub_categories();
+
+
         /*
             hierarchy looks like =>
             heirarchy: [
@@ -49,7 +59,7 @@ const remove_complete_inventory = async () => {
                 for (sub_category of category.sku_sub_category) {
                     try {
                         const sku_sub_category_id = sub_category.id;
-                        const sku_group_hierarchy = await get_groups(sku_sub_category_id);
+                        const sku_group_hierarchy = await get_groups(sku_sub_category_id, default_business_unit_id);
 
                         /*
                             sku_group_hierarchy looks like this:
@@ -114,6 +124,7 @@ const remove_complete_inventory = async () => {
         for (const sku_division of hierarchy) {
             for (const sku_category of sku_division.sku_category) {
                 try {
+                    console.log(sku_category.name, sku_category.store_id);
                     if (sku_category.store_id == MY_STORE_ID) {
                         await remove_sku_category(sku_category.id);
                     }

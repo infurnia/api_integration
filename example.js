@@ -73,11 +73,18 @@ const create_inventory = async () => {
     try {
         //fetch SKU Category Types
         let sku_category_types = await fetch_sku_category_types();
+
         //fetch Sales Channels
         let sales_channels = await fetch_sales_channels();
+        sales_channels = sales_channels.sales_channels.owned;
+        let sales_channel_details = sales_channels.filter(obj => obj.price_type_ids.length > 0)[0];
+        console.log('All sales channels:', sales_channels);
+        console.log('Owned sales channels 0:', sales_channels[0]);
+        console.log('sales_channel_details', sales_channel_details);
 
         //fetch material templates
         let material_templates = await fetch_material_templates();
+        
         let material_templates_map = material_templates.reduce((final, elem) => ({
             ...final,
             [ elem.id ]: elem            
@@ -106,9 +113,9 @@ const create_inventory = async () => {
                             name: "demo_material",
                         },
                         sales_channels: [{
-                            id: sales_channels[0].id,
+                            id: sales_channel_details.id,
                             price_types: [{
-                                id: sales_channels[0].price_types[0].id,
+                                id: sales_channel_details.price_type_ids[0],
                                 price: 1000,
                                 margin: 10,
                                 tax: 10,
@@ -146,9 +153,9 @@ const create_inventory = async () => {
                             file: "./dummy_model.glb",
                         },
                         sales_channels: [{
-                            id: sales_channels[0].id,
+                            id: sales_channel_details.id,
                             price_types: [{
-                                id: sales_channels[0].price_types[0].id,
+                                id: sales_channel_details.price_type_ids[0],
                                 price: 1000,
                                 margin: 10,
                                 tax: 10,
