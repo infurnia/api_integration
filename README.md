@@ -41,3 +41,7 @@ Use the `update_sku` function in the utils folder to update any SKU's details. O
 
 ### Disable rendering for a design branch
 Use the `disable_rendering` function in the utils folder to disable rendering for a given design branch. Alternatively, use the `enable_rendering` function in the utils folder to enable rendering for a given design branch. By default, a design branch has rendering enabled.
+
+
+### Attach Tags
+Pls check this [example code](attach_tags.js) for attaching tags to SKU.

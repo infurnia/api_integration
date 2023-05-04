@@ -633,6 +633,55 @@ const enable_rendering = async (design_branch_id) => {
     }
 }
 
+/**
+ * Create a new Tag
+ * @param {*} name - Name of the new Tag
+ * @returns 
+ */
+const create_tag = async (name) => {
+    try {
+        const data = await general_fetch({ url: 'tag/add', body: { name } });
+        console.log('successfully created a tag with details -> ', data[0]);
+        return data[0].id;
+    } catch(err) {
+        console.error('Error in create_tag ->', err);
+        return Promise.reject({ err, info: 'Error in create_tag' })
+    }
+}
+
+/**
+ * Get attach Tags in the SKU
+ * @param {*} sku_id - SKU ID
+ * @returns 
+ */
+const get_tags_on_sku = async (sku_id) => {
+    try {
+        const data = await general_fetch({ url: 'sku/get_tags', body: { ids: [sku_id] } });
+        console.log(`successfully got the tags attached to the SKU id: ${sku_id} -> `, data?.[sku_id]?.sku_tags);
+        return data?.[sku_id]?.sku_tags ?? [];
+    } catch(err) {
+        console.error('Error in create_tag ->', err);
+        return Promise.reject({ err, info: 'Error in create_tag' })
+    }
+}
+
+/**
+ * Attach Tags in the SKU
+ * @param {*} sku_id - SKU ID
+ * @param {*} tag_ids - Array of Tag IDs
+ * @returns 
+ */
+const attach_tags_on_sku = async (sku_id, tag_ids) => {
+    try {
+        const data = await general_fetch({ url: 'sku/attach_tags', body: { ids: [sku_id], tag_ids } });
+        console.log(`successfully attached the following tags to the SKU id: ${sku_id}`);
+        return data;
+    } catch(err) {
+        console.error('Error in create_tag ->', err);
+        return Promise.reject({ err, info: 'Error in create_tag' })
+    }
+}
+
 module.exports = {
     generate_id,
     sleep,
@@ -662,6 +711,9 @@ module.exports = {
     update_sku,
     disable_rendering,
     enable_rendering,
+    create_tag,
+    get_tags_on_sku,
+    attach_tags_on_sku,
     STORE_ID,
     SERVER_PATH
 }
