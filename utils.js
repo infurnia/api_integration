@@ -668,7 +668,7 @@ const get_tags_on_sku = async (sku_id) => {
 /**
  * Attach Tags in the SKU
  * @param {*} sku_id - SKU ID
- * @param tag_ids - Array of Tag IDs
+ * @param {*} tag_ids - Array of Tag IDs
  * @returns 
  */
 const attach_tags_on_sku = async (sku_id, tag_ids) => {
