@@ -682,6 +682,22 @@ const attach_tags_on_sku = async (sku_id, tag_ids) => {
     }
 }
 
+/**
+ * Get all renders fired for a given design ID
+ * @param {*} design_id - Design ID
+ * @returns 
+ */
+const get_renders_for_design = async (design_id) => {
+    try {
+        const data = await general_fetch({ url: 'render/get_all_of_design', body: { design_id } });
+        console.log(`successfully found renders fired for design id: ${design_id}`);
+        return data;
+    } catch(err) {
+        console.error('Error in create_tag ->', err);
+        return Promise.reject({ err, info: 'Error in create_tag' })
+    }
+}
+
 module.exports = {
     generate_id,
     sleep,
@@ -714,6 +730,7 @@ module.exports = {
     create_tag,
     get_tags_on_sku,
     attach_tags_on_sku,
+    get_renders_for_design,
     STORE_ID,
     SERVER_PATH
 }

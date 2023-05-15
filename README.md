@@ -45,3 +45,7 @@ Use the `disable_rendering` function in the utils folder to disable rendering fo
 
 ### Attach Tags
 Pls check this [example code](attach_tags.js) for attaching tags to SKU.
+
+
+### Fetch all renders for a given design branch
+Pls check this [example code](get_renders.js) for fetching all renders for a given design ID.
