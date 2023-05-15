@@ -321,17 +321,22 @@ const create_display_pic = async ({ path }) => {
     CREATE MODEL 3D
     this function is used to create model 3d
     @params
-    path: path of the model 3d file
+    high: false
+    format: 'obj' | 'glb'
+    path: path of the model 3d file (.obj or .glb)
+    mtl_path: path of the .mtl file if format is .obj
 */
 const create_model_3d = async ({ path, mtl_path }) => {
     try {
         let form = new FormData();
-        form.append('format', 'glb');
         form.append('high', 'false');
         form.append('file', fs.createReadStream(path));
-	if(mtl_path && mtl_path.length) {
-	    form.append('mtl_file', fs.createReadStream(mtl_path));
-	}
+        if(mtl_path && mtl_path.length) {
+            form.append('format', 'obj');
+            form.append('mtl_file', fs.createReadStream(mtl_path));
+        } else {
+            form.append('format', 'glb');
+        }
         let model_3d = await upload_file({ url: 'model_3d/upload_asset', data: form });
         console.log('successfully created model_3d with ID -> ', model_3d.id);
         return model_3d;
