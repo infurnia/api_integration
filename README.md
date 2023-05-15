@@ -9,6 +9,7 @@
 * Example code uses miscellaneous_finish  as category type, other category types may be used (for example cabinet, wardrobe, panel_core, cabinet_finish, etc. which are returned in the fetch_catgeory_types response).
 * Thickenss for finish skus and core_materials can be specified in the sku.height field.
 * Additional properties - user may create any number of custom key value pairs.
+* You can create Model 3D for a SKU using two ways - either using a GLB file or using OBJ and MTL files. Check the example code for more information on how to pass the appropriate arguments
 
 ### Pricing
 display_unit field for price_types must be in agreement with pricing_dimension field of sku_category_type for the SKU. Acceptable values of display_unit can be determined as follows:

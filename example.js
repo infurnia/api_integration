@@ -237,6 +237,9 @@ const create_inventory = async () => {
 
                         if (sample_sku.model_3d) {
                             //create model 3d
+                            // Two ways to create model 3d ->
+                            // 1. Using GLB file (give .glb file path in `path` field)
+                            // 2. Using OBJ and MTL files (give .obj file path in `path` field and .mtl file path in `mtl_path` field)
                             let model_3d = await create_model_3d({ path: sample_sku.model_3d.file });
                             sku_data.low_model_3d_id = model_3d.id;
                         }
