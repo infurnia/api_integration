@@ -323,12 +323,15 @@ const create_display_pic = async ({ path }) => {
     @params
     path: path of the model 3d file
 */
-const create_model_3d = async ({ path }) => {
+const create_model_3d = async ({ path, mtl_path }) => {
     try {
         let form = new FormData();
         form.append('format', 'glb');
         form.append('high', 'false');
         form.append('file', fs.createReadStream(path));
+	if(mtl_path && mtl_path.length) {
+	    form.append('mtl_file', fs.createReadStream(mtl_path);
+	}
         let model_3d = await upload_file({ url: 'model_3d/upload_asset', data: form });
         console.log('successfully created model_3d with ID -> ', model_3d.id);
         return model_3d;
