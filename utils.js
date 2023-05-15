@@ -330,7 +330,7 @@ const create_model_3d = async ({ path, mtl_path }) => {
         form.append('high', 'false');
         form.append('file', fs.createReadStream(path));
 	if(mtl_path && mtl_path.length) {
-	    form.append('mtl_file', fs.createReadStream(mtl_path);
+	    form.append('mtl_file', fs.createReadStream(mtl_path));
 	}
         let model_3d = await upload_file({ url: 'model_3d/upload_asset', data: form });
         console.log('successfully created model_3d with ID -> ', model_3d.id);
