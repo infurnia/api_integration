@@ -91,17 +91,17 @@ const create_inventory = async () => {
         }), {});
 
         let sample_inventory = [{
-            name: "SKU Category 1",
+            name: "RushHub Test Category 1",
             sku_category_type_id: 'miscellanous_finish', //must be one of the sku_category_types array
             sku_division_id: 'finish', //must be same as sku_division_id of sku_category_type
             sku_sub_categories: [{
-                name: "SKU Sub Category 1",
+                name: "RushHub Test Sub Category 1",
                 order: 1, //can be any decimal number (used to set display order of sub categories)
                 sku_groups: [{
-                    name: "SKU Group 1",
+                    name: "RushHub Test Group 1",
                     order: 2, //can be any decimal number (used to set display order of groups)
                     skus: [{
-                        name: "SKU 1",
+                        name: "RushHub Test 1",
                         height: 100,
                         model_no: "model_no1",
                         material: {
@@ -244,6 +244,9 @@ const create_inventory = async () => {
 
                         if (sample_sku.model_3d) {
                             //create model 3d
+                            // Two ways to create model 3d ->
+                            // 1. Using GLB file (give .glb file path in `path` field) (below example)
+                            // 2. Using OBJ and MTL files (give .obj file path in `path` field and .mtl file path in `mtl_path` field)
                             let model_3d = await create_model_3d({ path: sample_sku.model_3d.file });
                             sku_data.low_model_3d_id = model_3d.id;
                         }

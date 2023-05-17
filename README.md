@@ -9,6 +9,7 @@
 * Example code uses miscellaneous_finish  as category type, other category types may be used (for example cabinet, wardrobe, panel_core, cabinet_finish, etc. which are returned in the fetch_catgeory_types response).
 * Thickenss for finish skus and core_materials can be specified in the sku.height field.
 * Additional properties - user may create any number of custom key value pairs.
+* You can create Model 3D for a SKU using two ways - either using a GLB file or using OBJ and MTL files. Check the example code for more information on how to pass the appropriate arguments
 
 ### Pricing
 display_unit field for price_types must be in agreement with pricing_dimension field of sku_category_type for the SKU. Acceptable values of display_unit can be determined as follows:
@@ -41,3 +42,11 @@ Use the `update_sku` function in the utils folder to update any SKU's details. O
 
 ### Disable rendering for a design branch
 Use the `disable_rendering` function in the utils folder to disable rendering for a given design branch. Alternatively, use the `enable_rendering` function in the utils folder to enable rendering for a given design branch. By default, a design branch has rendering enabled.
+
+
+### Attach Tags
+Pls check this [example code](attach_tags.js) for attaching tags to SKU.
+
+
+### Fetch all renders for a given design branch
+Pls check this [example code](get_renders.js) for fetching all renders for a given design ID.

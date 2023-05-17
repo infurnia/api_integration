@@ -321,14 +321,22 @@ const create_display_pic = async ({ path }) => {
     CREATE MODEL 3D
     this function is used to create model 3d
     @params
-    path: path of the model 3d file
+    high: false
+    format: 'obj' | 'glb'
+    path: path of the model 3d file (.obj or .glb)
+    mtl_path: path of the .mtl file if format is .obj
 */
-const create_model_3d = async ({ path }) => {
+const create_model_3d = async ({ path, mtl_path }) => {
     try {
         let form = new FormData();
-        form.append('format', 'glb');
         form.append('high', 'false');
         form.append('file', fs.createReadStream(path));
+        if(mtl_path && mtl_path.length) {
+            form.append('format', 'obj');
+            form.append('mtl_file', fs.createReadStream(mtl_path));
+        } else {
+            form.append('format', 'glb');
+        }
         let model_3d = await upload_file({ url: 'model_3d/upload_asset', data: form });
         console.log('successfully created model_3d with ID -> ', model_3d.id);
         return model_3d;
@@ -392,7 +400,7 @@ const create_cabinets = async (sku_data) => {
 const get_create_cabinet_status = async (id) => {
     try {
         let resp = await general_fetch({ url: 'production_detail/get_bulk_create_sku_status', body: { id }});
-        console.log('successfully requested the status of create cabinets with request id -> ', id, 'with status ->', resp.status);
+        console.log('successfully requested the status of create cabinets with request id -> ', id, 'with status ->', resp?.[0]?.status);
         return resp;
     } catch(err) {
         console.error('Error in get_create_cabinet_status ->', err);
@@ -654,6 +662,71 @@ const enable_rendering = async (design_branch_id) => {
     }
 }
 
+/**
+ * Create a new Tag
+ * @param {*} name - Name of the new Tag
+ * @returns 
+ */
+const create_tag = async (name) => {
+    try {
+        const data = await general_fetch({ url: 'tag/add', body: { name } });
+        console.log('successfully created a tag with details -> ', data[0]);
+        return data[0].id;
+    } catch(err) {
+        console.error('Error in create_tag ->', err);
+        return Promise.reject({ err, info: 'Error in create_tag' })
+    }
+}
+
+/**
+ * Get attach Tags in the SKU
+ * @param {*} sku_id - SKU ID
+ * @returns 
+ */
+const get_tags_on_sku = async (sku_id) => {
+    try {
+        const data = await general_fetch({ url: 'sku/get_tags', body: { ids: [sku_id] } });
+        console.log(`successfully got the tags attached to the SKU id: ${sku_id} -> `, data?.[sku_id]?.sku_tags);
+        return data?.[sku_id]?.sku_tags ?? [];
+    } catch(err) {
+        console.error('Error in create_tag ->', err);
+        return Promise.reject({ err, info: 'Error in create_tag' })
+    }
+}
+
+/**
+ * Attach Tags in the SKU
+ * @param {*} sku_id - SKU ID
+ * @param {*} tag_ids - Array of Tag IDs
+ * @returns 
+ */
+const attach_tags_on_sku = async (sku_id, tag_ids) => {
+    try {
+        const data = await general_fetch({ url: 'sku/attach_tags', body: { ids: [sku_id], tag_ids } });
+        console.log(`successfully attached the following tags to the SKU id: ${sku_id}`);
+        return data;
+    } catch(err) {
+        console.error('Error in create_tag ->', err);
+        return Promise.reject({ err, info: 'Error in create_tag' })
+    }
+}
+
+/**
+ * Get all renders fired for a given design ID
+ * @param {*} design_id - Design ID
+ * @returns 
+ */
+const get_renders_for_design = async (design_id) => {
+    try {
+        const data = await general_fetch({ url: 'render/get_all_of_design', body: { design_id } });
+        console.log(`successfully found renders fired for design id: ${design_id}`);
+        return data;
+    } catch(err) {
+        console.error('Error in create_tag ->', err);
+        return Promise.reject({ err, info: 'Error in create_tag' })
+    }
+}
+
 module.exports = {
     generate_id,
     sleep,
@@ -684,6 +757,10 @@ module.exports = {
     update_sku,
     disable_rendering,
     enable_rendering,
+    create_tag,
+    get_tags_on_sku,
+    attach_tags_on_sku,
+    get_renders_for_design,
     STORE_ID,
     SERVER_PATH
 }
