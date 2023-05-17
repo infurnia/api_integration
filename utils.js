@@ -685,7 +685,7 @@ const create_tag = async (name) => {
  */
 const get_tags_on_sku = async (sku_id) => {
     try {
-        const data = await general_fetch({ url: 'sku/get_tags', body: { ids: [sku_id] } });
+        const data = await general_fetch({ url: 'sku/get_tags', body: { sku_ids: [sku_id] } });
         console.log(`successfully got the tags attached to the SKU id: ${sku_id} -> `, data?.[sku_id]?.sku_tags);
         return data?.[sku_id]?.sku_tags ?? [];
     } catch(err) {
@@ -702,7 +702,7 @@ const get_tags_on_sku = async (sku_id) => {
  */
 const attach_tags_on_sku = async (sku_id, tag_ids) => {
     try {
-        const data = await general_fetch({ url: 'sku/attach_tags', body: { ids: [sku_id], tag_ids } });
+        const data = await general_fetch({ url: 'sku/attach_tags', body: { sku_ids: [sku_id], tag_ids } });
         console.log(`successfully attached the following tags to the SKU id: ${sku_id}`);
         return data;
     } catch(err) {
