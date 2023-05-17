@@ -145,7 +145,7 @@ const fetch_sku_category_types = async () => {
 */
 const fetch_sales_channels = async () => {
     try {
-        let sales_channels = await general_fetch({ url: 'sales_channel/get_of_store', body: {include_price_type_mapping: true} }); // ! BU refactor change 
+        let sales_channels = await general_fetch({ url: 'sales_channel/get_of_store', body: {include_price_type_mapping: true} });
         console.log('successfully fetched sales channels');
         return sales_channels;
     } catch(err) {
@@ -186,7 +186,7 @@ const create_sku_category = async ({ name, sku_category_type_id, sku_division_id
             sku_category_type_id,
             sku_division_id
         };
-        let sku_category = await general_fetch({ url: 'sku_category/create', body: sku_category_data }); // ! BU refactor change 
+        let sku_category = await general_fetch({ url: 'sku_category/create', body: sku_category_data }); 
         console.log('successfully created sku_category with ID -> ', sku_category.id);
         return sku_category;
     } catch(err) {
@@ -211,7 +211,7 @@ const create_sku_sub_category = async ({ name, sku_category_id, order }) => {
             sku_category_id,
             order
         };
-        let sku_sub_category = await general_fetch({ url: 'sku_sub_category/create', body: sku_sub_category_data }); // ! BU refactor change 
+        let sku_sub_category = await general_fetch({ url: 'sku_sub_category/create', body: sku_sub_category_data });
         console.log('successfully created sku_sub_category with ID -> ', sku_sub_category.id);
         return sku_sub_category;
     } catch(err) {
@@ -418,7 +418,6 @@ const get_create_cabinet_status = async (id) => {
 */
 const init_core_request = async (body) => {
     try {
-        console.log('init_core_request body::', body);
         let resp = await general_fetch({ url: 'production_detail/get_output', body});
         console.log('successfully created an attempt to request download reports from core with id -> ', resp.request_batch_id);
         return resp;
@@ -637,7 +636,7 @@ const update_sku = async (sku_id, sku_data) => {
  */
 const disable_rendering = async (design_branch_id) => {
     try {
-        const data = await general_fetch({ url: 'design/disable_branch_rendering', body: { design_branch_id } });
+        const data = await general_fetch({ url: 'design_branch/update_rendering_enabled_status', body: { design_branch_id, status: 'disable' } });
         console.log('successfully disabled rendering on design branch with id -> ', design_branch_id);
         return data;
     } catch(err) {
@@ -653,7 +652,7 @@ const disable_rendering = async (design_branch_id) => {
  */
 const enable_rendering = async (design_branch_id) => {
     try {
-        const data = await general_fetch({ url: 'design/enable_branch_rendering', body: { design_branch_id } });
+        const data = await general_fetch({ url: 'design_branch/update_rendering_enabled_status', body: { design_branch_id, status: 'enable' } });
         console.log('successfully enabled rendering on design branch with id -> ', design_branch_id);
         return data;
     } catch(err) {

@@ -118,7 +118,7 @@ const remove_complete_inventory = async () => {
             }
         }
 
-        // Owned sku caetgories do not get removed automatically even after removing all the underlying sku sub categories, sku groups and skus
+        // Owned sku categories do not get removed automatically even after removing all the underlying sku sub categories, sku groups and skus
         // To remove them, do the following => 
 
         for (const sku_division of hierarchy) {
