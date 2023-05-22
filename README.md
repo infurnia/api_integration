@@ -50,3 +50,59 @@ Pls check this [example code](attach_tags.js) for attaching tags to SKU.
 
 ### Fetch all renders for a given design branch
 Pls check this [example code](get_renders.js) for fetching all renders for a given design ID.
+
+
+### Business Unit Migration Guide
+A new API is supported to get the store info and corresponding default business unit id. This business unit id can be used in the other APIs.
+
+##### Fetch store info
+API named as `store/get_info`
+
+The following APIs have been changed and their example codes have been updated accordingly. Please have a look at the API names, request bodies and response bodies.
+
+##### Fetch sales channels
+API name changed from `sales_channel/get` to `sales_channel/get_of_store`
+Request body must have the following field `include_price_type_mapping: true`.
+Response body now will have a field called `sales_channels` which has two more nested fields `owned` and `subscribed` representing the owned and subscribed sales channels respectively. You can combine both the arrays to get all the visible sales channels for your Org. For every sales channel, there will be a correpsonding field called `price_type_ids`.
+
+##### Create SKU Category
+API name changed from `sku_category/add` to `sku_category/create`.
+
+##### Create SKU Sub Category
+API name changed from `sku_sub_category/add` to `sku_sub_category/create`.
+
+##### Create SKU Group
+API name changed from `sku_group/add` to `sku_group/create`.
+
+##### Fetch all sub categories in the inventory
+API `inventory/get_all_sub_categories` expects an extra parameter `business_unit_id` to fetch the sub categories in the the corresponding business unit. You can use the default business unit ID from `store/get_info` as mentioned above to fetch the sub categories in the default business unit.
+
+##### Fetch all the groups in a sub category
+API `inventory/get_groups` expects an extra parameter `business_unit_id` to fetch the sub groups in the the given sub category and business unit. You can use the default business unit ID from `store/get_info` as mentioned above to fetch the groups from the default business unit.
+
+##### Remove SKU from the store
+API `sku/remove_from_store` expects a different parameter in the request body: `sku_ids` should be the array of SKU IDs to be removed from the store.
+
+##### Remove SKU Group from the store
+API `sku_group/remove_from_store` expects a different parameter in the request body: `sku_group_ids` should be the array of SKU Group IDs to be removed from the store.
+
+##### Remove SKU Sub Category from the store
+API `sku_sub_category/deprecate` expects a different parameter in the request body: `sku_sub_category_id` should be the ID of the SKU Sub Category to be removed from the store.
+
+##### Remove SKU Category from the store
+API `sku_category/deprecate` expects a different parameter in the request body: `sku_category_id` should be the ID of the SKU Category to be removed from the store.
+
+##### Update SKU details
+API `sku/update` does not support `identifiers` and `updates` in the request body. Instead of `identifiers`, it expects `sku_id` to be the ID of the SKU to be updated. Instead of `updates`, it expects the corresponding fields like `name`, `order`, `model_no` (previously sent in the `updates` field) in the request body.
+
+##### Disable design branch rendering
+API `design/disable_branch_rendering` is changed to `design_branch/update_rendering_enabled_status` with an extra parameter `status: disable` along with the `design_branch_id` parameter in the request body.
+
+##### Disable design branch rendering
+API `design/disable_branch_rendering` is changed to `design_branch/update_rendering_enabled_status` with an extra parameter `status: enable` along with the `design_branch_id` parameter in the request body.
+
+##### Fetch Tags
+API `sku/get_tags` expects a different parameter `sku_ids` instead of `ids` in the request body.
+
+##### Attach Tags to a SKU
+API `sku/attach_tags` expects a different parameter `sku_ids` instead of `ids` in the request body.

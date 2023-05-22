@@ -124,7 +124,6 @@ const remove_complete_inventory = async () => {
         for (const sku_division of hierarchy) {
             for (const sku_category of sku_division.sku_category) {
                 try {
-                    console.log(sku_category.name, sku_category.store_id);
                     if (sku_category.store_id == MY_STORE_ID) {
                         await remove_sku_category(sku_category.id);
                     }

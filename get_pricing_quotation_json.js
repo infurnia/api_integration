@@ -30,7 +30,7 @@ const _main = async () => {
          * You can send a subset of these commands as an array in the `commands` argument in the below API. 
          */
         const req_body = {
-            "commands": ["GetCabinetCompositeBoq"],
+            "commands": ["GetPricingQuotationDetailsJSON"],
             "design_branch_id": DESIGN_BRANCH_ID,
         }
         const resp = await init_core_request(req_body);
