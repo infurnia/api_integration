@@ -53,7 +53,7 @@ Pls check this [example code](get_renders.js) for fetching all renders for a giv
 
 
 ### Business Unit Migration Guide
-A new API is supported to get the store info and corresponding default business unit id. This business unit id can be used in the other APIs.
+A new API is supported to get the store info and corresponding default business unit id. This business unit id can be used in the other APIs. Or please ask the Infurnia admin to provide for the valid business unit id
 
 ##### Fetch store info
 API named as `store/get_info`

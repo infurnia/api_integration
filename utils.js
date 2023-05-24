@@ -13,6 +13,7 @@ const ACCESS_TOKEN = process.env.ACCESS_TOKEN || "";
 const EMAIL = process.env.EMAIL || "";
 const SERVER_PATH = process.env.SERVER_PATH || "";
 const STORE_ID = process.env.STORE_ID || "";
+const BUSINESS_UNIT_ID = process.env.BUSINESS_UNIT_ID || "";
 
 
 /*

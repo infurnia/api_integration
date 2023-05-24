@@ -6,7 +6,8 @@ const {
     remove_sku_group,
     remove_sku_sub_category,
     remove_sku_category,
-    STORE_ID
+    STORE_ID,
+    BUSINESS_UNIT_ID
 } = require('./utils');
 
 const MY_STORE_ID = STORE_ID;
@@ -16,10 +17,15 @@ const remove_complete_inventory = async () => {
         // fetch the complete sub category map in the Default Business Unit
         // get the default Business Unit Id from the store/get_info API
         const store_info = await get_store_info();
-        const default_business_unit_id = store_info.default_business_unit_id;
+        let default_business_unit_id = store_info.default_business_unit_id;
+
+        // NOTE: Either use this default_business_unit_id or provided BUSINESS_UNIT_ID in the following APIs
+        
+        // Using the above default_business_unit_id
+        BUSINESS_UNIT_ID = default_business_unit_id;
 
         // this includes all owned sub categories and and non owned sub categories in which at least one sku is added to the default Business Unit Id
-        const hierarchy = await get_all_sub_categories(default_business_unit_id);
+        const hierarchy = await get_all_sub_categories(BUSINESS_UNIT_ID);
         
         // this includes all owned sub categories and and non owned sub categories in which at least one sku is added to your store
         // const hierarchy = await get_all_sub_categories();
@@ -59,7 +65,7 @@ const remove_complete_inventory = async () => {
                 for (sub_category of category.sku_sub_category) {
                     try {
                         const sku_sub_category_id = sub_category.id;
-                        const sku_group_hierarchy = await get_groups(sku_sub_category_id, default_business_unit_id);
+                        const sku_group_hierarchy = await get_groups(sku_sub_category_id, BUSINESS_UNIT_ID);
 
                         /*
                             sku_group_hierarchy looks like this:
