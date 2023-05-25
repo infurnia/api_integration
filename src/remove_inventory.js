@@ -8,7 +8,7 @@ const {
     remove_sku_category,
     STORE_ID,
     BUSINESS_UNIT_ID
-} = require('./utils');
+} = require('../utils');
 
 const MY_STORE_ID = STORE_ID;
 

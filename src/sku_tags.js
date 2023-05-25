@@ -2,7 +2,7 @@ const {
     create_tag,
     get_tags_on_sku,
     attach_tags_on_sku
-} = require('./utils');
+} = require('../utils');
 
 const SAMPLE_SKU_ID = 'd2efeab2bd2a65ef';
 

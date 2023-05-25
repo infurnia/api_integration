@@ -1,4 +1,4 @@
-const { get_renders_for_design } = require('./utils');
+const { get_renders_for_design } = require('../utils');
 
 const SAMPLE_DESIGN_ID = 'ff00b30d59ad5a9c';
 
