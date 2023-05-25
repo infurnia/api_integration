@@ -25,7 +25,7 @@ If category_type has the pricing_dimension 'per_unit_length', display_unit for p
 
 
 ### Generate Pricing Quoation
-Please check the [pricing quotation code](get_pricing_quotation_json.js) to know more about supported commands and file formats to generate pricing quotation.
+Please check the [pricing quotation code](src/pricing_quotation.js) to know more about supported commands and file formats to generate pricing quotation.
 
 The following commands are supported in the production details API
 1. GetPricingQuotationDetailsJSON - To get pricing quotation in JSON format
@@ -37,7 +37,7 @@ The following commands are supported in the production details API
 
 
 ### SKU Update
-Use the `update_sku` function in the utils folder to update any SKU's details. Only mention the fields supposed to be updated in the body of the API.  Please stringify the `additional_roperties` field if it exists before calling the API.
+Use the `update_sku` function in the utils folder to update any SKU's details. Only mention the fields supposed to be updated in the body of the API. Please stringify the `additional_roperties` field if it exists before calling the API. Check the example code [here](src/inventory.js)
 
 
 ### Disable rendering for a design branch
@@ -45,11 +45,11 @@ Use the `disable_rendering` function in the utils folder to disable rendering fo
 
 
 ### Attach Tags
-Pls check this [example code](attach_tags.js) for attaching tags to SKU.
+Pls check this [example code](src/sku_tags.js) for attaching tags to SKU.
 
 
 ### Fetch all renders for a given design branch
-Pls check this [example code](get_renders.js) for fetching all renders for a given design ID.
+Pls check this [example code](src/render.js) for fetching all renders for a given design ID.
 
 
 ### Business Unit Migration Guide

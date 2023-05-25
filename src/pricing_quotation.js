@@ -3,7 +3,7 @@ const {
     get_status_for_core_request,
     sleep,
     SERVER_PATH
-} = require('./utils');
+} = require('../utils');
 
 const DESIGN_BRANCH_ID = "c3753074dcfb798d"; // Example design branch
  

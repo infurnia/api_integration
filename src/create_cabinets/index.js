@@ -128,7 +128,7 @@ const {
     create_cabinets,
     get_create_cabinet_status,
     sleep
-} = require('../utils');
+} = require('../../utils');
 
 
 const SKU_GROUP_ID_1 = 'valid_sku_group_id';
@@ -136,8 +136,8 @@ const SKU_GROUP_ID_2 = 'valid_sku_group_id';
 const DISPLAY_PIC_ID_1 = 'valid_display_pic_id';
 const DISPLAY_PIC_ID_2 = 'valid_display_pic_id';
 
-const component_info_1 = require('./example1.json');
-const component_info_2 = require('./example2.json');
+const component_info_1 = require('./examples/example1.json');
+const component_info_2 = require('./examples/example2.json');
 
 const create_cabinet_skus = async () => {
     try {

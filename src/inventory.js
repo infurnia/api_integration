@@ -66,10 +66,8 @@ const {
     create_model_3d,
     bulk_create_skus,
     update_sku,
-    add_brand,
-    get_brands,
     BUSINESS_UNIT_ID
-} = require('./utils');
+} = require('../utils');
 
 const create_inventory = async () => {
     try {
@@ -114,7 +112,7 @@ const create_inventory = async () => {
                         model_no: "model_no1",
                         material: {
                             texture: {
-                                file: "./dummy_image.jpg",
+                                file: "../files/dummy_image.jpg",
                                 name: "demo_texture"
                             },
                             material_template_id: material_templates.find(elem => elem.name == 'Laminate').id,
@@ -155,10 +153,10 @@ const create_inventory = async () => {
                         model_no: "model_no2",
                         placement_id: "base",
                         display_pic: {
-                            file: "./dummy_image.jpg",
+                            file: "../files/dummy_image.jpg",
                         },
                         model_3d: {
-                            file: "./dummy_model.glb",
+                            file: "../files/dummy_model.glb",
                         },
                         sales_channels: [{
                             id: sales_channel_details.id,
