@@ -179,14 +179,17 @@ const fetch_material_templates = async () => {
     name: name of the sku category
     sku_category_type_id: id of the sku category type
     sku_division_id: id of the sku division
+    business_unit_id: business unit id
 */
-const create_sku_category = async ({ name, sku_category_type_id, sku_division_id }) => {
+const create_sku_category = async ({ name, sku_category_type_id, sku_division_id, business_unit_id }) => {
     try {
         let sku_category_data = {
             name,
             sku_category_type_id,
-            sku_division_id
+            sku_division_id,
+            business_unit_id
         };
+        console.log('body for cat creation:::', sku_category_data);
         let sku_category = await general_fetch({ url: 'sku_category/create', body: sku_category_data }); 
         console.log('successfully created sku_category with ID -> ', sku_category.id);
         return sku_category;
@@ -204,13 +207,15 @@ const create_sku_category = async ({ name, sku_category_type_id, sku_division_id
     name: name of the sku sub category
     sku_category_id: id of the sku category
     order: order of the sku sub category
+    business_unit_id: business unit id 
 */
-const create_sku_sub_category = async ({ name, sku_category_id, order }) => {
+const create_sku_sub_category = async ({ name, sku_category_id, order, business_unit_id }) => {
     try {
         let sku_sub_category_data = {
             name,
             sku_category_id,
-            order
+            order,
+            business_unit_id
         };
         let sku_sub_category = await general_fetch({ url: 'sku_sub_category/create', body: sku_sub_category_data });
         console.log('successfully created sku_sub_category with ID -> ', sku_sub_category.id);
@@ -229,13 +234,15 @@ const create_sku_sub_category = async ({ name, sku_category_id, order }) => {
     name: name of the sku group
     sku_sub_category_id: id of the sku sub category
     order: order of the sku group
+    business_unit_id: business unit id
 */
-const create_sku_group = async ({ name, sku_sub_category_id, order }) => {
+const create_sku_group = async ({ name, sku_sub_category_id, order, business_unit_id }) => {
     try {
         let sku_group_data = {
             name,
             sku_sub_category_id,
-            order
+            order,
+            business_unit_id
         };
         let sku_group = await general_fetch({ url: 'sku_group/create', body: sku_group_data });
         console.log('successfully created sku_group with ID -> ', sku_group.id);
@@ -354,10 +361,11 @@ const create_model_3d = async ({ path, mtl_path }) => {
     @params
     sku_data: data of the skus to be created
     sku_category_id: id of the sku category
+    business_unit_id: business unit id
 */
-const bulk_create_skus = async ({ sku_data, sku_category_id }) => {
+const bulk_create_skus = async ({ sku_data, sku_category_id, business_unit_id }) => {
     try {
-        let bulk_create_attempt = await general_fetch({ url: 'sku_bulk_operation/create_attempt', body: { sku_category_id, type: 'upload'} });
+        let bulk_create_attempt = await general_fetch({ url: 'sku_bulk_operation/create_attempt', body: { sku_category_id, type: 'upload', business_unit_id } });
         let created_skus = await general_fetch({ url: 'sku_bulk_operation/trigger_attempt', body: { bulk_operation_attempt_id: bulk_create_attempt.id, data: sku_data } });
         console.log('successfully created skus with IDs -> ', created_skus.map(sku => sku.id));
         return created_skus;
@@ -762,5 +770,6 @@ module.exports = {
     attach_tags_on_sku,
     get_renders_for_design,
     STORE_ID,
+    BUSINESS_UNIT_ID,
     SERVER_PATH
 }

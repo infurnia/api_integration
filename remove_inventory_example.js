@@ -22,10 +22,10 @@ const remove_complete_inventory = async () => {
         // NOTE: Either use this default_business_unit_id or provided BUSINESS_UNIT_ID in the following APIs
         
         // Using the above default_business_unit_id
-        BUSINESS_UNIT_ID = default_business_unit_id;
+        let business_unit_id = BUSINESS_UNIT_ID ? BUSINESS_UNIT_ID : default_business_unit_id;
 
         // this includes all owned sub categories and and non owned sub categories in which at least one sku is added to the default Business Unit Id
-        const hierarchy = await get_all_sub_categories(BUSINESS_UNIT_ID);
+        const hierarchy = await get_all_sub_categories(business_unit_id);
         
         // this includes all owned sub categories and and non owned sub categories in which at least one sku is added to your store
         // const hierarchy = await get_all_sub_categories();
@@ -65,7 +65,7 @@ const remove_complete_inventory = async () => {
                 for (sub_category of category.sku_sub_category) {
                     try {
                         const sku_sub_category_id = sub_category.id;
-                        const sku_group_hierarchy = await get_groups(sku_sub_category_id, BUSINESS_UNIT_ID);
+                        const sku_group_hierarchy = await get_groups(sku_sub_category_id, business_unit_id);
 
                         /*
                             sku_group_hierarchy looks like this:

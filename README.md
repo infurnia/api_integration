@@ -67,12 +67,18 @@ Response body now will have a field called `sales_channels` which has two more n
 
 ##### Create SKU Category
 API name changed from `sku_category/add` to `sku_category/create`.
+It expects an extra parameter `business_unit_id`
 
 ##### Create SKU Sub Category
 API name changed from `sku_sub_category/add` to `sku_sub_category/create`.
+It expects an extra parameter `business_unit_id`
 
 ##### Create SKU Group
 API name changed from `sku_group/add` to `sku_group/create`.
+It expects an extra parameter `business_unit_id`
+
+##### Bulk create SKU
+It expects an extra parameter `business_unit_id`
 
 ##### Fetch all sub categories in the inventory
 API `inventory/get_all_sub_categories` expects an extra parameter `business_unit_id` to fetch the sub categories in the the corresponding business unit. You can use the default business unit ID from `store/get_info` as mentioned above to fetch the sub categories in the default business unit.
