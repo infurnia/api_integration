@@ -126,7 +126,8 @@ Example Json 2:
 
 const {
     create_cabinets,
-    get_create_cabinet_status
+    get_create_cabinet_status,
+    sleep
 } = require('../utils');
 
 
@@ -182,6 +183,7 @@ const create_cabinet_skus = async () => {
                 console.error('Failed to create SKUs for request id', request_id);
                 break;
             }
+            await sleep(2000);
         }
 
         console.log('SKU IDs generated =>', sku_ids);
