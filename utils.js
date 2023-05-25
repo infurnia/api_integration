@@ -13,6 +13,7 @@ const ACCESS_TOKEN = process.env.ACCESS_TOKEN || "";
 const EMAIL = process.env.EMAIL || "";
 const SERVER_PATH = process.env.SERVER_PATH || "";
 const STORE_ID = process.env.STORE_ID || "";
+const BUSINESS_UNIT_ID = process.env.BUSINESS_UNIT_ID || "";
 
 
 /*
@@ -145,8 +146,8 @@ const fetch_sku_category_types = async () => {
 */
 const fetch_sales_channels = async () => {
     try {
-        let sales_channels = await general_fetch({ url: 'sales_channel/get' });
-        console.log('successfully fetched sales_channels.');
+        let sales_channels = await general_fetch({ url: 'sales_channel/get_of_store', body: {include_price_type_mapping: true} });
+        console.log('successfully fetched sales channels');
         return sales_channels;
     } catch(err) {
         console.error('Error in fetch_sales_channels ->', err);
@@ -178,15 +179,18 @@ const fetch_material_templates = async () => {
     name: name of the sku category
     sku_category_type_id: id of the sku category type
     sku_division_id: id of the sku division
+    business_unit_id: business unit id
 */
-const create_sku_category = async ({ name, sku_category_type_id, sku_division_id }) => {
+const create_sku_category = async ({ name, sku_category_type_id, sku_division_id, business_unit_id }) => {
     try {
         let sku_category_data = {
             name,
             sku_category_type_id,
-            sku_division_id
+            sku_division_id,
+            business_unit_id
         };
-        let sku_category = await general_fetch({ url: 'sku_category/add', body: sku_category_data });
+        console.log('body for cat creation:::', sku_category_data);
+        let sku_category = await general_fetch({ url: 'sku_category/create', body: sku_category_data }); 
         console.log('successfully created sku_category with ID -> ', sku_category.id);
         return sku_category;
     } catch(err) {
@@ -203,15 +207,17 @@ const create_sku_category = async ({ name, sku_category_type_id, sku_division_id
     name: name of the sku sub category
     sku_category_id: id of the sku category
     order: order of the sku sub category
+    business_unit_id: business unit id 
 */
-const create_sku_sub_category = async ({ name, sku_category_id, order }) => {
+const create_sku_sub_category = async ({ name, sku_category_id, order, business_unit_id }) => {
     try {
         let sku_sub_category_data = {
             name,
             sku_category_id,
-            order
+            order,
+            business_unit_id
         };
-        let sku_sub_category = await general_fetch({ url: 'sku_sub_category/add', body: sku_sub_category_data });
+        let sku_sub_category = await general_fetch({ url: 'sku_sub_category/create', body: sku_sub_category_data });
         console.log('successfully created sku_sub_category with ID -> ', sku_sub_category.id);
         return sku_sub_category;
     } catch(err) {
@@ -228,15 +234,17 @@ const create_sku_sub_category = async ({ name, sku_category_id, order }) => {
     name: name of the sku group
     sku_sub_category_id: id of the sku sub category
     order: order of the sku group
+    business_unit_id: business unit id
 */
-const create_sku_group = async ({ name, sku_sub_category_id, order }) => {
+const create_sku_group = async ({ name, sku_sub_category_id, order, business_unit_id }) => {
     try {
         let sku_group_data = {
             name,
             sku_sub_category_id,
-            order
+            order,
+            business_unit_id
         };
-        let sku_group = await general_fetch({ url: 'sku_group/add', body: sku_group_data });
+        let sku_group = await general_fetch({ url: 'sku_group/create', body: sku_group_data });
         console.log('successfully created sku_group with ID -> ', sku_group.id);
         return sku_group;
     } catch(err) {
@@ -353,10 +361,11 @@ const create_model_3d = async ({ path, mtl_path }) => {
     @params
     sku_data: data of the skus to be created
     sku_category_id: id of the sku category
+    business_unit_id: business unit id
 */
-const bulk_create_skus = async ({ sku_data, sku_category_id }) => {
+const bulk_create_skus = async ({ sku_data, sku_category_id, business_unit_id }) => {
     try {
-        let bulk_create_attempt = await general_fetch({ url: 'sku_bulk_operation/create_attempt', body: { sku_category_id, type: 'upload'} });
+        let bulk_create_attempt = await general_fetch({ url: 'sku_bulk_operation/create_attempt', body: { sku_category_id, type: 'upload', business_unit_id } });
         let created_skus = await general_fetch({ url: 'sku_bulk_operation/trigger_attempt', body: { bulk_operation_attempt_id: bulk_create_attempt.id, data: sku_data } });
         console.log('successfully created skus with IDs -> ', created_skus.map(sku => sku.id));
         return created_skus;
@@ -400,7 +409,7 @@ const create_cabinets = async (sku_data) => {
 const get_create_cabinet_status = async (id) => {
     try {
         let resp = await general_fetch({ url: 'production_detail/get_bulk_create_sku_status', body: { id }});
-        console.log('successfully requested the status of create cabinets with request id -> ', id, 'with status ->', resp?.[0]?.status);
+        console.log('successfully requested the status of create cabinets with request id -> ', id, 'with status ->', resp?.status);
         return resp;
     } catch(err) {
         console.error('Error in get_create_cabinet_status ->', err);
@@ -442,7 +451,7 @@ const init_core_request = async (body) => {
 const get_status_for_core_request = async (id) => {
     try {
         let resp = await general_fetch({ url: 'production_detail/get_status', body: { ids: [id] }});
-        console.log('successfully found the status of download reports request from core with id -> ', id, 'and status ->', resp.status);
+        console.log('successfully found the status of download reports request from core with id -> ', id, 'and status ->', resp?.[0]?.status);
         return resp[0];
     } catch(err) {
         console.error('Error in get_status_for_core_request ->', err);
@@ -450,14 +459,29 @@ const get_status_for_core_request = async (id) => {
     }
 }
 
+/*
+    FETCH STORE DETAILS
+    Used to get the default business unit id in your store
+*/
+const get_store_info = async () => {
+    try {
+        const data = await general_fetch({ url: 'store/get_info' });
+        console.log('succesfully fetched the store details -> ', data)
+        return data;
+    } catch (err) {
+        console.error('Error in get_store_info ->', err);
+        return Promise.reject({ err, info: 'Error in get_store_info' })
+    }
+}
 
 /*
     FETCH ALL SUB CATEGORIES
-    this function is used to fetch sub category tree for a given store (both owned/non-owned)
+    this function is used to fetch sub category tree (both owned/subscribed) for a given store (business_unit_id :== NULL) or business unit
+    @param business_unit_id (optional)
 */
-const get_all_sub_categories = async () => {
+const get_all_sub_categories = async (business_unit_id) => {
     try {
-        const data = await general_fetch({ url: 'inventory/get_all_sub_categories' });
+        const data = await general_fetch({ url: 'inventory/get_all_sub_categories', body: {business_unit_id} });
         console.log('succesfully fetched the complete sub categories tree -> ', data)
         return data;
     } catch(err) {
@@ -470,12 +494,12 @@ const get_all_sub_categories = async () => {
 /*
     FETCH GROUP TREE
     this function is used to fetch sku group and underlying skus for a given sku category id
-    @param
-
+    @param sku_sub_category_id: mandatory
+    @param business_unit_id: optional (if provided, it will fetch the underlying groups in the business unit otherwise in the Org)
 */
-const get_groups = async (sku_sub_category_id) => {
+const get_groups = async (sku_sub_category_id, business_unit_id) => {
     try {
-        const data = await general_fetch({ url: 'inventory/get_groups', body: { sku_sub_category_id } });
+        const data = await general_fetch({ url: 'inventory/get_groups', body: { sku_sub_category_id, business_unit_id } });
         console.log(`succesfully fetched all the sku groups for sku sub category id: ${sku_sub_category_id} -> `, data)
         return data;
     } catch(err) {
@@ -489,12 +513,12 @@ const get_groups = async (sku_sub_category_id) => {
     BULK REMOVE SKUs
     this function is used to remove skus from store
     @params
-    id: a single sku id (string) or multiple sku ids (array of strings)
+    id: sku ids (array of strings)
 */
-const remove_skus = async (id) => {
+const remove_skus = async (ids) => {
     try {
-        await general_fetch({ url: 'sku/remove_from_store', body: { identifiers: JSON.stringify({id}) } });
-        console.log('successfully removed skus with IDs -> ', id);
+        await general_fetch({ url: 'sku/remove_from_store', body: { sku_ids: ids } });
+        console.log('successfully removed skus with IDs -> ', ids);
         return "OK";
     } catch(err) {
         console.error('Error in remove_skus ->', err);
@@ -507,12 +531,12 @@ const remove_skus = async (id) => {
     BULK REMOVE SKU GROUPs (only owned)
     this function is used to remove owned sku groups 
     @params
-    id: a single sku group id (string) or multiple sku group ids (array of strings)
+    ids: sku group ids (array of strings)
 */
-const remove_sku_group = async (id) => {
+const remove_sku_group = async (ids) => {
     try {
-        await general_fetch({ url: 'sku_group/remove_from_store', body: { identifiers: JSON.stringify({id}) } });
-        console.log('successfully removed sku group with ID -> ', id);
+        await general_fetch({ url: 'sku_group/remove_from_store', body: { sku_group_ids: ids } });
+        console.log('successfully removed sku group with IDs -> ', ids);
         return "OK";
     } catch(err) {
         console.error('Error in remove_sku_group ->', err);
@@ -529,7 +553,7 @@ const remove_sku_group = async (id) => {
 */
 const remove_sku_sub_category = async (id) => {
     try {
-        await general_fetch({ url: 'sku_sub_category/deprecate', body: { id } });
+        await general_fetch({ url: 'sku_sub_category/deprecate', body: { sku_sub_category_id: id } });
         console.log('successfully removed sku sub category with ID -> ', id);
         return "OK";
     } catch(err) {
@@ -547,7 +571,8 @@ const remove_sku_sub_category = async (id) => {
 */
 const remove_sku_category = async (id) => {
     try {
-        await general_fetch({ url: 'sku_category/deprecate', body: { id } });
+        console.log('Removing sku category with ID -> ', id);
+        await general_fetch({ url: 'sku_category/deprecate', body: { sku_category_id: id } });
         console.log('successfully removed sku category with ID -> ', id);
         return "OK";
     } catch(err) {
@@ -597,9 +622,13 @@ const get_brands = async () => {
 */
 const update_sku = async (sku_id, sku_data) => {
     try {
+        console.log('sku_update payload::', sku_id, sku_data);
         let form = new FormData();
-        form.append('identifiers', JSON.stringify({ id: sku_id }));
-        form.append('updates', JSON.stringify(sku_data));
+        form.append('sku_id', sku_id);
+        Object.keys(sku_data).forEach(key => {
+            console.log('key:', key);
+            if (sku_data[key]) form.append(key, sku_data[key]);
+        })
         const data = await upload_file({ url: 'sku/update', data: form });
         console.log('successfully updated sku -> ', sku_id);
         return data;
@@ -616,7 +645,7 @@ const update_sku = async (sku_id, sku_data) => {
  */
 const disable_rendering = async (design_branch_id) => {
     try {
-        const data = await general_fetch({ url: 'design/disable_branch_rendering', body: { design_branch_id } });
+        const data = await general_fetch({ url: 'design_branch/update_rendering_enabled_status', body: { design_branch_id, status: 'disable' } });
         console.log('successfully disabled rendering on design branch with id -> ', design_branch_id);
         return data;
     } catch(err) {
@@ -632,7 +661,7 @@ const disable_rendering = async (design_branch_id) => {
  */
 const enable_rendering = async (design_branch_id) => {
     try {
-        const data = await general_fetch({ url: 'design/enable_branch_rendering', body: { design_branch_id } });
+        const data = await general_fetch({ url: 'design_branch/update_rendering_enabled_status', body: { design_branch_id, status: 'enable' } });
         console.log('successfully enabled rendering on design branch with id -> ', design_branch_id);
         return data;
     } catch(err) {
@@ -664,7 +693,7 @@ const create_tag = async (name) => {
  */
 const get_tags_on_sku = async (sku_id) => {
     try {
-        const data = await general_fetch({ url: 'sku/get_tags', body: { ids: [sku_id] } });
+        const data = await general_fetch({ url: 'sku/get_tags', body: { sku_ids: [sku_id] } });
         console.log(`successfully got the tags attached to the SKU id: ${sku_id} -> `, data?.[sku_id]?.sku_tags);
         return data?.[sku_id]?.sku_tags ?? [];
     } catch(err) {
@@ -681,7 +710,7 @@ const get_tags_on_sku = async (sku_id) => {
  */
 const attach_tags_on_sku = async (sku_id, tag_ids) => {
     try {
-        const data = await general_fetch({ url: 'sku/attach_tags', body: { ids: [sku_id], tag_ids } });
+        const data = await general_fetch({ url: 'sku/attach_tags', body: { sku_ids: [sku_id], tag_ids } });
         console.log(`successfully attached the following tags to the SKU id: ${sku_id}`);
         return data;
     } catch(err) {
@@ -724,6 +753,7 @@ module.exports = {
     get_create_cabinet_status,
     init_core_request,
     get_status_for_core_request,
+    get_store_info,
     get_all_sub_categories,
     get_groups,
     remove_skus,
@@ -740,5 +770,6 @@ module.exports = {
     attach_tags_on_sku,
     get_renders_for_design,
     STORE_ID,
+    BUSINESS_UNIT_ID,
     SERVER_PATH
 }

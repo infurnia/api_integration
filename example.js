@@ -53,6 +53,7 @@
 
 const {
     generate_id,
+    get_store_info,
     fetch_sku_category_types,
     fetch_sales_channels,
     fetch_material_templates,
@@ -66,35 +67,49 @@ const {
     bulk_create_skus,
     update_sku,
     add_brand,
-    get_brands
+    get_brands,
+    BUSINESS_UNIT_ID
 } = require('./utils');
 
 const create_inventory = async () => {
     try {
         //fetch SKU Category Types
         let sku_category_types = await fetch_sku_category_types();
+
+        // Fetching store details and default business unit Id
+        let store_info = await get_store_info();
+        console.log(store_info)
+        console.log(store_info.default_business_unit_id);
+        let business_unit_id = BUSINESS_UNIT_ID ? BUSINESS_UNIT_ID : store_info.default_business_unit_id;
+
         //fetch Sales Channels
         let sales_channels = await fetch_sales_channels();
+        sales_channels = sales_channels.sales_channels.owned;
+        let sales_channel_details = sales_channels.filter(obj => obj.price_type_ids.length > 0)[0];
+        console.log('All sales channels:', sales_channels);
+        console.log('Owned sales channels 0:', sales_channels[0]);
+        console.log('sales_channel_details', sales_channel_details);
 
         //fetch material templates
         let material_templates = await fetch_material_templates();
+        
         let material_templates_map = material_templates.reduce((final, elem) => ({
             ...final,
             [ elem.id ]: elem            
         }), {});
 
         let sample_inventory = [{
-            name: "RushHub Test Category 1",
+            name: "Test Category 11",
             sku_category_type_id: 'miscellanous_finish', //must be one of the sku_category_types array
             sku_division_id: 'finish', //must be same as sku_division_id of sku_category_type
             sku_sub_categories: [{
-                name: "RushHub Test Sub Category 1",
+                name: "Test Sub Category 1",
                 order: 1, //can be any decimal number (used to set display order of sub categories)
                 sku_groups: [{
-                    name: "RushHub Test Group 1",
+                    name: "Test Group 1",
                     order: 2, //can be any decimal number (used to set display order of groups)
                     skus: [{
-                        name: "RushHub Test 1",
+                        name: "Test 1",
                         height: 100,
                         model_no: "model_no1",
                         material: {
@@ -106,9 +121,9 @@ const create_inventory = async () => {
                             name: "demo_material",
                         },
                         sales_channels: [{
-                            id: sales_channels[0].id,
+                            id: sales_channel_details.id,
                             price_types: [{
-                                id: sales_channels[0].price_types[0].id,
+                                id: sales_channel_details.price_type_ids[0],
                                 price: 1000,
                                 margin: 10,
                                 tax: 10,
@@ -146,9 +161,9 @@ const create_inventory = async () => {
                             file: "./dummy_model.glb",
                         },
                         sales_channels: [{
-                            id: sales_channels[0].id,
+                            id: sales_channel_details.id,
                             price_types: [{
-                                id: sales_channels[0].price_types[0].id,
+                                id: sales_channel_details.price_type_ids[0],
                                 price: 1000,
                                 margin: 10,
                                 tax: 10,
@@ -174,7 +189,8 @@ const create_inventory = async () => {
             let sku_category = await create_sku_category({
                 name: sample_category.name,
                 sku_category_type_id: sample_category.sku_category_type_id,
-                sku_division_id: sample_category.sku_division_id
+                sku_division_id: sample_category.sku_division_id,
+                business_unit_id: business_unit_id
             });
             //create sku sub categories
             let sample_sub_categories = sample_category.sku_sub_categories;
@@ -183,7 +199,8 @@ const create_inventory = async () => {
                 let sku_sub_category = await create_sku_sub_category({
                     name: sample_sub_category.name,
                     sku_category_id: sku_category.id,
-                    order: sample_sub_category.order
+                    order: sample_sub_category.order,
+                    business_unit_id: business_unit_id
                 });
 
                 //create sku groups
@@ -193,7 +210,8 @@ const create_inventory = async () => {
                     let sku_group = await create_sku_group({
                         name: sample_group.name,
                         sku_sub_category_id: sku_sub_category.id,
-                        order: sample_group.order
+                        order: sample_group.order,
+                        business_unit_id: business_unit_id
                     });
                     //create skus
                     let sample_skus = sample_group.skus;
@@ -208,7 +226,8 @@ const create_inventory = async () => {
                             sku_group_id: sku_group.id,
                             additional_properties: JSON.stringify(sample_sku.additional_properties),
                             placement_id: sample_sku.placement_id,
-                            sales_channels: sample_sku.sales_channels
+                            sales_channels: sample_sku.sales_channels,
+                            business_unit_id: business_unit_id
                         };
                         if (sample_sku.material) {
                             let texture = null;
@@ -247,7 +266,8 @@ const create_inventory = async () => {
                     }
                     let created_skus = await bulk_create_skus({ 
                         sku_category_id: sku_category.id, 
-                        sku_data: all_sku_data 
+                        sku_data: all_sku_data,
+                        business_unit_id
                     });
                     console.log(`created_skus`, created_skus);
                     
