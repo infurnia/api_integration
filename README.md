@@ -28,12 +28,27 @@ If category_type has the pricing_dimension 'per_unit_length', display_unit for p
 Please check the [pricing quotation code](src/pricing_quotation.js) to know more about supported commands and file formats to generate pricing quotation.
 
 The following commands are supported in the production details API
-1. GetPricingQuotationDetailsJSON - To get pricing quotation in JSON format
-2. GetPricingQuotationXlsx - To get pricing quotation in XLSX format
-3. GetPricingQuotationCsv - To get pricing quotation in CSV format
-4. GetPricingQuotationPdf - To get pricing quotation in PDF format
-5. GetCabinetCompositeBoq - To get Cabinet Composite BOQ (XLSX format)
-6. PrintElevationViews - To get elevation view (PDF format)
+1. `GetPricingQuotationDetailsJSON` - Get pricing quotation in JSON
+2. `GetPricingQuotationXlsx` - Get pricing quotation in XLSX
+3. `GetPricingQuotationPdf` - Get pricing quotation in PDF
+4. `GetPricingQuotationCsv` - Get pricing quotation in CSV
+5. `GetCabinetCompositeBoq` - Get cabinet composite BOQ
+6. `GetStandardWoodenRmOutput` - Get standard wooden RM output
+7. `GetStandardHardwareRmOutput` - Get standard hardware RM output
+8. `GetCutlistCsv` - Get cutlist in CSV
+9. `GetManufacturingCutlistCsv` - Get manufacturing cutlist in CSV
+10. `GetCurrentBoardTypeCurrentBoard` - Get current board type current board
+11. `GetCurrentBoardTypeAllBoards` - Get current board type all boards
+12. `GetAllBoardTypeAllBoards` - Get all board type all boards
+13. `GetBoardLayoutCount` - Get board layout count
+14. `GetBoardLayoutFinishCount` - Get board layout finish count
+15. `GetFloorplanFloorViews` - Get floor plan floor views
+16. `GetFloorplanRoomViews` - Get floor plan room views
+17. `GetFulfillmentTags` - Get fulfillment tags
+18. `GetCNCMachineOutputCix` - Get CNC machine output CIX
+19. `GetCNCMachineOutputMpr` - Get CNC machine output MPR
+20. `GetCNCMachineOutputXcs` - Get CNC machine output XCS
+21. `GetCNCMachineOutputPdf` - Get CNC machine output PDF
 
 
 ### SKU Update

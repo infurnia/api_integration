@@ -19,13 +19,28 @@ const _main = async () => {
          *      for example, "design_branch_id": "d57e969750c4078"
          * 
          * 
-         * Other supported commands are the following:
-         *  GetPricingQuotationDetailsJSON  ->      Get pricing quotation in JSON
-         *  GetPricingQuotationXlsx         ->      Get pricing quotation in XLSX
-         *  GetPricingQuotationCsv          ->      Get pricing quotation in CSV
-         *  GetPricingQuotationPdf          ->      Get pricing quotation in PDF
-         *  GetCabinetCompositeBoq          ->      Get Cabinet Composite BOQ
-         *  PrintElevationViews             ->      Get Elevation View in PDF
+         * All supported commands are the following:
+         * 'GetPricingQuotationDetailsJSON' - Get pricing quotation in JSON
+         * 'GetPricingQuotationXlsx' - Get pricing quotation in XLSX
+         * 'GetPricingQuotationPdf' - Get pricing quotation in PDF
+         * 'GetPricingQuotationCsv' - Get pricing quotation in CSV
+         * 'GetCabinetCompositeBoq' - Get cabinet composite BOQ
+         * 'GetStandardWoodenRmOutput' - Get standard wooden RM output
+         * 'GetStandardHardwareRmOutput' - Get standard hardware RM output
+         * 'GetCutlistCsv' - Get cutlist in CSV
+         * 'GetManufacturingCutlistCsv' - Get manufacturing cutlist in CSV
+         * 'GetCurrentBoardTypeCurrentBoard' - Get current board type current board
+         * 'GetCurrentBoardTypeAllBoards' - Get current board type all boards
+         * 'GetAllBoardTypeAllBoards' - Get all board type all boards
+         * 'GetBoardLayoutCount' - Get board layout count
+         * 'GetBoardLayoutFinishCount' - Get board layout finish count
+         * 'GetFloorplanFloorViews' - Get floor plan floor views
+         * 'GetFloorplanRoomViews' - Get floor plan room views
+         * 'GetFulfillmentTags' - Get fulfillment tags
+         * 'GetCNCMachineOutputCix' - Get CNC machine output CIX
+         * 'GetCNCMachineOutputMpr' - Get CNC machine output MPR
+         * 'GetCNCMachineOutputXcs' - Get CNC machine output XCS
+         * 'GetCNCMachineOutputPdf' - Get CNC machine output PDF
          * 
          * You can send a subset of these commands as an array in the `commands` argument in the below API. 
          */
