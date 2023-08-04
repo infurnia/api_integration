@@ -69,6 +69,8 @@ const {
     BUSINESS_UNIT_ID
 } = require('../utils');
 
+let file_dir_path = __dirname + '/../files/';
+
 const create_inventory = async () => {
     try {
         //fetch SKU Category Types
@@ -112,7 +114,7 @@ const create_inventory = async () => {
                         model_no: "model_no1",
                         material: {
                             texture: {
-                                file: "../files/dummy_image.jpg",
+                                file: file_dir_path + "dummy_image.jpg",
                                 name: "demo_texture"
                             },
                             material_template_id: material_templates.find(elem => elem.name == 'Laminate').id,
@@ -153,10 +155,10 @@ const create_inventory = async () => {
                         model_no: "model_no2",
                         placement_id: "base",
                         display_pic: {
-                            file: "../files/dummy_image.jpg",
+                            file: file_dir_path + "dummy_image.jpg",
                         },
                         model_3d: {
-                            file: "../files/dummy_model.glb",
+                            file: file_dir_path + "dummy_model.glb",
                         },
                         sales_channels: [{
                             id: sales_channel_details.id,
