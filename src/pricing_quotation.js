@@ -41,6 +41,7 @@ const _main = async () => {
          * 'GetCNCMachineOutputMpr' - Get CNC machine output MPR
          * 'GetCNCMachineOutputXcs' - Get CNC machine output XCS
          * 'GetCNCMachineOutputPdf' - Get CNC machine output PDF
+         * 'GetAllPresentationSheetsPdf' - Get presentation PDF of a design branch 
          * 
          * You can send a subset of these commands as an array in the `commands` argument in the below API. 
          */
