@@ -49,6 +49,7 @@ The following commands are supported in the production details API
 19. `GetCNCMachineOutputMpr` - Get CNC machine output MPR
 20. `GetCNCMachineOutputXcs` - Get CNC machine output XCS
 21. `GetCNCMachineOutputPdf` - Get CNC machine output PDF
+22. `GetAllPresentationSheetsPdf` - Get presentation PDF of a design branch 
 
 
 ### SKU Update
