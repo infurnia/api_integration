@@ -4,6 +4,7 @@ const crypto = require('crypto');
 const FormData = require('form-data');
 const format = require('biguint-format');
 require('dotenv').config()
+const fetch = require("node-fetch");
 
 /*
     CREDENTIALS
@@ -698,7 +699,7 @@ const get_tags_on_sku = async (sku_id) => {
         return data?.[sku_id]?.sku_tags ?? [];
     } catch(err) {
         console.error('Error in create_tag ->', err);
-        return Promise.reject({ err, info: 'Error in create_tag' })
+        return Promise.reject({ err, info: 'Error in get_tags_on_sku' })
     }
 }
 
@@ -715,7 +716,7 @@ const attach_tags_on_sku = async (sku_id, tag_ids) => {
         return data;
     } catch(err) {
         console.error('Error in create_tag ->', err);
-        return Promise.reject({ err, info: 'Error in create_tag' })
+        return Promise.reject({ err, info: 'Error in attach_tags_on_sku' })
     }
 }
 
@@ -731,11 +732,47 @@ const get_renders_for_design = async (design_id) => {
         return data;
     } catch(err) {
         console.error('Error in create_tag ->', err);
-        return Promise.reject({ err, info: 'Error in create_tag' })
+        return Promise.reject({ err, info: 'Error in get_renders_for_design' })
     }
 }
 
+const add_skus_to_sc = async ({sku_ids, sales_channel_id}) => {
+    try{
+        const data = await general_fetch({url : 'sales_channel/add_skus', body : {sku_ids, sales_channel_id}})
+        console.log(`successfully added the following skus to the sales_channel with id: ${sales_channel_id}`);
+        return data;
+    }catch(err) {
+        console.error('Error in adding skus to sc ->', err);
+        return Promise.reject({err, info : 'Error in add_skus_to_sc'})
+    }
+}
+
+const remove_skus_from_sc = async ({sku_ids, sales_channel_id}) => {
+    try{
+        const data = await general_fetch({url : 'sales_channel/remove_skus', body : {sku_ids, sales_channel_id}})
+        console.log(`successfully removed the following skus from the sales_channel with id: ${sales_channel_id}`);
+        return data;
+    }catch(err) {
+        console.error('Error in removing skus to sc ->', err);
+        return Promise.reject({err, info : 'Error in remove_skus_from_sc'})
+    }
+}
+
+const price_update = async ({sku_id = null, business_unit_id = null, price = null, tax = null, margin = null, display_unit= null, sales_channel_id = null, price_type_id = null} = {sku_id : null, business_unit_id : null, price : null, tax : null, margin : null, display_unit: null, sales_channel_id : null, price_type_id : null}) => {
+    try{
+            const data = await general_fetch({url : 'price/update', body : {sku_id, business_unit_id, price, tax, margin, display_unit, sales_channel_id, price_type_id}})
+            console.log(`successfully updated the price of sku ${sku_id}`);
+            return data;
+        }catch(err) {
+            console.error('Error in adding adding skus to sc ->', err);
+            return Promise.reject({err, info : 'Error in add_skus_to_sc'})
+        }
+}
+
 module.exports = {
+    price_update,
+    remove_skus_from_sc,
+    add_skus_to_sc,
     generate_id,
     sleep,
     fetch_sku_category_types,
