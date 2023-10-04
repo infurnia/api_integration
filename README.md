@@ -129,3 +129,20 @@ API `sku/get_tags` expects a different parameter `sku_ids` instead of `ids` in t
 
 ##### Attach Tags to a SKU
 API `sku/attach_tags` expects a different parameter `sku_ids` instead of `ids` in the request body.
+
+#### Update sku price/sales channel information.
+API `sales_channel/add_skus`  and `sales_channel/remove_skus` can be used to map and unmap skus to a sales channel respectively 
+Both expect parameter `sku_ids` which is a list(Array) of skus that needs to be added or removed from the sales channel and `sales_channel_id` which the id of the sales channel in which the skus are to added.
+
+To get sku_id the following ways can be used 
+api `inventory/get_all_sub_categories` can be used to to get the sub category tree (both owned/subscribed) for a given store, sub category id can be inferred from its result by seraching on the name or individual sub category ids can directly picked selecting a particaular sub category , the last path segments/URL path component is the sku_sub_category id.
+eg. in  `/catalogue/finish/984703946002946389/9927264560914371958/`  9927264560914371958 is the sub_category id.
+
+Once a sub_category_id is selected,  sku group and underlying skus for a given sku category id can be obtained by the api `inventory/get_groups`.
+
+API `price/update` is used to update the price of a sku, it accepts params sku_id, business_unit_id, price, tax, margin, display_unit, sales_channel_id, price_type_id 
+If the price to be updated is the default price or the sku business_unit_id should be passed, and both sales_channel_id and price_type_id should be set as null.
+If the price is to be set of sku for a particular sales channel and price type specify both sales_channel_id and price_type_id for which the price is to updated. 
+
+To get sales channels and their mapped price_types API `sales_channel/get_of_store` can be used with parameter include_price_type_mapping set as true in the body,
+

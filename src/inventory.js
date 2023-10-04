@@ -52,6 +52,9 @@
 
 
 const {
+    price_update,
+    remove_skus_from_sc,
+    add_skus_to_sc,
     generate_id,
     get_store_info,
     fetch_sku_category_types,
@@ -279,6 +282,20 @@ const create_inventory = async () => {
                     sku_data_0.additional_properties = JSON.stringify(sku_data_0.additional_properties); // note: always stringify additional properties if it exists
                     let updated_sku = await update_sku(created_skus[0].id, sku_data_0);
                     console.log(`updated_sku_id`, updated_sku);
+
+                    // Adding SKUs to sales channel 
+                    let sales_channel_sku = await add_skus_to_sc({sku_ids : [created_skus[0].id], sales_channel_id: sales_channel_details.id});
+                    console.log(`:: added sku whith sku_id ${created_skus[0].id} to sales_channel with id ${sales_channel_details.id}`)
+
+                    // Editing price of sku , 
+                    //possible display units ["per_set", "per_unit", "metre", "foot", "millimetre", "sq_metre", "sq_foot", "sq_millimetre", "cu_metre", "cu_foot", "cu_millimetre"]
+                    // Edit default price of sku
+                    let default_price_update = await price_update({sku_id : created_skus[0].id, business_unit_id : business_unit_id, price : 500, tax : 20, margin : 30, display_unit: "per_unit", sales_channel_id : null, price_type_id : null})
+                    console.log(`:: succesfully updated the price of sku with sku_id ${created_skus[0].id} for business_unit ${business_unit_id}`)
+
+                    // Edit prices for sales channel price_type pair
+                    let sales_channel_price_update = await price_update({sku_id : created_skus[0].id, business_unit_id : business_unit_id, price : 600, tax : 15, margin : 30, display_unit: "per_unit", sales_channel_id : sales_channel_details.id, price_type_id : sales_channel_details.price_type_ids[0]})
+                    console.log(`:: succesfully updated the price of sku in sales channel with id${sales_channel_details.id} for price_type id of ${sales_channel_details.price_type_ids[0]} for sku_id ${created_skus[0].id}`)
                 }
             }
         }
