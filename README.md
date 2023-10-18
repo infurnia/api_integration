@@ -151,7 +151,10 @@ API `sku/get` is used to fetch information corresponding to a list of sku ids.
 
 - **Parameters**
   - `business_unit_id` (string): The ID of your business unit.
-  - `identifiers` (stringified JSON): A JSON object with parameter `id` containing an array of SKU IDs you want to retrieve information for.
+  - `identifiers` (stringified JSON): A JSON object with parameter `id` containing an array of SKU IDs you want to retrieve information for. This JSON object needs to be converted into strigified format. To create stringified JSON for 2 SKUs having ids 1499253168870, 1488453826100.
+    - Firstly generate a JSON in the format: `{"id":["1499253168870", "1488453826100"]}`
+    - Then stringify it to obtain it in the following format: `"{\"id\":[\"1499253168870\", \"1488453826100\"]}"` 
+
 
 - **Sample Request:**
 ```json
