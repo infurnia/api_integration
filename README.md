@@ -146,3 +146,21 @@ If the price is to be set of sku for a particular sales channel and price type s
 
 To get sales channels and their mapped price_types API `sales_channel/get_of_store` can be used with parameter include_price_type_mapping set as true in the body,
 
+#### Fetch SKU information
+API `sku/get` is used to fetch information corresponding to a list of sku ids. 
+
+- **Parameters**
+  - `business_unit_id` (string): The ID of your business unit.
+  - `identifiers` (stringified JSON): A JSON object with parameter `id` containing an array of SKU IDs you want to retrieve information for.
+
+- **Sample Request:**
+```json
+{
+  "business_unit_id": "your_business_unit_id",
+  "identifiers": "{\"id\":[\"1499253168870\", \"1488453826100\"]}"
+}
+```
+## Caution
+
+**Caution**: If you need to retrieve information for multiple SKUs, it's recommended to pass a list of SKU IDs in a single request rather than calling the API individually for each ID. This practice helps avoid potential issues like server request blocks and improves efficiency.
+
