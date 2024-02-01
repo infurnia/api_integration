@@ -779,12 +779,6 @@ const update_sku_group = async ({sku_group_id = null, business_unit_id = null, n
         }
 }
 
-// shift to pull out unit 
-update_sku_group({sku_group_id : "63e91b1769247296",business_unit_id : "d914a9a59f39691c",sku_sub_category_id : "20179839d1c123e6"})
-.then(data => console.log(data))
-.catch(err => console.log(err));
-
-
 module.exports = {
     update_sku_group,
     price_update,
