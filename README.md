@@ -103,11 +103,14 @@ API `inventory/get_all_sub_categories` expects an extra parameter `business_unit
 ##### Fetch all the groups in a sub category
 API `inventory/get_groups` expects an extra parameter `business_unit_id` to fetch the sub groups in the the given sub category and business unit. You can use the default business unit ID from `store/get_info` as mentioned above to fetch the groups from the default business unit.
 
-##### Remove SKU from the store
-API `sku/remove_from_store` expects a different parameter in the request body: `sku_ids` should be the array of SKU IDs to be removed from the store.
+##### Remove SKU from the Business Unit 
+API `sku/remove_from_business_unit` expects a different parameter in the request body: `sku_ids` should be the array of SKU IDs to be removed from the business unit and `business_unit_id` .
 
-##### Remove SKU Group from the store
-API `sku_group/remove_from_store` expects a different parameter in the request body: `sku_group_ids` should be the array of SKU Group IDs to be removed from the store.
+##### Remove SKU Group from the Business Unit 
+API `sku_group/remove_from_business_unit` expects a different parameter in the request body: `sku_group_ids` should be the array of SKU Group IDs to be removed from the business unit and `business_unit_id`.
+
+##### Update SKU Group 
+API `sku_group/update` expects a different parameter in the request body: `sku_group_id` should be the id of the SKU Group which is to be updated, `business_unit_id`, `name` (optional field) provide the new name of the sku group, `sku_sub_category_id` (optional field) provide the new SKU Sub Category ID if the sku group need to be moved accross SKU Sub Categories (sku group can only be moved across SKU Sub Categories having the same SKU Category Type).
 
 ##### Remove SKU Sub Category from the store
 API `sku_sub_category/deprecate` expects a different parameter in the request body: `sku_sub_category_id` should be the ID of the SKU Sub Category to be removed from the store.

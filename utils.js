@@ -516,9 +516,9 @@ const get_groups = async (sku_sub_category_id, business_unit_id) => {
     @params
     id: sku ids (array of strings)
 */
-const remove_skus = async (ids) => {
+const remove_skus = async (ids, business_unit_id) => {
     try {
-        await general_fetch({ url: 'sku/remove_from_store', body: { sku_ids: ids } });
+        await general_fetch({ url: 'sku/remove_from_business_unit', body: { sku_ids: ids, business_unit_id } });
         console.log('successfully removed skus with IDs -> ', ids);
         return "OK";
     } catch(err) {
@@ -527,16 +527,15 @@ const remove_skus = async (ids) => {
     }
 }
 
-
 /*
     BULK REMOVE SKU GROUPs (only owned)
     this function is used to remove owned sku groups 
     @params
     ids: sku group ids (array of strings)
 */
-const remove_sku_group = async (ids) => {
+const remove_sku_group = async (ids, business_unit_id) => {
     try {
-        await general_fetch({ url: 'sku_group/remove_from_store', body: { sku_group_ids: ids } });
+        await general_fetch({ url: 'sku_group/remove_from_business_unit', body: { sku_group_ids: ids, business_unit_id } });
         console.log('successfully removed sku group with IDs -> ', ids);
         return "OK";
     } catch(err) {
@@ -769,7 +768,25 @@ const price_update = async ({sku_id = null, business_unit_id = null, price = nul
         }
 }
 
+const update_sku_group = async ({sku_group_id = null, business_unit_id = null, name = null, sku_sub_category_id = null} = {sku_group_id : null, business_unit_id : null, name : null, sku_sub_category_id : null}) => {
+    try{
+            const data = await general_fetch({url : 'sku_group/update', body : {sku_group_id, business_unit_id, name, sku_sub_category_id}});
+            console.log(`successfully updated the sku group with id ${sku_group_id}`);
+            return data;
+        }catch(err) {
+            console.error('Error in adding adding skus to sc ->', err);
+            return Promise.reject({err, info : 'Error in add_skus_to_sc'})
+        }
+}
+
+// shift to pull out unit 
+update_sku_group({sku_group_id : "63e91b1769247296",business_unit_id : "d914a9a59f39691c",sku_sub_category_id : "20179839d1c123e6"})
+.then(data => console.log(data))
+.catch(err => console.log(err));
+
+
 module.exports = {
+    update_sku_group,
     price_update,
     remove_skus_from_sc,
     add_skus_to_sc,
