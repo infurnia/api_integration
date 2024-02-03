@@ -90,7 +90,7 @@ const remove_complete_inventory = async () => {
                         */
 
                         // Collecting all owned sku group ids
-                        const all_owned_sku_group_ids = sku_group_hierarchy.filter(obj => obj.store_id == MY_STORE_ID).map(obj => obj.id);
+                        const all_owned_sku_group_ids = sku_group_hierarchy.filter(obj => obj.business_unit_id == business_unit_id).map(obj => obj.id);
 
                         // removing all owned sku groups
                         remove_sku_group(all_owned_sku_group_ids);
@@ -102,14 +102,14 @@ const remove_complete_inventory = async () => {
 
                         // Collecting all the SKU IDs of non-owned sku groups
                         const to_remove_sku_ids = [];
-                        sku_group_hierarchy.filter(obj => obj.store_id != MY_STORE_ID).forEach(sku_group => {
+                        sku_group_hierarchy.filter(obj => obj.business_unit_id != business_unit_id).forEach(sku_group => {
                             sku_group.sku.forEach(sku => {
                                 to_remove_sku_ids.push(sku.id);
                             })
                         })
 
                         // remove all the sku ids
-                        await remove_skus(to_remove_sku_ids);
+                        await remove_skus(to_remove_sku_ids, business_unit_id);
                         
                         if (sub_category.store_id == MY_STORE_ID) {
                             // Owned sku sub categories do not get removed automatically
