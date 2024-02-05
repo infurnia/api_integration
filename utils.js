@@ -774,8 +774,8 @@ const update_sku_group = async ({sku_group_id = null, business_unit_id = null, n
             console.log(`successfully updated the sku group with id ${sku_group_id}`);
             return data;
         }catch(err) {
-            console.error('Error in adding adding skus to sc ->', err);
-            return Promise.reject({err, info : 'Error in add_skus_to_sc'})
+            console.error('Error in updating sku group ->', err);
+            return Promise.reject({err, info : 'Error in update_sku_group'})
         }
 }
 
