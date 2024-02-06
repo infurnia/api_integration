@@ -119,7 +119,7 @@ API `sku_sub_category/deprecate` expects a different parameter in the request bo
 API `sku_category/deprecate` expects a different parameter in the request body: `sku_category_id` should be the ID of the SKU Category to be removed from the store.
 
 ##### Update SKU details
-API `sku/update` does not support `identifiers` and `updates` in the request body. Instead of `identifiers`, it expects `sku_id` to be the ID of the SKU to be updated. Instead of `updates`, it expects the corresponding fields like `name`, `order`, `model_no` (previously sent in the `updates` field) in the request body.
+API `sku/update` does not support `identifiers` and `updates` in the request body. Instead of `identifiers`, it expects `sku_id` to be the ID of the SKU to be updated. Instead of `updates`, it expects the corresponding fields like `name`, `order`, `model_no` (previously sent in the `updates` field) in the request body. To move sku across sku groups, pass in the new sku group id in the `sku_group_id` field of the body (sku can only be moved accross sku groups having the same sku category types).
 
 ##### Disable design branch rendering
 API `design/disable_branch_rendering` is changed to `design_branch/update_rendering_enabled_status` with an extra parameter `status: disable` along with the `design_branch_id` parameter in the request body.
