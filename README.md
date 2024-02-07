@@ -53,8 +53,6 @@ The following commands are supported in the production details API
 23. `PrintElevationViews` - Print elevation view in PDF
 
 
-### SKU Update
-Use the `update_sku` function in the utils folder to update any SKU's details. Only mention the fields supposed to be updated in the body of the API. Please stringify the `additional_properties` field if it exists before calling the API. Check the example code [here](src/inventory.js)
 
 
 ### Disable rendering for a design branch
