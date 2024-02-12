@@ -84,9 +84,15 @@ Response body now will have a field called `sales_channels` which has two more n
 API name changed from `sku_category/add` to `sku_category/create`.
 It expects an extra parameter `business_unit_id`
 
+##### Update SKU Category
+sku_category/update expects `sku_category_id` (id of sub category that is to be updated), `name`, `business_unit_id`, `sku_category_type_id` ( if the category is to be moved across sku category types – all tags whose eligibility has been violated as a result of this change would be removed from the sku categroy).
+
 ##### Create SKU Sub Category
 API name changed from `sku_sub_category/add` to `sku_sub_category/create`.
 It expects an extra parameter `business_unit_id`
+
+##### Update SKU Sub Category
+sku_sub_category/update expects `sku_sub_category_id` (id of sub category that is to be updated), `name`, `order`.
 
 ##### Create SKU Group
 API name changed from `sku_group/add` to `sku_group/create`.
