@@ -1,5 +1,7 @@
 # Infurnia API integration Example - Bulk Creation of Inventory
 
+### This Repository is no longer maintained for the latest API docs please refer to [Infurnia API Docs](https://apidocs.infurnia.com/)
+
 ### Assumptions
 1. You must have access token, org ID (store_id), email and server path (paste them in utils.js).
 2. Sales Channels and Price Types must be created (if not, default sales channel and price types can be used).
