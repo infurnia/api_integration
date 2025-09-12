@@ -1,0 +1,2409 @@
+{
+  "meta": {
+    "sku_category_id": "6b5e894fbb558b03",
+    "sku_sub_category_id": "a9a716e555f20b9",
+    "sku_category_type_id": "tile_finish",
+    "sku_division_id": "finish",
+    "groupIdMap": {
+      "wall-tiles - CNC1212": "2ee8bd957247786a",
+      "wall-tiles - CNC9201": "931e7fa34234a821",
+      "wall-tiles - wallTiles-1": "ab9e442fcc5d461",
+      "wall-tiles - wallTiles-4": "4bb73b05595cd780",
+      "wall-tiles - wallTiles-5": "5cfc298aeb63121e",
+      "wall-tiles - wallTiles-6": "6f0ae0a5839f7612",
+      "wall-tiles - wallTiles-7": "ee0e517ed6203d04",
+      "wall-tiles - wallTiles-2": "9877fd134fe4b6b4",
+      "wall-tiles - wallTiles-3": "4aee7e693b380396",
+      "wall-tiles - PW02973": "42873bea9d2eca65",
+      "wall-tiles - GP00119": "48386fc736844dc0",
+      "wall-tiles - GP00120": "8aee456a0a51324a",
+      "wall-tiles - GP00778": "e26d94b51bd11ee8",
+      "wall-tiles - GP00799": "186bb372e6097515",
+      "wall-tiles - GP00817": "961500176de46880",
+      "wall-tiles - GP00852": "9b0721f31cb34b5c",
+      "wall-tiles - GP00860": "ed4d80231f6be6f7",
+      "wall-tiles - GP00865": "49c2aed2778401fa",
+      "wall-tiles - GP00871": "a045e8decc7b092b",
+      "wall-tiles - GP00872": "c69887886f652157",
+      "wall-tiles - GP00874": "8ccdc8a68c8ed2d0",
+      "wall-tiles - PW00016": "f1bb3bb78bb467fd",
+      "wall-tiles - PW00017": "f3f788a6d019126c",
+      "wall-tiles - PW00018": "464c40e3f63d7ad7",
+      "wall-tiles - PW00036": "cdeca921bdf6323b",
+      "wall-tiles - PW00038": "ddcbe9e0ed0fbd14",
+      "wall-tiles - PW00051": "5538ba75032a0f80",
+      "wall-tiles - PW00052": "c68fb587e78803b1",
+      "wall-tiles - PW00053": "2cd60f8a95efee4e",
+      "wall-tiles - PW00054": "2a07a83ef59d72f4",
+      "wall-tiles - PW00055": "810e6d632eec913d",
+      "wall-tiles - PW00073": "5bc12d9068fa1314",
+      "wall-tiles - PW00074": "4091fbd73171e369",
+      "wall-tiles - PW00075": "e444dae7464ba8bd",
+      "wall-tiles - PW00076": "67b622e04c9fa5bc",
+      "wall-tiles - PW00077": "2bad7909e1cac683",
+      "wall-tiles - PW00078": "b3b75db12350fba1",
+      "wall-tiles - PW00727": "879820200be0cc97",
+      "wall-tiles - PW02461": "c1d50fd37fea75cf",
+      "wall-tiles - PW02463": "fc829f731d1b88f8",
+      "wall-tiles - PW02600": "e81afb0355a9d5bd",
+      "wall-tiles - PW02622": "fbbeaf2a9a277a62",
+      "wall-tiles - PW02627": "d2c029b4e5d9d397",
+      "wall-tiles - PW02637": "ca4e10417d91b87",
+      "wall-tiles - PW02752": "c3dc03768f86f7c2",
+      "wall-tiles - PW02753": "2bed33a4c15d361a",
+      "wall-tiles - PW02754": "628381876112a3e8",
+      "wall-tiles - PW02778": "e8c74d0367a735a3",
+      "wall-tiles - PW02914": "aa66579efb683a99",
+      "wall-tiles - PW02916": "d0d8c2d465f3154",
+      "wall-tiles - PW02918": "5201c84103c61abd",
+      "wall-tiles - PW02921": "a3585287ae16ef60",
+      "wall-tiles - PW02924": "bfc67e46cc46d496",
+      "wall-tiles - PW02928": "e405fa30713bae28",
+      "wall-tiles - PW02937": "d7d3ef306288e4e1",
+      "wall-tiles - PW02938": "4337bfd2246c206f",
+      "wall-tiles - PW02944": "230673721d2b24a",
+      "wall-tiles - PW02945": "79a6f470715d647",
+      "wall-tiles - PW02972": "f84ac676fcf734a8",
+      "wall-tiles - PW02974": "d0c980b2a4b1ef7a",
+      "wall-tiles - PW02980": "fe8b6f3007787744",
+      "wall-tiles - PW02981": "1daa7af90c1b5cf6",
+      "wall-tiles - PW03011": "fd3f679b2e00bf61",
+      "wall-tiles - PW03012": "4ac21494e836755b",
+      "wall-tiles - PW03013": "67d1da0257be0edf",
+      "wall-tiles - PW03014": "11ed87c63bca71b0",
+      "wall-tiles - PW03015": "38c84210e408256c",
+      "wall-tiles - PW03016": "99bbea9a0154784f",
+      "wall-tiles - PW03215": "a24a0f3e2ce82e65",
+      "wall-tiles - SPW01072": "ae1b07ad1fef4ca7",
+      "wall-tiles - SPW01073": "1608a861bfeb37f",
+      "wall-tiles - SPW01074": "9eb7e59440f8e670",
+      "wall-tiles - SPW01075": "c23c2ebd4959e50e",
+      "wall-tiles - SPW01107": "7210d1c1d2796ddb",
+      "wall-tiles - SPW01110": "29800b800eee4e78",
+      "wall-tiles - Amalfi Platinum Reactive PW03364": "4624e1e4132f2bd9",
+      "wall-tiles - Pandanus Grey A": "317a9c890ffffb44"
+    },
+    "pricingCtx": {
+      "sales_channel_id": "304ba9639706a581",
+      "price_type_id": "f27fafa6f2c31dd2",
+      "default_margin": 0,
+      "default_tax": 0
+    }
+  },
+  "skus": [
+    {
+      "id": "e9aaf322c89996be",
+      "name": "CNC1212",
+      "model_no": null,
+      "sku_group_id": "2ee8bd957247786a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 100,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "fb493384090799a1",
+      "display_pic_id": "7a22e98ad598d65d"
+    },
+    {
+      "id": "e2b8486fc469297a",
+      "name": "CNC9201",
+      "model_no": null,
+      "sku_group_id": "931e7fa34234a821",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 100,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "160c4b798863d280",
+      "display_pic_id": "30ba1a1a4c9c5a6a"
+    },
+    {
+      "id": "13d7f1fd22752a6d",
+      "name": "wallTiles-1",
+      "model_no": null,
+      "sku_group_id": "ab9e442fcc5d461",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 100,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "bf44a8bc7729125a",
+      "display_pic_id": "d22334062de026f2"
+    },
+    {
+      "id": "9f91b6a23b9b3175",
+      "name": "wallTiles-4",
+      "model_no": null,
+      "sku_group_id": "4bb73b05595cd780",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 100,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "a24c2b24fde64d7e",
+      "display_pic_id": "aa1678fab564c107"
+    },
+    {
+      "id": "5c36e26c3397b20d",
+      "name": "wallTiles-5",
+      "model_no": null,
+      "sku_group_id": "5cfc298aeb63121e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 100,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "7c3444fa37ba293c",
+      "display_pic_id": "837f534129a3c51"
+    },
+    {
+      "id": "85483a696117f476",
+      "name": "wallTiles-6",
+      "model_no": null,
+      "sku_group_id": "6f0ae0a5839f7612",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 100,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "25e21707a2d22be2",
+      "display_pic_id": "93ee40b19b62d8f0"
+    },
+    {
+      "id": "8d244c7eab34e832",
+      "name": "wallTiles-7",
+      "model_no": null,
+      "sku_group_id": "ee0e517ed6203d04",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 100,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2eb2b2897fd8aa4a",
+      "display_pic_id": "661fb526dbec4260"
+    },
+    {
+      "id": "c2092d3ab1e60a7f",
+      "name": "wallTiles-2",
+      "model_no": null,
+      "sku_group_id": "9877fd134fe4b6b4",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 200,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "8f9fe1ba3aecb8db",
+      "display_pic_id": "2557fc9d0dceaf3"
+    },
+    {
+      "id": "ef1eb63ef4bfe957",
+      "name": "wallTiles-3",
+      "model_no": null,
+      "sku_group_id": "4aee7e693b380396",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 300,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6c51811612571bfc",
+      "display_pic_id": "23c36e0f45186c21"
+    },
+    {
+      "id": "bf6bf5db0f765389",
+      "name": "PW02973",
+      "model_no": null,
+      "sku_group_id": "42873bea9d2eca65",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "fcddf5b14c7c0ea0",
+      "display_pic_id": "24a28101fece56e7"
+    },
+    {
+      "id": "2edcce036e3aeb1f",
+      "name": "GP00119",
+      "model_no": null,
+      "sku_group_id": "48386fc736844dc0",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "daa8c6aa3768f466",
+      "display_pic_id": "e7817582603d8014"
+    },
+    {
+      "id": "821df7d55a8acca",
+      "name": "GP00120",
+      "model_no": null,
+      "sku_group_id": "8aee456a0a51324a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f1ca6a9623a8d690",
+      "display_pic_id": "885c0bc0c8241bfb"
+    },
+    {
+      "id": "11176febe139b942",
+      "name": "GP00778",
+      "model_no": null,
+      "sku_group_id": "e26d94b51bd11ee8",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "7abd4bda3a2ef77d",
+      "display_pic_id": "7d58807f8f8d8599"
+    },
+    {
+      "id": "9dae31b854cb4b8a",
+      "name": "GP00799",
+      "model_no": null,
+      "sku_group_id": "186bb372e6097515",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "abb10f4b35d6fa8f",
+      "display_pic_id": "461c1ce7a38b198a"
+    },
+    {
+      "id": "3e252c13442bc0a3",
+      "name": "GP00817",
+      "model_no": null,
+      "sku_group_id": "961500176de46880",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6dae3270f89404b1",
+      "display_pic_id": "1b9a1437f950d323"
+    },
+    {
+      "id": "ff2d5fe88b25983c",
+      "name": "GP00852",
+      "model_no": null,
+      "sku_group_id": "9b0721f31cb34b5c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "502751bd23a9de9c",
+      "display_pic_id": "864a8db977d14749"
+    },
+    {
+      "id": "385269ee07121dc3",
+      "name": "GP00860",
+      "model_no": null,
+      "sku_group_id": "ed4d80231f6be6f7",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9d66522552cf35f5",
+      "display_pic_id": "ad5d6f0fdf09ca43"
+    },
+    {
+      "id": "7dc3a6987fe75ebc",
+      "name": "GP00865",
+      "model_no": null,
+      "sku_group_id": "49c2aed2778401fa",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9d73ef7dfb8571c4",
+      "display_pic_id": "d97ea39438b44929"
+    },
+    {
+      "id": "9de07bfe14947dd1",
+      "name": "GP00871",
+      "model_no": null,
+      "sku_group_id": "a045e8decc7b092b",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e1b3b092a4482ae3",
+      "display_pic_id": "db91fbef651f19be"
+    },
+    {
+      "id": "25c9f7effff48168",
+      "name": "GP00872",
+      "model_no": null,
+      "sku_group_id": "c69887886f652157",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "ca848ab554834ddf",
+      "display_pic_id": "cf5da1f433b496f8"
+    },
+    {
+      "id": "60d7303043d8a35",
+      "name": "GP00874",
+      "model_no": null,
+      "sku_group_id": "8ccdc8a68c8ed2d0",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "57227a63afe3bb51",
+      "display_pic_id": "9be98cd1b3888e46"
+    },
+    {
+      "id": "7e166ed02691913f",
+      "name": "PW00016",
+      "model_no": null,
+      "sku_group_id": "f1bb3bb78bb467fd",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "b6a4f124effd748c",
+      "display_pic_id": "1035deb89d90ee9e"
+    },
+    {
+      "id": "27d74316909536cf",
+      "name": "PW00017",
+      "model_no": null,
+      "sku_group_id": "f3f788a6d019126c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "40b111c795e65fc",
+      "display_pic_id": "5785507ea24d5c5f"
+    },
+    {
+      "id": "c77430705ca7114e",
+      "name": "PW00018",
+      "model_no": null,
+      "sku_group_id": "464c40e3f63d7ad7",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "a0ca57c8ea6d832b",
+      "display_pic_id": "dbb406a6ad3a8004"
+    },
+    {
+      "id": "2f441b5bf684bc8a",
+      "name": "PW00036",
+      "model_no": null,
+      "sku_group_id": "cdeca921bdf6323b",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6b1544040c69e2d5",
+      "display_pic_id": "7c1ed987eed96b42"
+    },
+    {
+      "id": "851bfcbe07018a80",
+      "name": "PW00038",
+      "model_no": null,
+      "sku_group_id": "ddcbe9e0ed0fbd14",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e8e393f85514bd08",
+      "display_pic_id": "5de11707a65d7e37"
+    },
+    {
+      "id": "9da54e19b3441ae7",
+      "name": "PW00051",
+      "model_no": null,
+      "sku_group_id": "5538ba75032a0f80",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f3f6751b9bdb7ae5",
+      "display_pic_id": "75d5c5768fc53d03"
+    },
+    {
+      "id": "c9b2afefbc470a8a",
+      "name": "PW00052",
+      "model_no": null,
+      "sku_group_id": "c68fb587e78803b1",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "1be2d1680f9ead4e",
+      "display_pic_id": "77a9d553478f87e2"
+    },
+    {
+      "id": "b5dfe088197b74f",
+      "name": "PW00053",
+      "model_no": null,
+      "sku_group_id": "2cd60f8a95efee4e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "83ae088245f49697",
+      "display_pic_id": "84270ae389f580bf"
+    },
+    {
+      "id": "6c5d6480626cc9af",
+      "name": "PW00054",
+      "model_no": null,
+      "sku_group_id": "2a07a83ef59d72f4",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "37d3027e99384557",
+      "display_pic_id": "a4dbc5bc2b8d3b55"
+    },
+    {
+      "id": "c609c64535c0501c",
+      "name": "PW00055",
+      "model_no": null,
+      "sku_group_id": "810e6d632eec913d",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "3679ffca597bc47e",
+      "display_pic_id": "8f550117c42adae3"
+    },
+    {
+      "id": "19cdff340d193e6",
+      "name": "PW00073",
+      "model_no": null,
+      "sku_group_id": "5bc12d9068fa1314",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "5efe71f24167c5ad",
+      "display_pic_id": "256ef20fd5d4724e"
+    },
+    {
+      "id": "70bbc83838ef0e80",
+      "name": "PW00074",
+      "model_no": null,
+      "sku_group_id": "4091fbd73171e369",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "22c7bf456937b5ae",
+      "display_pic_id": "427223b65bf2a4c1"
+    },
+    {
+      "id": "e1c5b81ea446abdb",
+      "name": "PW00075",
+      "model_no": null,
+      "sku_group_id": "e444dae7464ba8bd",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "552bf552c87d0f78",
+      "display_pic_id": "e04c5feec42c34d"
+    },
+    {
+      "id": "d49fdc414f7507c3",
+      "name": "PW00076",
+      "model_no": null,
+      "sku_group_id": "67b622e04c9fa5bc",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "44a660c81c1a3de3",
+      "display_pic_id": "1792e61f49c13b9d"
+    },
+    {
+      "id": "51ea72d7aa8138a4",
+      "name": "PW00077",
+      "model_no": null,
+      "sku_group_id": "2bad7909e1cac683",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "904e02aeaa6d0b0b",
+      "display_pic_id": "d82a66622dbc7944"
+    },
+    {
+      "id": "139ae8cdc1ec1bb1",
+      "name": "PW00078",
+      "model_no": null,
+      "sku_group_id": "b3b75db12350fba1",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "8b485d673aac6df9",
+      "display_pic_id": "e4d15a2277fe2987"
+    },
+    {
+      "id": "9f226f344a50866",
+      "name": "PW00727",
+      "model_no": null,
+      "sku_group_id": "879820200be0cc97",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c416859ceca5d44e",
+      "display_pic_id": "afcee9363f45783b"
+    },
+    {
+      "id": "80acddc2b45a166f",
+      "name": "PW02461",
+      "model_no": null,
+      "sku_group_id": "c1d50fd37fea75cf",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "1c783011a26aeb64",
+      "display_pic_id": "9137a0994ed99df5"
+    },
+    {
+      "id": "dab747f4d4f47cc1",
+      "name": "PW02463",
+      "model_no": null,
+      "sku_group_id": "fc829f731d1b88f8",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "231909139deec35f",
+      "display_pic_id": "dfdb4b6a8abbad01"
+    },
+    {
+      "id": "1a75748404e73ff2",
+      "name": "PW02600",
+      "model_no": null,
+      "sku_group_id": "e81afb0355a9d5bd",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2586e2d694760843",
+      "display_pic_id": "8cce23936465eac8"
+    },
+    {
+      "id": "3d15a55c551c360a",
+      "name": "PW02622",
+      "model_no": null,
+      "sku_group_id": "fbbeaf2a9a277a62",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "33c542ee6578f90f",
+      "display_pic_id": "5d3f7745d375597a"
+    },
+    {
+      "id": "e21161c1d310b7c5",
+      "name": "PW02627",
+      "model_no": null,
+      "sku_group_id": "d2c029b4e5d9d397",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c453c7d004c9ef00",
+      "display_pic_id": "42c4de16be3543c9"
+    },
+    {
+      "id": "11d6110f57161818",
+      "name": "PW02637",
+      "model_no": null,
+      "sku_group_id": "ca4e10417d91b87",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "96dcac5d38aabe19",
+      "display_pic_id": "786201ff8b94d7b8"
+    },
+    {
+      "id": "7ed9fede1a9e94b",
+      "name": "PW02752",
+      "model_no": null,
+      "sku_group_id": "c3dc03768f86f7c2",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "908bff9b893b71bf",
+      "display_pic_id": "27e109f3207a1a8d"
+    },
+    {
+      "id": "8dac465d9fb754fb",
+      "name": "PW02753",
+      "model_no": null,
+      "sku_group_id": "2bed33a4c15d361a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "608d35432ac80c4",
+      "display_pic_id": "cf7b8fa947a9bdae"
+    },
+    {
+      "id": "24a2965b6f26a1f8",
+      "name": "PW02754",
+      "model_no": null,
+      "sku_group_id": "628381876112a3e8",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2265100400981583",
+      "display_pic_id": "7de47dc5febf7bbd"
+    },
+    {
+      "id": "a6f97a6fc85c42f0",
+      "name": "PW02778",
+      "model_no": null,
+      "sku_group_id": "e8c74d0367a735a3",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "273f7f7d340b4424",
+      "display_pic_id": "7bc95b79ae6800be"
+    },
+    {
+      "id": "65931f960305bbe2",
+      "name": "PW02914",
+      "model_no": null,
+      "sku_group_id": "aa66579efb683a99",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9cb527405997490",
+      "display_pic_id": "583ecff3b1817fb6"
+    },
+    {
+      "id": "2f30eae815044ddc",
+      "name": "PW02916",
+      "model_no": null,
+      "sku_group_id": "d0d8c2d465f3154",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9cd93cfb78dc930f",
+      "display_pic_id": "805cc43cfd985541"
+    },
+    {
+      "id": "59b494a1c185b6a9",
+      "name": "PW02918",
+      "model_no": null,
+      "sku_group_id": "5201c84103c61abd",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "19de7c3aa6fc39ca",
+      "display_pic_id": "65c8a912f8e47f03"
+    },
+    {
+      "id": "ebcf70862129da26",
+      "name": "PW02921",
+      "model_no": null,
+      "sku_group_id": "a3585287ae16ef60",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "43b3be658791be30",
+      "display_pic_id": "f8409e98f0337877"
+    },
+    {
+      "id": "56ea052302d6ed61",
+      "name": "PW02924",
+      "model_no": null,
+      "sku_group_id": "bfc67e46cc46d496",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e19d725e850ad159",
+      "display_pic_id": "cbd817c1cc65828e"
+    },
+    {
+      "id": "19555f1840f6a913",
+      "name": "PW02928",
+      "model_no": null,
+      "sku_group_id": "e405fa30713bae28",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2b5817dd075633ee",
+      "display_pic_id": "7b14b67816811a0"
+    },
+    {
+      "id": "a040339f8c53990",
+      "name": "PW02937",
+      "model_no": null,
+      "sku_group_id": "d7d3ef306288e4e1",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "4c28ff74aef7a672",
+      "display_pic_id": "dac298c5af5edd19"
+    },
+    {
+      "id": "9ba482da3d6f2cc2",
+      "name": "PW02938",
+      "model_no": null,
+      "sku_group_id": "4337bfd2246c206f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "a08b917cbbc85fe4",
+      "display_pic_id": "f9b1ae4110d27790"
+    },
+    {
+      "id": "e5f3e2da4a948d9d",
+      "name": "PW02944",
+      "model_no": null,
+      "sku_group_id": "230673721d2b24a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "7a43bbe2f248688e",
+      "display_pic_id": "3d3a0bcd2859acc3"
+    },
+    {
+      "id": "715710106bed86b",
+      "name": "PW02945",
+      "model_no": null,
+      "sku_group_id": "79a6f470715d647",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "161cc8708d91dafe",
+      "display_pic_id": "589e423bfece5e9e"
+    },
+    {
+      "id": "76a1c5cd36b17345",
+      "name": "PW02972",
+      "model_no": null,
+      "sku_group_id": "f84ac676fcf734a8",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c78dfc966ca2be22",
+      "display_pic_id": "c2aca37f2ab54973"
+    },
+    {
+      "id": "439d10b77f17efe2",
+      "name": "PW02974",
+      "model_no": null,
+      "sku_group_id": "d0c980b2a4b1ef7a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "7abcaaa707d2447a",
+      "display_pic_id": "3b56fe4f171dfb60"
+    },
+    {
+      "id": "279b096176149c2a",
+      "name": "PW02980",
+      "model_no": null,
+      "sku_group_id": "fe8b6f3007787744",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "74d5f07eaa315994",
+      "display_pic_id": "f34289567ab3a1b"
+    },
+    {
+      "id": "9cfd195813555282",
+      "name": "PW02981",
+      "model_no": null,
+      "sku_group_id": "1daa7af90c1b5cf6",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6ab9b02ee1c67a02",
+      "display_pic_id": "58f512380bc7a0c9"
+    },
+    {
+      "id": "e6cd18d08cd70b22",
+      "name": "PW03011",
+      "model_no": null,
+      "sku_group_id": "fd3f679b2e00bf61",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "5835582d42acd1a0",
+      "display_pic_id": "77d970815118d0ca"
+    },
+    {
+      "id": "b9a057f93cd67d53",
+      "name": "PW03012",
+      "model_no": null,
+      "sku_group_id": "4ac21494e836755b",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "1b916e1b14041dc8",
+      "display_pic_id": "d7282135c855e518"
+    },
+    {
+      "id": "68b08df20b026a34",
+      "name": "PW03013",
+      "model_no": null,
+      "sku_group_id": "67d1da0257be0edf",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "a03a86089e66aca0",
+      "display_pic_id": "21d2a8f3ad6e2435"
+    },
+    {
+      "id": "df611bf51847ccf9",
+      "name": "PW03014",
+      "model_no": null,
+      "sku_group_id": "11ed87c63bca71b0",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "480531e52c98f7e2",
+      "display_pic_id": "d0acf6aff2f4bff3"
+    },
+    {
+      "id": "a81edd3c04cc462c",
+      "name": "PW03015",
+      "model_no": null,
+      "sku_group_id": "38c84210e408256c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c3a6a5ca76a41cd2",
+      "display_pic_id": "80e168e53a9774bf"
+    },
+    {
+      "id": "aef4c24846c888dc",
+      "name": "PW03016",
+      "model_no": null,
+      "sku_group_id": "99bbea9a0154784f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "deb08e8b4866a620",
+      "display_pic_id": "bc06a51afc079703"
+    },
+    {
+      "id": "73451c53bd6e1762",
+      "name": "PW03215",
+      "model_no": null,
+      "sku_group_id": "a24a0f3e2ce82e65",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "7b85d952a30dfaa9",
+      "display_pic_id": "5f967cd883944ffa"
+    },
+    {
+      "id": "b0611af339461738",
+      "name": "SPW01072",
+      "model_no": null,
+      "sku_group_id": "ae1b07ad1fef4ca7",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2388e0843340cff2",
+      "display_pic_id": "f1bcacf308ba8bb1"
+    },
+    {
+      "id": "66d0e91ce37939c9",
+      "name": "SPW01073",
+      "model_no": null,
+      "sku_group_id": "1608a861bfeb37f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "333571fc939523e3",
+      "display_pic_id": "5a44c959141b7e48"
+    },
+    {
+      "id": "13ec7cec6a1277b9",
+      "name": "SPW01074",
+      "model_no": null,
+      "sku_group_id": "9eb7e59440f8e670",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "82452e1f696494f9",
+      "display_pic_id": "cdecd33f4695c7d2"
+    },
+    {
+      "id": "e879007eeccde4a0",
+      "name": "SPW01075",
+      "model_no": null,
+      "sku_group_id": "c23c2ebd4959e50e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6693cc50e813a8ab",
+      "display_pic_id": "ec2893dcda57c660"
+    },
+    {
+      "id": "ebdc2ad5cf8df9f3",
+      "name": "SPW01107",
+      "model_no": null,
+      "sku_group_id": "7210d1c1d2796ddb",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "425f0e7985800647",
+      "display_pic_id": "a946fc374ebeec42"
+    },
+    {
+      "id": "585ec5247eb3def",
+      "name": "SPW01110",
+      "model_no": null,
+      "sku_group_id": "29800b800eee4e78",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "78141194614cfc8b",
+      "display_pic_id": "c878cceff2453df3"
+    },
+    {
+      "id": "2b43180d0b144832",
+      "name": "Amalfi Platinum Reactive PW03364",
+      "model_no": null,
+      "sku_group_id": "4624e1e4132f2bd9",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "abe5905151abc8f9",
+      "display_pic_id": "bb91e7952b7c1421"
+    },
+    {
+      "id": "11bd5a8d42069452",
+      "name": "Pandanus Grey A",
+      "model_no": null,
+      "sku_group_id": "317a9c890ffffb44",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 40,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "per_unit"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f5b0be6e04f9f55a",
+      "display_pic_id": "faddf82304f9c023"
+    }
+  ],
+  "created": [
+    {
+      "id": "e9aaf322c89996be",
+      "name": "CNC1212",
+      "model_no": null
+    },
+    {
+      "id": "e2b8486fc469297a",
+      "name": "CNC9201",
+      "model_no": null
+    },
+    {
+      "id": "13d7f1fd22752a6d",
+      "name": "wallTiles-1",
+      "model_no": null
+    },
+    {
+      "id": "9f91b6a23b9b3175",
+      "name": "wallTiles-4",
+      "model_no": null
+    },
+    {
+      "id": "5c36e26c3397b20d",
+      "name": "wallTiles-5",
+      "model_no": null
+    },
+    {
+      "id": "85483a696117f476",
+      "name": "wallTiles-6",
+      "model_no": null
+    },
+    {
+      "id": "8d244c7eab34e832",
+      "name": "wallTiles-7",
+      "model_no": null
+    },
+    {
+      "id": "c2092d3ab1e60a7f",
+      "name": "wallTiles-2",
+      "model_no": null
+    },
+    {
+      "id": "ef1eb63ef4bfe957",
+      "name": "wallTiles-3",
+      "model_no": null
+    },
+    {
+      "id": "bf6bf5db0f765389",
+      "name": "PW02973",
+      "model_no": null
+    },
+    {
+      "id": "2edcce036e3aeb1f",
+      "name": "GP00119",
+      "model_no": null
+    },
+    {
+      "id": "821df7d55a8acca",
+      "name": "GP00120",
+      "model_no": null
+    },
+    {
+      "id": "11176febe139b942",
+      "name": "GP00778",
+      "model_no": null
+    },
+    {
+      "id": "9dae31b854cb4b8a",
+      "name": "GP00799",
+      "model_no": null
+    },
+    {
+      "id": "3e252c13442bc0a3",
+      "name": "GP00817",
+      "model_no": null
+    },
+    {
+      "id": "ff2d5fe88b25983c",
+      "name": "GP00852",
+      "model_no": null
+    },
+    {
+      "id": "385269ee07121dc3",
+      "name": "GP00860",
+      "model_no": null
+    },
+    {
+      "id": "7dc3a6987fe75ebc",
+      "name": "GP00865",
+      "model_no": null
+    },
+    {
+      "id": "9de07bfe14947dd1",
+      "name": "GP00871",
+      "model_no": null
+    },
+    {
+      "id": "25c9f7effff48168",
+      "name": "GP00872",
+      "model_no": null
+    },
+    {
+      "id": "60d7303043d8a35",
+      "name": "GP00874",
+      "model_no": null
+    },
+    {
+      "id": "7e166ed02691913f",
+      "name": "PW00016",
+      "model_no": null
+    },
+    {
+      "id": "27d74316909536cf",
+      "name": "PW00017",
+      "model_no": null
+    },
+    {
+      "id": "c77430705ca7114e",
+      "name": "PW00018",
+      "model_no": null
+    },
+    {
+      "id": "2f441b5bf684bc8a",
+      "name": "PW00036",
+      "model_no": null
+    },
+    {
+      "id": "851bfcbe07018a80",
+      "name": "PW00038",
+      "model_no": null
+    },
+    {
+      "id": "9da54e19b3441ae7",
+      "name": "PW00051",
+      "model_no": null
+    },
+    {
+      "id": "c9b2afefbc470a8a",
+      "name": "PW00052",
+      "model_no": null
+    },
+    {
+      "id": "b5dfe088197b74f",
+      "name": "PW00053",
+      "model_no": null
+    },
+    {
+      "id": "6c5d6480626cc9af",
+      "name": "PW00054",
+      "model_no": null
+    },
+    {
+      "id": "c609c64535c0501c",
+      "name": "PW00055",
+      "model_no": null
+    },
+    {
+      "id": "19cdff340d193e6",
+      "name": "PW00073",
+      "model_no": null
+    },
+    {
+      "id": "70bbc83838ef0e80",
+      "name": "PW00074",
+      "model_no": null
+    },
+    {
+      "id": "e1c5b81ea446abdb",
+      "name": "PW00075",
+      "model_no": null
+    },
+    {
+      "id": "d49fdc414f7507c3",
+      "name": "PW00076",
+      "model_no": null
+    },
+    {
+      "id": "51ea72d7aa8138a4",
+      "name": "PW00077",
+      "model_no": null
+    },
+    {
+      "id": "139ae8cdc1ec1bb1",
+      "name": "PW00078",
+      "model_no": null
+    },
+    {
+      "id": "9f226f344a50866",
+      "name": "PW00727",
+      "model_no": null
+    },
+    {
+      "id": "80acddc2b45a166f",
+      "name": "PW02461",
+      "model_no": null
+    },
+    {
+      "id": "dab747f4d4f47cc1",
+      "name": "PW02463",
+      "model_no": null
+    },
+    {
+      "id": "1a75748404e73ff2",
+      "name": "PW02600",
+      "model_no": null
+    },
+    {
+      "id": "3d15a55c551c360a",
+      "name": "PW02622",
+      "model_no": null
+    },
+    {
+      "id": "e21161c1d310b7c5",
+      "name": "PW02627",
+      "model_no": null
+    },
+    {
+      "id": "11d6110f57161818",
+      "name": "PW02637",
+      "model_no": null
+    },
+    {
+      "id": "7ed9fede1a9e94b",
+      "name": "PW02752",
+      "model_no": null
+    },
+    {
+      "id": "8dac465d9fb754fb",
+      "name": "PW02753",
+      "model_no": null
+    },
+    {
+      "id": "24a2965b6f26a1f8",
+      "name": "PW02754",
+      "model_no": null
+    },
+    {
+      "id": "a6f97a6fc85c42f0",
+      "name": "PW02778",
+      "model_no": null
+    },
+    {
+      "id": "65931f960305bbe2",
+      "name": "PW02914",
+      "model_no": null
+    },
+    {
+      "id": "2f30eae815044ddc",
+      "name": "PW02916",
+      "model_no": null
+    },
+    {
+      "id": "59b494a1c185b6a9",
+      "name": "PW02918",
+      "model_no": null
+    },
+    {
+      "id": "ebcf70862129da26",
+      "name": "PW02921",
+      "model_no": null
+    },
+    {
+      "id": "56ea052302d6ed61",
+      "name": "PW02924",
+      "model_no": null
+    },
+    {
+      "id": "19555f1840f6a913",
+      "name": "PW02928",
+      "model_no": null
+    },
+    {
+      "id": "a040339f8c53990",
+      "name": "PW02937",
+      "model_no": null
+    },
+    {
+      "id": "9ba482da3d6f2cc2",
+      "name": "PW02938",
+      "model_no": null
+    },
+    {
+      "id": "e5f3e2da4a948d9d",
+      "name": "PW02944",
+      "model_no": null
+    },
+    {
+      "id": "715710106bed86b",
+      "name": "PW02945",
+      "model_no": null
+    },
+    {
+      "id": "76a1c5cd36b17345",
+      "name": "PW02972",
+      "model_no": null
+    },
+    {
+      "id": "439d10b77f17efe2",
+      "name": "PW02974",
+      "model_no": null
+    },
+    {
+      "id": "279b096176149c2a",
+      "name": "PW02980",
+      "model_no": null
+    },
+    {
+      "id": "9cfd195813555282",
+      "name": "PW02981",
+      "model_no": null
+    },
+    {
+      "id": "e6cd18d08cd70b22",
+      "name": "PW03011",
+      "model_no": null
+    },
+    {
+      "id": "b9a057f93cd67d53",
+      "name": "PW03012",
+      "model_no": null
+    },
+    {
+      "id": "68b08df20b026a34",
+      "name": "PW03013",
+      "model_no": null
+    },
+    {
+      "id": "df611bf51847ccf9",
+      "name": "PW03014",
+      "model_no": null
+    },
+    {
+      "id": "a81edd3c04cc462c",
+      "name": "PW03015",
+      "model_no": null
+    },
+    {
+      "id": "aef4c24846c888dc",
+      "name": "PW03016",
+      "model_no": null
+    },
+    {
+      "id": "73451c53bd6e1762",
+      "name": "PW03215",
+      "model_no": null
+    },
+    {
+      "id": "b0611af339461738",
+      "name": "SPW01072",
+      "model_no": null
+    },
+    {
+      "id": "66d0e91ce37939c9",
+      "name": "SPW01073",
+      "model_no": null
+    },
+    {
+      "id": "13ec7cec6a1277b9",
+      "name": "SPW01074",
+      "model_no": null
+    },
+    {
+      "id": "e879007eeccde4a0",
+      "name": "SPW01075",
+      "model_no": null
+    },
+    {
+      "id": "ebdc2ad5cf8df9f3",
+      "name": "SPW01107",
+      "model_no": null
+    },
+    {
+      "id": "585ec5247eb3def",
+      "name": "SPW01110",
+      "model_no": null
+    },
+    {
+      "id": "2b43180d0b144832",
+      "name": "Amalfi Platinum Reactive PW03364",
+      "model_no": null
+    },
+    {
+      "id": "11bd5a8d42069452",
+      "name": "Pandanus Grey A",
+      "model_no": null
+    }
+  ],
+  "next_index": 77,
+  "completed": true
+}

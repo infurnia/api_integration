@@ -4,6 +4,15 @@
     "biguint-format": "^1.0.2",
     "dotenv": "^16.0.3",
     "form-data": "^4.0.0",
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.7.0",
+    "csv-parse": "^5.5.6"
+  },
+  "scripts": {
+    "upload:glass": "node src/catalog_upload/upload_glass.js",
+    "upload:wall_papers": "node src/catalog_upload/upload_wall_papers.js",
+    "upload:wall_tiles": "node src/catalog_upload/upload_wall_tiles.js"
+  ,"upload:lights": "node src/catalog_upload/upload_lights.js"
+  ,"upload:edge_bands": "node src/catalog_upload/upload_edge_bands.js"
+  ,"upload:finishes": "node src/catalog_upload/upload_finishes.js"
   }
 }

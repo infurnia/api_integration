@@ -1,0 +1,4269 @@
+{
+  "meta": {
+    "sku_category_id": "c528abe8edce3cbb",
+    "sku_sub_category_id": "18c55c44dbcd2b82",
+    "sku_category_type_id": "wallpaper_finish",
+    "sku_division_id": "finish",
+    "groupIdMap": {
+      "wall-paper - 202000028": "c521c4761640e4e9",
+      "wall-paper - 202000014": "a385cec46853de",
+      "wall-paper - 201000074": "f43596252736d651",
+      "wall-paper - 201000076": "4003a6b495ffce0f",
+      "wall-paper - 201000079": "28e7e15157f8aa52",
+      "wall-paper - 201000081": "7d6e59d9dafd8676",
+      "wall-paper - 201000082": "3d5e05fa1630a811",
+      "wall-paper - 201000083": "ae8648648afa60a",
+      "wall-paper - 201000084": "a4d4f6de3d4b4161",
+      "wall-paper - 201000085": "86154eed57e44988",
+      "wall-paper - 201000087": "37cbfecb459ec62a",
+      "wall-paper - 201000090": "a825a3870e29bd98",
+      "wall-paper - 201000002": "5ec043d8f646db95",
+      "wall-paper - 201000091": "f6edc3b183ee6",
+      "wall-paper - 201000097": "2c2b5d78572f018d",
+      "wall-paper - 201000103": "5b73d4e2bdd28b85",
+      "wall-paper - 201000105": "2f0bb95b85391d73",
+      "wall-paper - 201000107": "e6ec57b546db1596",
+      "wall-paper - 201000112": "400a69aa5967ddfa",
+      "wall-paper - 201000116": "cc00964e5d800377",
+      "wall-paper - 201009003": "281d0928e39dc4d8",
+      "wall-paper - 201009004": "954d933bfec98327",
+      "wall-paper - 201000004": "e405b5b64c58c208",
+      "wall-paper - 201009011": "a252b683d2b756e8",
+      "wall-paper - 201009012": "cbb4f53a501b135b",
+      "wall-paper - 201009014": "9c120bf1e538a115",
+      "wall-paper - 201009016": "9f653a5322d7049e",
+      "wall-paper - 201009018": "da3d0dc9c34729e3",
+      "wall-paper - 201009020": "5ca20d4692ba6c8a",
+      "wall-paper - 201009028": "9af5da757a4995f3",
+      "wall-paper - 202000033": "8802e5166349c3dd",
+      "wall-paper - 201000008": "3aab4c854fd5f369",
+      "wall-paper - 202000036": "5ac7409d8966b02a",
+      "wall-paper - 201000012": "f36fb2f80a57862",
+      "wall-paper - 202000039": "5c74f063b606a3aa",
+      "wall-paper - 201000013": "48514c7257579ff",
+      "wall-paper - 202000041": "d347b6580ee2d981",
+      "wall-paper - 201000014": "7aa78e393136026",
+      "wall-paper - 201000015": "551564a6b322c43f",
+      "wall-paper - 201000009": "72bb992785b3aca7",
+      "wall-paper - 201000016": "7a873477ae86ad55",
+      "wall-paper - 201000029": "395ca73d5e2548a4",
+      "wall-paper - 201000030": "f34baa5fdd25da3f",
+      "wall-paper - 201000031": "2d2da711ec1cff65",
+      "wall-paper - 201000035": "50753ff1679beb1f",
+      "wall-paper - 201000039": "75d0bdd4fdb2cf3f",
+      "wall-paper - 201000064": "38699bc21c3e3f34",
+      "wall-paper - 201000023": "f92d09a9134fcdb7",
+      "wall-paper - 201000086": "52176a52c52cfe7e",
+      "wall-paper - 201000028": "79aad1a13b042713",
+      "wall-paper - 202000035": "d2f8510c7f56632d",
+      "wall-paper - 201000024": "5522916b9443a0a4",
+      "wall-paper - 201000010": "ee482a05a3d376f2",
+      "wall-paper - 201000036": "2801fa107ffd6e7b",
+      "wall-paper - 201000038": "6e7427e439b05259",
+      "wall-paper - 201000027": "aa3b07866cd4bd6c",
+      "wall-paper - 201000098": "3e615a7b1a9397e9",
+      "wall-paper - 202000029": "9ab97c3231d4f4a4",
+      "wall-paper - 201000040": "d9b3707048519411",
+      "wall-paper - 201000007": "1abf192368518973",
+      "wall-paper - 201000017": "205125f8104c0ce5",
+      "wall-paper - 201000060": "de4172cb00ad17a4",
+      "wall-paper - 201000062": "a96d342f89d6db7",
+      "wall-paper - 201000102": "7965c75afcf348d6",
+      "wall-paper - 202000037": "79df5be4a85def77",
+      "wall-paper - 202000040": "71b14256403bf42e",
+      "wall-paper - 201000066": "9ea709a3e901c15b",
+      "wall-paper - 201000019": "b1dcd678213a2a3d",
+      "wall-paper - 201000067": "f3e445ae4ff192ef",
+      "wall-paper - 202000030": "4204a3b5ebdd8ed1",
+      "wall-paper - 201000020": "20a1dd724e387662",
+      "wall-paper - 201000068": "1eb93ebdd59bc38e",
+      "wall-paper - 201000071": "a43f3d8ff1287b79",
+      "wall-paper - 201000078": "ed235c1ed05e1153",
+      "wall-paper - 201000088": "5b0b2b39344bae6a",
+      "wall-paper - 201000093": "fad6ddccc800f137",
+      "wall-paper - 201000095": "4c89cb74a98e3cd3",
+      "wall-paper - 202000031": "23a2522f6d19690c",
+      "wall-paper - 201000022": "b013143105aad4f3",
+      "wall-paper - 201000025": "9f73623f89a507fc",
+      "wall-paper - 201000026": "b55366de34aabaf",
+      "wall-paper - 201000034": "6caf82c570adaf8e",
+      "wall-paper - 202000004": "1ad91851cde4e712",
+      "wall-paper - 202000003": "3e8114fde4078e55",
+      "wall-paper - 202000002": "4655fdf8b75754d6",
+      "wall-paper - 201000044": "f891d352f138d7b4",
+      "wall-paper - 201000045": "9f11d7ea950c9f5f",
+      "wall-paper - 201000046": "e6bceac536a90286",
+      "wall-paper - 202000032": "873d43db9210ae49",
+      "wall-paper - 201009029": "511e4e5e4fdadad",
+      "wall-paper - 201000048": "a484de8997c2af5e",
+      "wall-paper - 201009023": "bb32940577f0d97d",
+      "wall-paper - 201009022": "44ed330a90b5dd72",
+      "wall-paper - 201009021": "ffca230449938e54",
+      "wall-paper - 201009015": "662d0c22fa45c568",
+      "wall-paper - 201009013": "ba86f91e07fb1fe0",
+      "wall-paper - 201000075": "856e90751357366f",
+      "wall-paper - 201009009": "a0e13c99f7a568e",
+      "wall-paper - 201009007": "5555cde3d920b549",
+      "wall-paper - 201009002": "e57a42743ec9dd00",
+      "wall-paper - 201009001": "525a78976a720993",
+      "wall-paper - 201000108": "1a7f3bd3003ecae6",
+      "wall-paper - 202000005": "26b8e4b9335bc16e",
+      "wall-paper - 202000013": "cb5c5a3e844d43ec",
+      "wall-paper - 201000077": "1a4bf55a76e675fb",
+      "wall-paper - 202000007": "e47f28988c2a8e28",
+      "wall-paper - 202000016": "e4ef72e70e8c832c",
+      "wall-paper - 202000008": "3a00066e69f48dff",
+      "wall-paper - 202000017": "3ca60212eb17a33e",
+      "wall-paper - 202000009": "7d53dd4e1b524d44",
+      "wall-paper - 202000010": "c2fa66aacb46f569",
+      "wall-paper - 202000019": "16094a18edab23f4",
+      "wall-paper - 202000025": "a17b35c890ee6120",
+      "wall-paper - 202000027": "464d2b77e940761d",
+      "wall-paper - 201009017": "135d6f9042298e14",
+      "wall-paper - 202000026": "a5d52df874b55589",
+      "wall-paper - 202000020": "97b850bc3f5580ea",
+      "wall-paper - 202000021": "823ea0edb69e2dfa",
+      "wall-paper - 202000024": "6d90413abac8b37c",
+      "wall-paper - 201000049": "b48b7c9fa219b9b",
+      "wall-paper - 201000051": "370d9940c014494",
+      "wall-paper - 201009026": "9fb31700187ac380",
+      "wall-paper - 201000052": "f0189bf0601c7593",
+      "wall-paper - 201000054": "5457340f5a30f2b0",
+      "wall-paper - 201000055": "c6a31f8731f0c38c",
+      "wall-paper - 201000058": "83889c4627629c5",
+      "wall-paper - 201000059": "92f2f645c9963b17",
+      "wall-paper - 201000063": "92c6670a306779bc",
+      "wall-paper - 201000065": "4436970e097fef98",
+      "wall-paper - 201000072": "dd49376f55c5e0f9",
+      "wall-paper - 201000003": "135d8578e6eb64ae",
+      "wall-paper - 202000018": "417eb0f68d193d31",
+      "wall-paper - 201000006": "8e725a4ef5d6a83c",
+      "wall-paper - 201000043": "dae816fdfe39c037",
+      "wall-paper - 201000080": "2786883ea69e9a23",
+      "wall-paper - 201009010": "dcf3b45589110d8b",
+      "wall-paper - 202000001": "c1462c280628df44"
+    },
+    "pricingCtx": {
+      "sales_channel_id": "304ba9639706a581",
+      "price_type_id": "f27fafa6f2c31dd2",
+      "default_margin": 0,
+      "default_tax": 0
+    }
+  },
+  "skus": [
+    {
+      "id": "b0384196170bbe55",
+      "name": "202000028",
+      "model_no": "2169",
+      "sku_group_id": "c521c4761640e4e9",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "907875d975e4e135",
+      "display_pic_id": "51a4d0d3a6e28224"
+    },
+    {
+      "id": "117ced8afa9a004c",
+      "name": "202000014",
+      "model_no": "2132",
+      "sku_group_id": "a385cec46853de",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "670c8fc4ccdd832e",
+      "display_pic_id": "1232570486551678"
+    },
+    {
+      "id": "33e5a9b3e7eaa7bd",
+      "name": "201000074",
+      "model_no": "2129",
+      "sku_group_id": "f43596252736d651",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "cc135cabd45d34fc",
+      "display_pic_id": "d2517ce9972c5993"
+    },
+    {
+      "id": "d01e4464b8e021f4",
+      "name": "201000076",
+      "model_no": "2130",
+      "sku_group_id": "4003a6b495ffce0f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "684689d6ed5c9a25",
+      "display_pic_id": "248f6f6fef10cb65"
+    },
+    {
+      "id": "9b848aac3ce1dd8c",
+      "name": "201000079",
+      "model_no": "2074",
+      "sku_group_id": "28e7e15157f8aa52",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "8df60c8d79fcfcb2",
+      "display_pic_id": "c1cfa8815cedf8b9"
+    },
+    {
+      "id": "1a36fead25f8d705",
+      "name": "201000081",
+      "model_no": "2075",
+      "sku_group_id": "7d6e59d9dafd8676",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "a3bbf02bff0b9bb6",
+      "display_pic_id": "40cf41b1f23c61c3"
+    },
+    {
+      "id": "b62948159b14ece4",
+      "name": "201000082",
+      "model_no": "2072",
+      "sku_group_id": "3d5e05fa1630a811",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9a2dcbb7e38e8ca2",
+      "display_pic_id": "2033464782633dd3"
+    },
+    {
+      "id": "c2fe6cca34a8ce12",
+      "name": "201000083",
+      "model_no": "2002",
+      "sku_group_id": "ae8648648afa60a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "877cf5098aabb933",
+      "display_pic_id": "223eabc07a4402a7"
+    },
+    {
+      "id": "7d1b5a77109c3d68",
+      "name": "201000084",
+      "model_no": "2001",
+      "sku_group_id": "a4d4f6de3d4b4161",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "4e89bca551c986af",
+      "display_pic_id": "473d1bf993953dd5"
+    },
+    {
+      "id": "a1a1c7c6a6d872f3",
+      "name": "201000085",
+      "model_no": "2031",
+      "sku_group_id": "86154eed57e44988",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f89fadd56b89712",
+      "display_pic_id": "ef9b8cbee7fb807c"
+    },
+    {
+      "id": "1dd07d7ce791966c",
+      "name": "201000087",
+      "model_no": "2032",
+      "sku_group_id": "37cbfecb459ec62a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "788ea20f418e7bea",
+      "display_pic_id": "2d73a3eed217faf8"
+    },
+    {
+      "id": "f0c795413b469ef0",
+      "name": "201000090",
+      "model_no": "2033",
+      "sku_group_id": "a825a3870e29bd98",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c858d06d7569ff5d",
+      "display_pic_id": "35f5b96b1397043e"
+    },
+    {
+      "id": "c9b4ee4cb1770ce8",
+      "name": "201000002",
+      "model_no": "1993",
+      "sku_group_id": "5ec043d8f646db95",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f2f76b84adefc10a",
+      "display_pic_id": "a5a8781a24a68e47"
+    },
+    {
+      "id": "ad1359994c9d1153",
+      "name": "201000091",
+      "model_no": "2035",
+      "sku_group_id": "f6edc3b183ee6",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c280a436d63be7b",
+      "display_pic_id": "4a207663af71c310"
+    },
+    {
+      "id": "255f801ea159c2a",
+      "name": "201000097",
+      "model_no": "2038",
+      "sku_group_id": "2c2b5d78572f018d",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e4e58dbbe35d0a39",
+      "display_pic_id": "ac3d1d0c941cf98b"
+    },
+    {
+      "id": "ad024d9583b380d7",
+      "name": "201000103",
+      "model_no": "2048",
+      "sku_group_id": "5b73d4e2bdd28b85",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "3b1df4de0a6eefb6",
+      "display_pic_id": "d7af2adadd890930"
+    },
+    {
+      "id": "93106b241434e9c7",
+      "name": "201000105",
+      "model_no": "2039",
+      "sku_group_id": "2f0bb95b85391d73",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9101e5e9f7bfae",
+      "display_pic_id": "f878da0512c6162d"
+    },
+    {
+      "id": "488963274e5acbc7",
+      "name": "201000107",
+      "model_no": "2046",
+      "sku_group_id": "e6ec57b546db1596",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "d1f7250c3a8bec2d",
+      "display_pic_id": "2137a92ec245ddb2"
+    },
+    {
+      "id": "adca14b8e91f26d1",
+      "name": "201000112",
+      "model_no": "2109",
+      "sku_group_id": "400a69aa5967ddfa",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00015856962269480092,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c25068ebb0ffbd4d",
+      "display_pic_id": "9661c113b55d5c5b"
+    },
+    {
+      "id": "444b71fd27c32b1c",
+      "name": "201000116",
+      "model_no": "2110",
+      "sku_group_id": "cc00964e5d800377",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00015856962269480092,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "8e26a148b227711b",
+      "display_pic_id": "fc66b8e6536b35ab"
+    },
+    {
+      "id": "14212060b58d705d",
+      "name": "201009003",
+      "model_no": "2079",
+      "sku_group_id": "281d0928e39dc4d8",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "bf876b8e0bcee3a3",
+      "display_pic_id": "e06a6b9ed52dab92"
+    },
+    {
+      "id": "2564207613064d2f",
+      "name": "201009004",
+      "model_no": "2080",
+      "sku_group_id": "954d933bfec98327",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "82ffcf12ddafa027",
+      "display_pic_id": "d11ef011bacf0723"
+    },
+    {
+      "id": "37fcafda67082f0",
+      "name": "201000004",
+      "model_no": "1991",
+      "sku_group_id": "e405b5b64c58c208",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9caf456102562454",
+      "display_pic_id": "3c0a03c39e8b7004"
+    },
+    {
+      "id": "afeb37a249c76a1c",
+      "name": "201009011",
+      "model_no": "2086",
+      "sku_group_id": "a252b683d2b756e8",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "7670925b1417f9fa",
+      "display_pic_id": "bda77afd1d6bd7a0"
+    },
+    {
+      "id": "8c4a0e0242e72ba5",
+      "name": "201009012",
+      "model_no": "2087",
+      "sku_group_id": "cbb4f53a501b135b",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00015856962269480092,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "49f63f65e5f33fe5",
+      "display_pic_id": "28cfe16bc04f84bf"
+    },
+    {
+      "id": "ad29180a1285c704",
+      "name": "201009014",
+      "model_no": "2089",
+      "sku_group_id": "9c120bf1e538a115",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "ef1759249586d815",
+      "display_pic_id": "76595a2b7fd49e9c"
+    },
+    {
+      "id": "5e70a3317dd3b8af",
+      "name": "201009016",
+      "model_no": "2091",
+      "sku_group_id": "9f653a5322d7049e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "851a913d3d004c52",
+      "display_pic_id": "1a47f085a3eedd29"
+    },
+    {
+      "id": "62af1f81618c4382",
+      "name": "201009018",
+      "model_no": "2093",
+      "sku_group_id": "da3d0dc9c34729e3",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "1ea6be7983d2b6a7",
+      "display_pic_id": "9803a8f95e6cf657"
+    },
+    {
+      "id": "9113ef01d7530d97",
+      "name": "201009020",
+      "model_no": "2095",
+      "sku_group_id": "5ca20d4692ba6c8a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9659b85394e94ece",
+      "display_pic_id": "6177ffc48b40eab5"
+    },
+    {
+      "id": "a76d9d3536ee33ba",
+      "name": "201009028",
+      "model_no": "2102",
+      "sku_group_id": "9af5da757a4995f3",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "1b713cf97265dd6a",
+      "display_pic_id": "38a9fbe29ecde12c"
+    },
+    {
+      "id": "e14bedb8b6a259a8",
+      "name": "202000033",
+      "model_no": "2162",
+      "sku_group_id": "8802e5166349c3dd",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00021969141160504542,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f2dbb084904b1d32",
+      "display_pic_id": "e832264f788377d0"
+    },
+    {
+      "id": "ca55a9c244f2e7fd",
+      "name": "201000008",
+      "model_no": "1997",
+      "sku_group_id": "3aab4c854fd5f369",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "cfa66d92e9a3b7ca",
+      "display_pic_id": "fa615b5a91f384e7"
+    },
+    {
+      "id": "6e1999ba19278948",
+      "name": "202000036",
+      "model_no": "2161",
+      "sku_group_id": "5ac7409d8966b02a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00021969141160504542,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "1fe530ebaa532165",
+      "display_pic_id": "c83b97cedb16e1e2"
+    },
+    {
+      "id": "13f49dc125d76128",
+      "name": "201000012",
+      "model_no": "2051",
+      "sku_group_id": "f36fb2f80a57862",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00011272828101211757,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "218a3a607b90c71a",
+      "display_pic_id": "1ade2b510ee19885"
+    },
+    {
+      "id": "ecdbd20bcf97b4ef",
+      "name": "202000039",
+      "model_no": "2159",
+      "sku_group_id": "5c74f063b606a3aa",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00021969141160504542,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "98a56ff8359db947",
+      "display_pic_id": "d1bb6addc35f900d"
+    },
+    {
+      "id": "35aa949b7ebf2d21",
+      "name": "201000013",
+      "model_no": "2055",
+      "sku_group_id": "48514c7257579ff",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00011272828101211757,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2e46cad82f7ec569",
+      "display_pic_id": "44345e9fdd148b51"
+    },
+    {
+      "id": "d1d118c2d2ef4e91",
+      "name": "202000041",
+      "model_no": "2164",
+      "sku_group_id": "d347b6580ee2d981",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00021969141160504542,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "60ae54df64119595",
+      "display_pic_id": "d4a8078810836c31"
+    },
+    {
+      "id": "1e6bb8801db19499",
+      "name": "201000014",
+      "model_no": "2053",
+      "sku_group_id": "7aa78e393136026",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00011272828101211757,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e210ed07640b3b0a",
+      "display_pic_id": "d2d8f8997e619cc4"
+    },
+    {
+      "id": "a578a2f26b3751af",
+      "name": "201000015",
+      "model_no": "2054",
+      "sku_group_id": "551564a6b322c43f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00011272828101211757,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "52ce9128ce6b6072",
+      "display_pic_id": "11c54fdca34801cc"
+    },
+    {
+      "id": "51da4d79d1d7005f",
+      "name": "201000009",
+      "model_no": "1994",
+      "sku_group_id": "72bb992785b3aca7",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "3371d9eb0c462351",
+      "display_pic_id": "a479d8d3e5b6ab10"
+    },
+    {
+      "id": "b9e7075f2be0e408",
+      "name": "201000016",
+      "model_no": "2050",
+      "sku_group_id": "7a873477ae86ad55",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00011272828101211757,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "3ac2f6b8d4b4ae00",
+      "display_pic_id": "da08c6006a097189"
+    },
+    {
+      "id": "b0cd40f3a1c5d8f3",
+      "name": "201000029",
+      "model_no": "2065",
+      "sku_group_id": "395ca73d5e2548a4",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "3f7b42bf50563bec",
+      "display_pic_id": "9b95bdcb4c0156f7"
+    },
+    {
+      "id": "641e80d3ff2da7af",
+      "name": "201000030",
+      "model_no": "2071",
+      "sku_group_id": "f34baa5fdd25da3f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "68e3ff42da043bdd",
+      "display_pic_id": "c60eecad0630cd33"
+    },
+    {
+      "id": "8d5a15c9ce897d3",
+      "name": "201000031",
+      "model_no": "2062",
+      "sku_group_id": "2d2da711ec1cff65",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "59eb2f67080b3b93",
+      "display_pic_id": "add9e0398d9e7f79"
+    },
+    {
+      "id": "b85b2d0020d981f9",
+      "name": "201000035",
+      "model_no": "2016",
+      "sku_group_id": "50753ff1679beb1f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "cf66b77002707eb2",
+      "display_pic_id": "e73b3d539658e2da"
+    },
+    {
+      "id": "67a710a7196a0673",
+      "name": "201000039",
+      "model_no": "2017",
+      "sku_group_id": "75d0bdd4fdb2cf3f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "5932f4bae6db85cd",
+      "display_pic_id": "2d41e37443a83477"
+    },
+    {
+      "id": "734abd8aef98b342",
+      "name": "201000064",
+      "model_no": "2118",
+      "sku_group_id": "38699bc21c3e3f34",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "66f8c8865ce7cc6e",
+      "display_pic_id": "a005ab8e48243816"
+    },
+    {
+      "id": "82e45b068c4f0c83",
+      "name": "201000023",
+      "model_no": "2070",
+      "sku_group_id": "f92d09a9134fcdb7",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "57ff3eeb7df05498",
+      "display_pic_id": "977c33c5d7f11312"
+    },
+    {
+      "id": "37f836fe8c553775",
+      "name": "201000086",
+      "model_no": "2030",
+      "sku_group_id": "52176a52c52cfe7e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2e9b60cecafdb71",
+      "display_pic_id": "27d7d0b693e11795"
+    },
+    {
+      "id": "f53c91ed3bd7116a",
+      "name": "201000028",
+      "model_no": "2069",
+      "sku_group_id": "79aad1a13b042713",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "509a7b22a3853cd2",
+      "display_pic_id": "3e7979b9b864be14"
+    },
+    {
+      "id": "60018b8e8a545c81",
+      "name": "202000035",
+      "model_no": "2163",
+      "sku_group_id": "d2f8510c7f56632d",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001379718037213852,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f9fe3ae37b6d88e6",
+      "display_pic_id": "ce8150a4ee0f0966"
+    },
+    {
+      "id": "abc152bf533f4cb4",
+      "name": "201000024",
+      "model_no": "2064",
+      "sku_group_id": "5522916b9443a0a4",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f6c1eedb3030498f",
+      "display_pic_id": "88195b819aab4d49"
+    },
+    {
+      "id": "25f850aa673633bc",
+      "name": "201000010",
+      "model_no": "1996",
+      "sku_group_id": "ee482a05a3d376f2",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "d072943013ee3868",
+      "display_pic_id": "7ebc6b8f52fb8928"
+    },
+    {
+      "id": "eb920aa679bc5fab",
+      "name": "201000036",
+      "model_no": "2024",
+      "sku_group_id": "2801fa107ffd6e7b",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c6e311e4a649e89c",
+      "display_pic_id": "fa1e2f0f337ac10c"
+    },
+    {
+      "id": "a0019420c2197172",
+      "name": "201000038",
+      "model_no": "2023",
+      "sku_group_id": "6e7427e439b05259",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "d1217caeea64b35c",
+      "display_pic_id": "704c8c99f0855794"
+    },
+    {
+      "id": "11bc7582e834546b",
+      "name": "201000027",
+      "model_no": "2066",
+      "sku_group_id": "aa3b07866cd4bd6c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "a74feb993eeb8ac3",
+      "display_pic_id": "f8f9b4cf4696ccd3"
+    },
+    {
+      "id": "b423b45250ec5f35",
+      "name": "201000098",
+      "model_no": "2044",
+      "sku_group_id": "3e615a7b1a9397e9",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "7753c7f68b49a9f7",
+      "display_pic_id": "cc2dd8e937c7298f"
+    },
+    {
+      "id": "3ab5ef8e0a586ac",
+      "name": "202000029",
+      "model_no": "2170",
+      "sku_group_id": "9ab97c3231d4f4a4",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "fd5401d54ce11f56",
+      "display_pic_id": "eb190d40bddca668"
+    },
+    {
+      "id": "8d54de2e09906215",
+      "name": "201000040",
+      "model_no": "2025",
+      "sku_group_id": "d9b3707048519411",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "ff6061b6f7d072d7",
+      "display_pic_id": "c4f262e0c911d036"
+    },
+    {
+      "id": "752f4f82d5cff23",
+      "name": "201000007",
+      "model_no": "1998",
+      "sku_group_id": "1abf192368518973",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "17c7f30ed32931d4",
+      "display_pic_id": "f2fa41228823c34e"
+    },
+    {
+      "id": "326680c14afc9c2e",
+      "name": "201000017",
+      "model_no": "2061",
+      "sku_group_id": "205125f8104c0ce5",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "cea33c0368f5f3af",
+      "display_pic_id": "3ace88c419eca60"
+    },
+    {
+      "id": "184e3c823c3b19c1",
+      "name": "201000060",
+      "model_no": "2115",
+      "sku_group_id": "de4172cb00ad17a4",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "24177b1f544ecfde",
+      "display_pic_id": "bc84c04bda38f93d"
+    },
+    {
+      "id": "9224f23aeff2f9dc",
+      "name": "201000062",
+      "model_no": "2113",
+      "sku_group_id": "a96d342f89d6db7",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9572e2fc3c8bcf38",
+      "display_pic_id": "66c59714f1bf5bf0"
+    },
+    {
+      "id": "5c1fa553d00e723b",
+      "name": "201000102",
+      "model_no": "2045",
+      "sku_group_id": "7965c75afcf348d6",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "92fc300df9228b22",
+      "display_pic_id": "9336b8df57bcb9de"
+    },
+    {
+      "id": "19f1346fa33d900",
+      "name": "202000037",
+      "model_no": "2158",
+      "sku_group_id": "79df5be4a85def77",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00021969141160504542,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "fdc8c31e942a74e5",
+      "display_pic_id": "91f91d186f1be0ea"
+    },
+    {
+      "id": "214380642e903b51",
+      "name": "202000040",
+      "model_no": "2165",
+      "sku_group_id": "71b14256403bf42e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00021969141160504542,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f6047ab23194a868",
+      "display_pic_id": "8486ed73353d77ba"
+    },
+    {
+      "id": "ef8a339047e2882f",
+      "name": "201000066",
+      "model_no": "2116",
+      "sku_group_id": "9ea709a3e901c15b",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "bc553cbc238aee1d",
+      "display_pic_id": "5429d64d9d9f567b"
+    },
+    {
+      "id": "e81df93181751fbe",
+      "name": "201000019",
+      "model_no": "2056",
+      "sku_group_id": "b1dcd678213a2a3d",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "cfb9ec8572646230",
+      "display_pic_id": "d41bf8e1a999a876"
+    },
+    {
+      "id": "622ea53209387745",
+      "name": "201000067",
+      "model_no": "2124",
+      "sku_group_id": "f3e445ae4ff192ef",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "253932a2d38982b0",
+      "display_pic_id": "a8e84aa87af3144c"
+    },
+    {
+      "id": "ec3162f17c64a40d",
+      "name": "202000030",
+      "model_no": "2167",
+      "sku_group_id": "4204a3b5ebdd8ed1",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "d6c814aff3abbb26",
+      "display_pic_id": "411e13f097b59f15"
+    },
+    {
+      "id": "2971076673fbcade",
+      "name": "201000020",
+      "model_no": "2060",
+      "sku_group_id": "20a1dd724e387662",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "ff324a45117b8ef2",
+      "display_pic_id": "d273006d40e03aaf"
+    },
+    {
+      "id": "731ae0c32035cf92",
+      "name": "201000068",
+      "model_no": "2121",
+      "sku_group_id": "1eb93ebdd59bc38e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "fa6154256dbe7965",
+      "display_pic_id": "93a2bb8f769ec416"
+    },
+    {
+      "id": "e5cdc276c6165da0",
+      "name": "201000071",
+      "model_no": "2122",
+      "sku_group_id": "a43f3d8ff1287b79",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "5efaa8ba9ca0fecf",
+      "display_pic_id": "89335362529f8cf2"
+    },
+    {
+      "id": "95358750bd2dc3e1",
+      "name": "201000078",
+      "model_no": "2076",
+      "sku_group_id": "ed235c1ed05e1153",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "daba4bb04b5ed48a",
+      "display_pic_id": "18fcfc7a97a8e04f"
+    },
+    {
+      "id": "8688bb842ba33f5",
+      "name": "201000088",
+      "model_no": "2036",
+      "sku_group_id": "5b0b2b39344bae6a",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00009999457498914997,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "26690f40a5d0697d",
+      "display_pic_id": "ecf661472640c5e0"
+    },
+    {
+      "id": "529e8156d52148d6",
+      "name": "201000093",
+      "model_no": "1990",
+      "sku_group_id": "fad6ddccc800f137",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00008726086896618236,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "3f82f8887119e674",
+      "display_pic_id": "73326c56150db438"
+    },
+    {
+      "id": "9d084a3443cf3888",
+      "name": "201000095",
+      "model_no": "1989",
+      "sku_group_id": "4c89cb74a98e3cd3",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00008726086896618236,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "631692caba727477",
+      "display_pic_id": "75ff567b089bf04a"
+    },
+    {
+      "id": "d85b98dae7f537bb",
+      "name": "202000031",
+      "model_no": "2166",
+      "sku_group_id": "23a2522f6d19690c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "360de70e99bdcb51",
+      "display_pic_id": "e699bcd1c6b27fff"
+    },
+    {
+      "id": "e17c1b852621a297",
+      "name": "201000022",
+      "model_no": "2058",
+      "sku_group_id": "b013143105aad4f3",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "123d654ae58b9248",
+      "display_pic_id": "e22bd1dc10a198f7"
+    },
+    {
+      "id": "887eaa20f27f681d",
+      "name": "201000025",
+      "model_no": "2067",
+      "sku_group_id": "9f73623f89a507fc",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "4b595162075afa67",
+      "display_pic_id": "6333eac4c8a5036d"
+    },
+    {
+      "id": "f7d2b5d8aad0e7b6",
+      "name": "201000026",
+      "model_no": "2068",
+      "sku_group_id": "b55366de34aabaf",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0001381956930580528,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f67a8deacf048ebb",
+      "display_pic_id": "73982714e17d5150"
+    },
+    {
+      "id": "66133071eadb56a9",
+      "name": "201000034",
+      "model_no": "2028",
+      "sku_group_id": "6caf82c570adaf8e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00008955573466702488,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9e2d7074091a6fcc",
+      "display_pic_id": "ff321f88d9ae9b0c"
+    },
+    {
+      "id": "c71083a9565dcc77",
+      "name": "202000004",
+      "model_no": "2134",
+      "sku_group_id": "1ad91851cde4e712",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "472b9e2d87062297",
+      "display_pic_id": "cce1668dd63ed754"
+    },
+    {
+      "id": "bf871a622de540fc",
+      "name": "202000003",
+      "model_no": "2138",
+      "sku_group_id": "3e8114fde4078e55",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "62208bd10093ad1c",
+      "display_pic_id": "8a0f143ab739a238"
+    },
+    {
+      "id": "4fe49a6de1fb3a21",
+      "name": "202000002",
+      "model_no": "2149",
+      "sku_group_id": "4655fdf8b75754d6",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00008983559633785934,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "92fc1b8c261dd2a",
+      "display_pic_id": "76dba9f8b2366b62"
+    },
+    {
+      "id": "129614324e711640",
+      "name": "201000044",
+      "model_no": "2022",
+      "sku_group_id": "f891d352f138d7b4",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "536474425afb4c3d",
+      "display_pic_id": "95d88a6d09e7d881"
+    },
+    {
+      "id": "2fd255e3076ea5e6",
+      "name": "201000045",
+      "model_no": "2027",
+      "sku_group_id": "9f11d7ea950c9f5f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9ba9bac1c9317f20",
+      "display_pic_id": "3fb7f94b61e11fdb"
+    },
+    {
+      "id": "7641612621e6f97d",
+      "name": "201000046",
+      "model_no": "2029",
+      "sku_group_id": "e6bceac536a90286",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "fd9c55758a7f93ce",
+      "display_pic_id": "657f51e1e788e8f1"
+    },
+    {
+      "id": "1ab36342dc194e31",
+      "name": "202000032",
+      "model_no": "2168",
+      "sku_group_id": "873d43db9210ae49",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "35b30b7d5e6fae4c",
+      "display_pic_id": "ea83809dbea03a70"
+    },
+    {
+      "id": "99e47ff27ee0f147",
+      "name": "201009029",
+      "model_no": "2103",
+      "sku_group_id": "511e4e5e4fdadad",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e7b7848465e4934",
+      "display_pic_id": "50f2a290c9e55882"
+    },
+    {
+      "id": "ea58d14f633e365e",
+      "name": "201000048",
+      "model_no": "2005",
+      "sku_group_id": "a484de8997c2af5e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "bc70b5f0deb86141",
+      "display_pic_id": "a00b4625aa73232"
+    },
+    {
+      "id": "853ed909beea2378",
+      "name": "201009023",
+      "model_no": "2098",
+      "sku_group_id": "bb32940577f0d97d",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "86c122e42ad0d2ed",
+      "display_pic_id": "951ea4ae74a161e4"
+    },
+    {
+      "id": "826d5174dd895ab1",
+      "name": "201009022",
+      "model_no": "2097",
+      "sku_group_id": "44ed330a90b5dd72",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "945791cc7d1d9cd8",
+      "display_pic_id": "4cbc735c4731354a"
+    },
+    {
+      "id": "4419b043c078a8a4",
+      "name": "201009021",
+      "model_no": "2096",
+      "sku_group_id": "ffca230449938e54",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6dcb3ec2e633871",
+      "display_pic_id": "744f4ee510aca56a"
+    },
+    {
+      "id": "dbe173d64de27043",
+      "name": "201009015",
+      "model_no": "2090",
+      "sku_group_id": "662d0c22fa45c568",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "dd73fb5beb61e0b",
+      "display_pic_id": "d39668553fa1d4b9"
+    },
+    {
+      "id": "b4fb7da388efe75",
+      "name": "201009013",
+      "model_no": "2088",
+      "sku_group_id": "ba86f91e07fb1fe0",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f2cd65a985c94280",
+      "display_pic_id": "b62d55d79a32b064"
+    },
+    {
+      "id": "d63851a6c7fdc625",
+      "name": "201000075",
+      "model_no": "2125",
+      "sku_group_id": "856e90751357366f",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c33d5e68e5b7f585",
+      "display_pic_id": "dad1b107a4e8482"
+    },
+    {
+      "id": "a07c258455ea8528",
+      "name": "201009009",
+      "model_no": "2084",
+      "sku_group_id": "a0e13c99f7a568e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "df02a2a7d67e3ded",
+      "display_pic_id": "ce07fc553110da29"
+    },
+    {
+      "id": "6233b0f374dd1ccf",
+      "name": "201009007",
+      "model_no": "2083",
+      "sku_group_id": "5555cde3d920b549",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "95936896aa6eae70",
+      "display_pic_id": "b95b9c5550015750"
+    },
+    {
+      "id": "91f383c7f7881bff",
+      "name": "201009002",
+      "model_no": "2078",
+      "sku_group_id": "e57a42743ec9dd00",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e1812837554f8c77",
+      "display_pic_id": "4fbc721406fa3a11"
+    },
+    {
+      "id": "ecb981eed26bd6dd",
+      "name": "201009001",
+      "model_no": "2077",
+      "sku_group_id": "525a78976a720993",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "91411ebe3053afee",
+      "display_pic_id": "f74024e2d09c2547"
+    },
+    {
+      "id": "861eab6a22fc8650",
+      "name": "201000108",
+      "model_no": "2106",
+      "sku_group_id": "1a7f3bd3003ecae6",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6bf6f52a0a22a12f",
+      "display_pic_id": "44c1cb922cb21c6"
+    },
+    {
+      "id": "936f0066c6cccc54",
+      "name": "202000005",
+      "model_no": "2153",
+      "sku_group_id": "26b8e4b9335bc16e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "4702f6d76928b7b5",
+      "display_pic_id": "e79726292d7002dc"
+    },
+    {
+      "id": "2920855a8029ac1f",
+      "name": "202000013",
+      "model_no": "2150",
+      "sku_group_id": "cb5c5a3e844d43ec",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "61b896a8eb672be7",
+      "display_pic_id": "ee7bcb7ae1552268"
+    },
+    {
+      "id": "f5f7e7b770382861",
+      "name": "201000077",
+      "model_no": "2126",
+      "sku_group_id": "1a4bf55a76e675fb",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2388e3a0895e45aa",
+      "display_pic_id": "7dd75a8b0517d9c7"
+    },
+    {
+      "id": "bb023cef5cd57ced",
+      "name": "202000007",
+      "model_no": "2131",
+      "sku_group_id": "e47f28988c2a8e28",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "256f9ac4264c82d4",
+      "display_pic_id": "7047ec7a2bf6dd05"
+    },
+    {
+      "id": "5de0e3583494053e",
+      "name": "202000016",
+      "model_no": "2146",
+      "sku_group_id": "e4ef72e70e8c832c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "aa3008505fd1cb6b",
+      "display_pic_id": "8ffd8810489f1980"
+    },
+    {
+      "id": "bf2405deb3b9cd68",
+      "name": "202000008",
+      "model_no": "2148",
+      "sku_group_id": "3a00066e69f48dff",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "edc3ba5fe8d6aa84",
+      "display_pic_id": "7302f21d59088bd1"
+    },
+    {
+      "id": "f5e0c0df156f9912",
+      "name": "202000017",
+      "model_no": "2144",
+      "sku_group_id": "3ca60212eb17a33e",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "72e509a234da3712",
+      "display_pic_id": "83811bb4b8c7114d"
+    },
+    {
+      "id": "2f6de964528ebd95",
+      "name": "202000009",
+      "model_no": "2156",
+      "sku_group_id": "7d53dd4e1b524d44",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2d52705db8506d31",
+      "display_pic_id": "e8095de1e52ce4e5"
+    },
+    {
+      "id": "c957c59dd3def096",
+      "name": "202000010",
+      "model_no": "2139",
+      "sku_group_id": "c2fa66aacb46f569",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "c8f559b105f78d35",
+      "display_pic_id": "2b4e3adf6d0a60ab"
+    },
+    {
+      "id": "5d283c81a92e5435",
+      "name": "202000019",
+      "model_no": "2155",
+      "sku_group_id": "16094a18edab23f4",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "a0bb16b03d4140d1",
+      "display_pic_id": "83c3b386bb718704"
+    },
+    {
+      "id": "cd9c3d0d5a6ae924",
+      "name": "202000025",
+      "model_no": "2151",
+      "sku_group_id": "a17b35c890ee6120",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "b0b15a803fc4c985",
+      "display_pic_id": "93a6a452f24bbf71"
+    },
+    {
+      "id": "df700dd91ce114b9",
+      "name": "202000027",
+      "model_no": "2157",
+      "sku_group_id": "464d2b77e940761d",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "bcd40268912fb7c6",
+      "display_pic_id": "92a0ae8407c5fea5"
+    },
+    {
+      "id": "373b6b653825c726",
+      "name": "201009017",
+      "model_no": "2092",
+      "sku_group_id": "135d6f9042298e14",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "1a2785b220a135d2",
+      "display_pic_id": "de1fcb211761ca8a"
+    },
+    {
+      "id": "8b136221a31d7be1",
+      "name": "202000026",
+      "model_no": "2142",
+      "sku_group_id": "a5d52df874b55589",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e7ea5080dff3708b",
+      "display_pic_id": "97e4049d521177bd"
+    },
+    {
+      "id": "cd5e93df179f951c",
+      "name": "202000020",
+      "model_no": "2140",
+      "sku_group_id": "97b850bc3f5580ea",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "5a510d01687562da",
+      "display_pic_id": "7c3ac643c8027e46"
+    },
+    {
+      "id": "98610334aaf31d89",
+      "name": "202000021",
+      "model_no": "2147",
+      "sku_group_id": "823ea0edb69e2dfa",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "46cbf18ac19b7466",
+      "display_pic_id": "5e64bc57c4d5b98e"
+    },
+    {
+      "id": "a981052414cdedc0",
+      "name": "202000024",
+      "model_no": "2141",
+      "sku_group_id": "6d90413abac8b37c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6647f4195805b11",
+      "display_pic_id": "39c50791013879c7"
+    },
+    {
+      "id": "ff614be916c73bfb",
+      "name": "201000049",
+      "model_no": "2013",
+      "sku_group_id": "b48b7c9fa219b9b",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "1387aaa9879c73e6",
+      "display_pic_id": "78e2577806c216fa"
+    },
+    {
+      "id": "9535515ee375dfc4",
+      "name": "201000051",
+      "model_no": "2015",
+      "sku_group_id": "370d9940c014494",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "5177ad6371d457ff",
+      "display_pic_id": "96d60a133769c60b"
+    },
+    {
+      "id": "5d34c1b9f3eb9a12",
+      "name": "201009026",
+      "model_no": "2101",
+      "sku_group_id": "9fb31700187ac380",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "b68a2da1d30d54b7",
+      "display_pic_id": "737cde448d72ef4e"
+    },
+    {
+      "id": "7fc76e90bcf02a87",
+      "name": "201000052",
+      "model_no": "2011",
+      "sku_group_id": "f0189bf0601c7593",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "e761248e070701ea",
+      "display_pic_id": "3480eade44cb0e38"
+    },
+    {
+      "id": "582263d47fb86e3e",
+      "name": "201000054",
+      "model_no": "2007",
+      "sku_group_id": "5457340f5a30f2b0",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "9cc2397263f0bb07",
+      "display_pic_id": "a45d433405357438"
+    },
+    {
+      "id": "4694ab96a9ad26e4",
+      "name": "201000055",
+      "model_no": "2010",
+      "sku_group_id": "c6a31f8731f0c38c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "a751c5196103ebd2",
+      "display_pic_id": "1092aa7a6a66ecc4"
+    },
+    {
+      "id": "191aa2087cf6bb3b",
+      "name": "201000058",
+      "model_no": "2012",
+      "sku_group_id": "83889c4627629c5",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f87feb049bb8a033",
+      "display_pic_id": "91dff7fe858e851c"
+    },
+    {
+      "id": "dacad5b1b6316ff5",
+      "name": "201000059",
+      "model_no": "2008",
+      "sku_group_id": "92f2f645c9963b17",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "b9f434fba5a2e4ad",
+      "display_pic_id": "97b554cdd32ed931"
+    },
+    {
+      "id": "e0578529c200a63e",
+      "name": "201000063",
+      "model_no": "2117",
+      "sku_group_id": "92c6670a306779bc",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018403703474073613,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "972b0912b8efefec",
+      "display_pic_id": "dbb4e00c3e56e8bd"
+    },
+    {
+      "id": "8013715dce326fd1",
+      "name": "201000065",
+      "model_no": "2123",
+      "sku_group_id": "4436970e097fef98",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00018386911773823547,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "6a12e7db7c547882",
+      "display_pic_id": "c12c06fad48ddc02"
+    },
+    {
+      "id": "6b594d490f16bdda",
+      "name": "201000072",
+      "model_no": "2128",
+      "sku_group_id": "dd49376f55c5e0f9",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "3b68b4e03c6befd0",
+      "display_pic_id": "ba1c1fa0d7184391"
+    },
+    {
+      "id": "e0ffc22cd6618673",
+      "name": "201000003",
+      "model_no": "1992",
+      "sku_group_id": "135d8578e6eb64ae",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f3f4fc3076f89f07",
+      "display_pic_id": "476b5660cd9f83c7"
+    },
+    {
+      "id": "57b088dd611cbb69",
+      "name": "202000018",
+      "model_no": "2137",
+      "sku_group_id": "417eb0f68d193d31",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "8b4e44eab7929c8e",
+      "display_pic_id": "451f35cb00911315"
+    },
+    {
+      "id": "3d848732c4e542d7",
+      "name": "201000006",
+      "model_no": "1999",
+      "sku_group_id": "8e725a4ef5d6a83c",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "67643407b321263f",
+      "display_pic_id": "29f07e0b02bf7308"
+    },
+    {
+      "id": "579c506116120c5e",
+      "name": "201000043",
+      "model_no": "2018",
+      "sku_group_id": "dae816fdfe39c037",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.0000898076101707759,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "f004c8b661ebce91",
+      "display_pic_id": "a4ccc9e9339bc9d"
+    },
+    {
+      "id": "38d62fe94c9bb0ea",
+      "name": "201000080",
+      "model_no": "2073",
+      "sku_group_id": "2786883ea69e9a23",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "28c64b86465a2189",
+      "display_pic_id": "48e6427d7b056b57"
+    },
+    {
+      "id": "1bc471f246e62844",
+      "name": "201009010",
+      "model_no": "2085",
+      "sku_group_id": "dcf3b45589110d8b",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.00014328917546723984,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "2da07ccc5d592797",
+      "display_pic_id": "dc548be36a262b5"
+    },
+    {
+      "id": "5a449fbaabd82718",
+      "name": "202000001",
+      "model_no": "2154",
+      "sku_group_id": "c1462c280628df44",
+      "additional_properties": null,
+      "placement_id": null,
+      "sales_channels": [
+        {
+          "id": "304ba9639706a581",
+          "price_types": [
+            {
+              "id": "f27fafa6f2c31dd2",
+              "price": 0.000168756587513175,
+              "margin": 0,
+              "tax": 0,
+              "display_unit": "sq_foot"
+            }
+          ]
+        }
+      ],
+      "business_unit_id": "fca03a5c5366933a",
+      "material_id": "821104c0dce91bd3",
+      "display_pic_id": "3c4385bd9b91658"
+    }
+  ],
+  "created": [
+    {
+      "id": "b0384196170bbe55",
+      "name": "202000028",
+      "model_no": "2169"
+    },
+    {
+      "id": "117ced8afa9a004c",
+      "name": "202000014",
+      "model_no": "2132"
+    },
+    {
+      "id": "33e5a9b3e7eaa7bd",
+      "name": "201000074",
+      "model_no": "2129"
+    },
+    {
+      "id": "d01e4464b8e021f4",
+      "name": "201000076",
+      "model_no": "2130"
+    },
+    {
+      "id": "9b848aac3ce1dd8c",
+      "name": "201000079",
+      "model_no": "2074"
+    },
+    {
+      "id": "1a36fead25f8d705",
+      "name": "201000081",
+      "model_no": "2075"
+    },
+    {
+      "id": "b62948159b14ece4",
+      "name": "201000082",
+      "model_no": "2072"
+    },
+    {
+      "id": "c2fe6cca34a8ce12",
+      "name": "201000083",
+      "model_no": "2002"
+    },
+    {
+      "id": "7d1b5a77109c3d68",
+      "name": "201000084",
+      "model_no": "2001"
+    },
+    {
+      "id": "a1a1c7c6a6d872f3",
+      "name": "201000085",
+      "model_no": "2031"
+    },
+    {
+      "id": "1dd07d7ce791966c",
+      "name": "201000087",
+      "model_no": "2032"
+    },
+    {
+      "id": "f0c795413b469ef0",
+      "name": "201000090",
+      "model_no": "2033"
+    },
+    {
+      "id": "c9b4ee4cb1770ce8",
+      "name": "201000002",
+      "model_no": "1993"
+    },
+    {
+      "id": "ad1359994c9d1153",
+      "name": "201000091",
+      "model_no": "2035"
+    },
+    {
+      "id": "255f801ea159c2a",
+      "name": "201000097",
+      "model_no": "2038"
+    },
+    {
+      "id": "ad024d9583b380d7",
+      "name": "201000103",
+      "model_no": "2048"
+    },
+    {
+      "id": "93106b241434e9c7",
+      "name": "201000105",
+      "model_no": "2039"
+    },
+    {
+      "id": "488963274e5acbc7",
+      "name": "201000107",
+      "model_no": "2046"
+    },
+    {
+      "id": "adca14b8e91f26d1",
+      "name": "201000112",
+      "model_no": "2109"
+    },
+    {
+      "id": "444b71fd27c32b1c",
+      "name": "201000116",
+      "model_no": "2110"
+    },
+    {
+      "id": "14212060b58d705d",
+      "name": "201009003",
+      "model_no": "2079"
+    },
+    {
+      "id": "2564207613064d2f",
+      "name": "201009004",
+      "model_no": "2080"
+    },
+    {
+      "id": "37fcafda67082f0",
+      "name": "201000004",
+      "model_no": "1991"
+    },
+    {
+      "id": "afeb37a249c76a1c",
+      "name": "201009011",
+      "model_no": "2086"
+    },
+    {
+      "id": "8c4a0e0242e72ba5",
+      "name": "201009012",
+      "model_no": "2087"
+    },
+    {
+      "id": "ad29180a1285c704",
+      "name": "201009014",
+      "model_no": "2089"
+    },
+    {
+      "id": "5e70a3317dd3b8af",
+      "name": "201009016",
+      "model_no": "2091"
+    },
+    {
+      "id": "62af1f81618c4382",
+      "name": "201009018",
+      "model_no": "2093"
+    },
+    {
+      "id": "9113ef01d7530d97",
+      "name": "201009020",
+      "model_no": "2095"
+    },
+    {
+      "id": "a76d9d3536ee33ba",
+      "name": "201009028",
+      "model_no": "2102"
+    },
+    {
+      "id": "e14bedb8b6a259a8",
+      "name": "202000033",
+      "model_no": "2162"
+    },
+    {
+      "id": "ca55a9c244f2e7fd",
+      "name": "201000008",
+      "model_no": "1997"
+    },
+    {
+      "id": "6e1999ba19278948",
+      "name": "202000036",
+      "model_no": "2161"
+    },
+    {
+      "id": "13f49dc125d76128",
+      "name": "201000012",
+      "model_no": "2051"
+    },
+    {
+      "id": "ecdbd20bcf97b4ef",
+      "name": "202000039",
+      "model_no": "2159"
+    },
+    {
+      "id": "35aa949b7ebf2d21",
+      "name": "201000013",
+      "model_no": "2055"
+    },
+    {
+      "id": "d1d118c2d2ef4e91",
+      "name": "202000041",
+      "model_no": "2164"
+    },
+    {
+      "id": "1e6bb8801db19499",
+      "name": "201000014",
+      "model_no": "2053"
+    },
+    {
+      "id": "a578a2f26b3751af",
+      "name": "201000015",
+      "model_no": "2054"
+    },
+    {
+      "id": "51da4d79d1d7005f",
+      "name": "201000009",
+      "model_no": "1994"
+    },
+    {
+      "id": "b9e7075f2be0e408",
+      "name": "201000016",
+      "model_no": "2050"
+    },
+    {
+      "id": "b0cd40f3a1c5d8f3",
+      "name": "201000029",
+      "model_no": "2065"
+    },
+    {
+      "id": "641e80d3ff2da7af",
+      "name": "201000030",
+      "model_no": "2071"
+    },
+    {
+      "id": "8d5a15c9ce897d3",
+      "name": "201000031",
+      "model_no": "2062"
+    },
+    {
+      "id": "b85b2d0020d981f9",
+      "name": "201000035",
+      "model_no": "2016"
+    },
+    {
+      "id": "67a710a7196a0673",
+      "name": "201000039",
+      "model_no": "2017"
+    },
+    {
+      "id": "734abd8aef98b342",
+      "name": "201000064",
+      "model_no": "2118"
+    },
+    {
+      "id": "82e45b068c4f0c83",
+      "name": "201000023",
+      "model_no": "2070"
+    },
+    {
+      "id": "37f836fe8c553775",
+      "name": "201000086",
+      "model_no": "2030"
+    },
+    {
+      "id": "f53c91ed3bd7116a",
+      "name": "201000028",
+      "model_no": "2069"
+    },
+    {
+      "id": "60018b8e8a545c81",
+      "name": "202000035",
+      "model_no": "2163"
+    },
+    {
+      "id": "abc152bf533f4cb4",
+      "name": "201000024",
+      "model_no": "2064"
+    },
+    {
+      "id": "25f850aa673633bc",
+      "name": "201000010",
+      "model_no": "1996"
+    },
+    {
+      "id": "eb920aa679bc5fab",
+      "name": "201000036",
+      "model_no": "2024"
+    },
+    {
+      "id": "a0019420c2197172",
+      "name": "201000038",
+      "model_no": "2023"
+    },
+    {
+      "id": "11bc7582e834546b",
+      "name": "201000027",
+      "model_no": "2066"
+    },
+    {
+      "id": "b423b45250ec5f35",
+      "name": "201000098",
+      "model_no": "2044"
+    },
+    {
+      "id": "3ab5ef8e0a586ac",
+      "name": "202000029",
+      "model_no": "2170"
+    },
+    {
+      "id": "8d54de2e09906215",
+      "name": "201000040",
+      "model_no": "2025"
+    },
+    {
+      "id": "752f4f82d5cff23",
+      "name": "201000007",
+      "model_no": "1998"
+    },
+    {
+      "id": "326680c14afc9c2e",
+      "name": "201000017",
+      "model_no": "2061"
+    },
+    {
+      "id": "184e3c823c3b19c1",
+      "name": "201000060",
+      "model_no": "2115"
+    },
+    {
+      "id": "9224f23aeff2f9dc",
+      "name": "201000062",
+      "model_no": "2113"
+    },
+    {
+      "id": "5c1fa553d00e723b",
+      "name": "201000102",
+      "model_no": "2045"
+    },
+    {
+      "id": "19f1346fa33d900",
+      "name": "202000037",
+      "model_no": "2158"
+    },
+    {
+      "id": "214380642e903b51",
+      "name": "202000040",
+      "model_no": "2165"
+    },
+    {
+      "id": "ef8a339047e2882f",
+      "name": "201000066",
+      "model_no": "2116"
+    },
+    {
+      "id": "e81df93181751fbe",
+      "name": "201000019",
+      "model_no": "2056"
+    },
+    {
+      "id": "622ea53209387745",
+      "name": "201000067",
+      "model_no": "2124"
+    },
+    {
+      "id": "ec3162f17c64a40d",
+      "name": "202000030",
+      "model_no": "2167"
+    },
+    {
+      "id": "2971076673fbcade",
+      "name": "201000020",
+      "model_no": "2060"
+    },
+    {
+      "id": "731ae0c32035cf92",
+      "name": "201000068",
+      "model_no": "2121"
+    },
+    {
+      "id": "e5cdc276c6165da0",
+      "name": "201000071",
+      "model_no": "2122"
+    },
+    {
+      "id": "95358750bd2dc3e1",
+      "name": "201000078",
+      "model_no": "2076"
+    },
+    {
+      "id": "8688bb842ba33f5",
+      "name": "201000088",
+      "model_no": "2036"
+    },
+    {
+      "id": "529e8156d52148d6",
+      "name": "201000093",
+      "model_no": "1990"
+    },
+    {
+      "id": "9d084a3443cf3888",
+      "name": "201000095",
+      "model_no": "1989"
+    },
+    {
+      "id": "d85b98dae7f537bb",
+      "name": "202000031",
+      "model_no": "2166"
+    },
+    {
+      "id": "e17c1b852621a297",
+      "name": "201000022",
+      "model_no": "2058"
+    },
+    {
+      "id": "887eaa20f27f681d",
+      "name": "201000025",
+      "model_no": "2067"
+    },
+    {
+      "id": "f7d2b5d8aad0e7b6",
+      "name": "201000026",
+      "model_no": "2068"
+    },
+    {
+      "id": "66133071eadb56a9",
+      "name": "201000034",
+      "model_no": "2028"
+    },
+    {
+      "id": "c71083a9565dcc77",
+      "name": "202000004",
+      "model_no": "2134"
+    },
+    {
+      "id": "bf871a622de540fc",
+      "name": "202000003",
+      "model_no": "2138"
+    },
+    {
+      "id": "4fe49a6de1fb3a21",
+      "name": "202000002",
+      "model_no": "2149"
+    },
+    {
+      "id": "129614324e711640",
+      "name": "201000044",
+      "model_no": "2022"
+    },
+    {
+      "id": "2fd255e3076ea5e6",
+      "name": "201000045",
+      "model_no": "2027"
+    },
+    {
+      "id": "7641612621e6f97d",
+      "name": "201000046",
+      "model_no": "2029"
+    },
+    {
+      "id": "1ab36342dc194e31",
+      "name": "202000032",
+      "model_no": "2168"
+    },
+    {
+      "id": "99e47ff27ee0f147",
+      "name": "201009029",
+      "model_no": "2103"
+    },
+    {
+      "id": "ea58d14f633e365e",
+      "name": "201000048",
+      "model_no": "2005"
+    },
+    {
+      "id": "853ed909beea2378",
+      "name": "201009023",
+      "model_no": "2098"
+    },
+    {
+      "id": "826d5174dd895ab1",
+      "name": "201009022",
+      "model_no": "2097"
+    },
+    {
+      "id": "4419b043c078a8a4",
+      "name": "201009021",
+      "model_no": "2096"
+    },
+    {
+      "id": "dbe173d64de27043",
+      "name": "201009015",
+      "model_no": "2090"
+    },
+    {
+      "id": "b4fb7da388efe75",
+      "name": "201009013",
+      "model_no": "2088"
+    },
+    {
+      "id": "d63851a6c7fdc625",
+      "name": "201000075",
+      "model_no": "2125"
+    },
+    {
+      "id": "a07c258455ea8528",
+      "name": "201009009",
+      "model_no": "2084"
+    },
+    {
+      "id": "6233b0f374dd1ccf",
+      "name": "201009007",
+      "model_no": "2083"
+    },
+    {
+      "id": "91f383c7f7881bff",
+      "name": "201009002",
+      "model_no": "2078"
+    },
+    {
+      "id": "ecb981eed26bd6dd",
+      "name": "201009001",
+      "model_no": "2077"
+    },
+    {
+      "id": "861eab6a22fc8650",
+      "name": "201000108",
+      "model_no": "2106"
+    },
+    {
+      "id": "936f0066c6cccc54",
+      "name": "202000005",
+      "model_no": "2153"
+    },
+    {
+      "id": "2920855a8029ac1f",
+      "name": "202000013",
+      "model_no": "2150"
+    },
+    {
+      "id": "f5f7e7b770382861",
+      "name": "201000077",
+      "model_no": "2126"
+    },
+    {
+      "id": "bb023cef5cd57ced",
+      "name": "202000007",
+      "model_no": "2131"
+    },
+    {
+      "id": "5de0e3583494053e",
+      "name": "202000016",
+      "model_no": "2146"
+    },
+    {
+      "id": "bf2405deb3b9cd68",
+      "name": "202000008",
+      "model_no": "2148"
+    },
+    {
+      "id": "f5e0c0df156f9912",
+      "name": "202000017",
+      "model_no": "2144"
+    },
+    {
+      "id": "2f6de964528ebd95",
+      "name": "202000009",
+      "model_no": "2156"
+    },
+    {
+      "id": "c957c59dd3def096",
+      "name": "202000010",
+      "model_no": "2139"
+    },
+    {
+      "id": "5d283c81a92e5435",
+      "name": "202000019",
+      "model_no": "2155"
+    },
+    {
+      "id": "cd9c3d0d5a6ae924",
+      "name": "202000025",
+      "model_no": "2151"
+    },
+    {
+      "id": "df700dd91ce114b9",
+      "name": "202000027",
+      "model_no": "2157"
+    },
+    {
+      "id": "373b6b653825c726",
+      "name": "201009017",
+      "model_no": "2092"
+    },
+    {
+      "id": "8b136221a31d7be1",
+      "name": "202000026",
+      "model_no": "2142"
+    },
+    {
+      "id": "cd5e93df179f951c",
+      "name": "202000020",
+      "model_no": "2140"
+    },
+    {
+      "id": "98610334aaf31d89",
+      "name": "202000021",
+      "model_no": "2147"
+    },
+    {
+      "id": "a981052414cdedc0",
+      "name": "202000024",
+      "model_no": "2141"
+    },
+    {
+      "id": "ff614be916c73bfb",
+      "name": "201000049",
+      "model_no": "2013"
+    },
+    {
+      "id": "9535515ee375dfc4",
+      "name": "201000051",
+      "model_no": "2015"
+    },
+    {
+      "id": "5d34c1b9f3eb9a12",
+      "name": "201009026",
+      "model_no": "2101"
+    },
+    {
+      "id": "7fc76e90bcf02a87",
+      "name": "201000052",
+      "model_no": "2011"
+    },
+    {
+      "id": "582263d47fb86e3e",
+      "name": "201000054",
+      "model_no": "2007"
+    },
+    {
+      "id": "4694ab96a9ad26e4",
+      "name": "201000055",
+      "model_no": "2010"
+    },
+    {
+      "id": "191aa2087cf6bb3b",
+      "name": "201000058",
+      "model_no": "2012"
+    },
+    {
+      "id": "dacad5b1b6316ff5",
+      "name": "201000059",
+      "model_no": "2008"
+    },
+    {
+      "id": "e0578529c200a63e",
+      "name": "201000063",
+      "model_no": "2117"
+    },
+    {
+      "id": "8013715dce326fd1",
+      "name": "201000065",
+      "model_no": "2123"
+    },
+    {
+      "id": "6b594d490f16bdda",
+      "name": "201000072",
+      "model_no": "2128"
+    },
+    {
+      "id": "e0ffc22cd6618673",
+      "name": "201000003",
+      "model_no": "1992"
+    },
+    {
+      "id": "57b088dd611cbb69",
+      "name": "202000018",
+      "model_no": "2137"
+    },
+    {
+      "id": "3d848732c4e542d7",
+      "name": "201000006",
+      "model_no": "1999"
+    },
+    {
+      "id": "579c506116120c5e",
+      "name": "201000043",
+      "model_no": "2018"
+    },
+    {
+      "id": "38d62fe94c9bb0ea",
+      "name": "201000080",
+      "model_no": "2073"
+    },
+    {
+      "id": "1bc471f246e62844",
+      "name": "201009010",
+      "model_no": "2085"
+    },
+    {
+      "id": "5a449fbaabd82718",
+      "name": "202000001",
+      "model_no": "2154"
+    }
+  ],
+  "next_index": 137,
+  "completed": true
+}

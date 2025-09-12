@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "sku_category_id": "2ba55e11417c88d0",
+    "sku_category_type_id": "other_finish_finish",
+    "sku_division_id": "finish"
+  },
+  "skus": [
+    {
+      "id": "123c5f630d6b53d7",
+      "name": "Saint Gobain Clear Glass 10mm",
+      "model_no": "1641"
+    },
+    {
+      "id": "781fb11d2ddf3aa3",
+      "name": "Saint Gobain Clear Glass 12mm",
+      "model_no": "1639"
+    },
+    {
+      "id": "d5fbdcaf343a2dc1",
+      "name": "Saint Gobain Clear Glass 6mm",
+      "model_no": "1637"
+    },
+    {
+      "id": "28f08b413d33679e",
+      "name": "Saint Gobain Clear Glass 8mm",
+      "model_no": "1636"
+    },
+    {
+      "id": "b67498ffb5f8037f",
+      "name": "Saint Gobain Clear Toughened Glass 10MM",
+      "model_no": "17079"
+    },
+    {
+      "id": "504ed7a83fcfef55",
+      "name": "Saint Gobain Clear Toughened Glass 6mm",
+      "model_no": "1631"
+    },
+    {
+      "id": "d657ab58c548814c",
+      "name": "Saint Gobain Clear Toughened Glass 8mm",
+      "model_no": "17080"
+    },
+    {
+      "id": "7fb62a25e579c562",
+      "name": "Saint Gobain Copper Mirror 6mm",
+      "model_no": "17081"
+    },
+    {
+      "id": "285bfeec29cf5dd5",
+      "name": "Saint Gobain Frosted Glass 6mm",
+      "model_no": "17082"
+    },
+    {
+      "id": "d0b52a22e0c8db99",
+      "name": "Saint Gobain Frosted Toughened Glass10mm",
+      "model_no": "17083"
+    },
+    {
+      "id": "a001f61d4f4e3c5c",
+      "name": "Saint Gobain Lacquered Glass Almond Green 6mm",
+      "model_no": "13749"
+    },
+    {
+      "id": "5c72e9df6130bd43",
+      "name": "Saint Gobain Lacquered Glass black",
+      "model_no": "17084"
+    },
+    {
+      "id": "64fa24a64e2260a2",
+      "name": "Saint Gobain Lacquered Glass calm-sky 6mm",
+      "model_no": "13751"
+    },
+    {
+      "id": "5bdf7a26d36665ba",
+      "name": "Saint Gobain Lacquered Glass casis-purple 6mm",
+      "model_no": "13752"
+    },
+    {
+      "id": "3e4f7d9c6e7345c5",
+      "name": "Saint Gobain Lacquered Glass choco-brown 6mm",
+      "model_no": "13753"
+    },
+    {
+      "id": "75402143555bd301",
+      "name": "Saint Gobain Lacquered Glass extra-white 6mm",
+      "model_no": "13754"
+    },
+    {
+      "id": "4f5a7728d343bd9",
+      "name": "Saint Gobain Lacquered Glass flame-red 6mm",
+      "model_no": "13755"
+    },
+    {
+      "id": "90c557be2cc414eb",
+      "name": "Saint Gobain Lacquered Glass fusion-orange 6mm",
+      "model_no": "13756"
+    },
+    {
+      "id": "68bc9851cf3663c5",
+      "name": "Saint Gobain Lacquered Glass ivory 6mm",
+      "model_no": "1620"
+    },
+    {
+      "id": "121e275d2a693583",
+      "name": "Saint Gobain Lacquered Glass opera-red 6mm",
+      "model_no": "13758"
+    },
+    {
+      "id": "63d22264c9bc9ee4",
+      "name": "Saint Gobain Lacquered Glass pista-green 6mm",
+      "model_no": "13759"
+    },
+    {
+      "id": "6065b38cef1c4a44",
+      "name": "Saint Gobain Lacquered Glass solar-yellow 6mm",
+      "model_no": "13760"
+    },
+    {
+      "id": "c0fe971169187e76",
+      "name": "Saint Gobain Lacquered Glass titanium-grey 6mm",
+      "model_no": "1648"
+    },
+    {
+      "id": "dc106ff360d74398",
+      "name": "Saint Gobain Lacquered Glass ultra-white 6mm",
+      "model_no": "9034"
+    },
+    {
+      "id": "aca10bd58dcd2188",
+      "name": "Saint Gobain Mirror glass 6mm",
+      "model_no": "1627"
+    },
+    {
+      "id": "f77ac50845ae4921",
+      "name": "Saint Gobain Tinted Glass brown 6mm",
+      "model_no": "17085"
+    },
+    {
+      "id": "43a55c167355be0e",
+      "name": "Saint Gobain Tinted Glass grey 6mm",
+      "model_no": "17086"
+    },
+    {
+      "id": "d4dfa6b6085a6c08",
+      "name": "Generic Clear Fluted Glass 5mm",
+      "model_no": "1653"
+    },
+    {
+      "id": "742dadf16f1ea1be",
+      "name": "Saint Gobain Lacquered Glass argent-metallise 6mm",
+      "model_no": "15958"
+    },
+    {
+      "id": "5c86df1bf2f20f3d",
+      "name": "Saint Gobain Lacquered Glass aquamarine 6mm",
+      "model_no": "15959"
+    },
+    {
+      "id": "181c730dd57d88f0",
+      "name": "Saint Gobain Lacquered Glass cappuccino 6mm",
+      "model_no": "15960"
+    },
+    {
+      "id": "584ccb03c061cff4",
+      "name": "Saint Gobain Lacquered Glass champagne 6mm",
+      "model_no": "15961"
+    },
+    {
+      "id": "2cb0c0fd4d862345",
+      "name": "Saint Gobain Lacquered Glass peral-white 6mm",
+      "model_no": "15962"
+    },
+    {
+      "id": "c5f4e9a9b826f88f",
+      "name": "Saint Gobain Lacquered Glass sky-blue 6mm",
+      "model_no": "15963"
+    },
+    {
+      "id": "b452df5ef9426d3f",
+      "name": "V Groove Mirror 6mm",
+      "model_no": "15650"
+    },
+    {
+      "id": "1719176f1c9110a7",
+      "name": "Saint Gobain Clear Glass 4mm",
+      "model_no": "1634"
+    },
+    {
+      "id": "e2f7614bb575751b",
+      "name": "Saint Gobain Clear Toughened Glass 4mm",
+      "model_no": "17207"
+    },
+    {
+      "id": "f5d4856af3fe452a",
+      "name": "Saint Gobain Lacquered Glass Almond Green 4mm",
+      "model_no": "14797"
+    },
+    {
+      "id": "6ebe25218ebef175",
+      "name": "Saint Gobain Lacquered Glass black-4mm",
+      "model_no": "1651"
+    },
+    {
+      "id": "a160d23f9cca4ab5",
+      "name": "Saint Gobain Lacquered Glass calm-sky 4mm",
+      "model_no": "13914"
+    },
+    {
+      "id": "4998aa40d62b546e",
+      "name": "Saint Gobain Lacquered Glass casis-purple 4mm",
+      "model_no": "16336"
+    },
+    {
+      "id": "b42598c9f749d979",
+      "name": "Saint Gobain Lacquered Glass choco-brown 4mm",
+      "model_no": "12085"
+    },
+    {
+      "id": "80aa302dac2e977f",
+      "name": "Saint Gobain Lacquered Glass extra-white 4mm",
+      "model_no": "14410"
+    },
+    {
+      "id": "f8478c75a5dc4636",
+      "name": "Saint Gobain Lacquered Glass ivory 4mm",
+      "model_no": "1647"
+    },
+    {
+      "id": "5e50cb38dc89b17b",
+      "name": "Saint Gobain Lacquered Glass pista-green 4mm",
+      "model_no": "15703"
+    },
+    {
+      "id": "8c0468a70a9c4c7",
+      "name": "Saint Gobain Lacquered Glass solar-yellow 4mm",
+      "model_no": "14943"
+    },
+    {
+      "id": "bec870fdae39b316",
+      "name": "Saint Gobain Lacquered Glass titanium-grey 4mm",
+      "model_no": "1652"
+    },
+    {
+      "id": "81e2adccccce8071",
+      "name": "Saint Gobain Lacquered Glass aquamarine 4mm",
+      "model_no": "16335"
+    },
+    {
+      "id": "2a28a3c7db2c0084",
+      "name": "Saint Gobain Lacquered Glass argent-metallise 4mm",
+      "model_no": "16334"
+    },
+    {
+      "id": "a065492edbc7b436",
+      "name": "Saint Gobain Lacquered Glass cappuccino 4mm",
+      "model_no": "15702"
+    },
+    {
+      "id": "95aa57ca67cacf35",
+      "name": "Saint Gobain Lacquered Glass champagne 4mm",
+      "model_no": "9036"
+    },
+    {
+      "id": "fbdbeb23f0726e55",
+      "name": "Saint Gobain Mirror glass 4mm",
+      "model_no": "12084"
+    },
+    {
+      "id": "7beccd5a637df3bd",
+      "name": "Saint Gobain Tinted Glass brown 4mm",
+      "model_no": "14795"
+    },
+    {
+      "id": "a7a744abce6da40a",
+      "name": "Saint Gobain Frosted plain Glass 4mm",
+      "model_no": "1615"
+    },
+    {
+      "id": "60678349914341d",
+      "name": "glass Fluted 5mm brown",
+      "model_no": "17333"
+    },
+    {
+      "id": "9fb62f1bf33491b3",
+      "name": "glass Fluted 5mm black",
+      "model_no": "17332"
+    },
+    {
+      "id": "266225e8d4274483",
+      "name": "Saint Gobain Extra Clear Glass 4mm",
+      "model_no": "9037"
+    },
+    {
+      "id": "4b97a534a4f5b605",
+      "name": "Saint Gobain Extra Clear Glass 5mm",
+      "model_no": "1650"
+    },
+    {
+      "id": "659eba295f29409e",
+      "name": "Saint Gobain Extra Clear Toughened Glass 5mm",
+      "model_no": "17331"
+    },
+    {
+      "id": "8ca3ac7e9308c9d6",
+      "name": "Saint Gobain Lacquered Glass Mint Green 4mm",
+      "model_no": "17375"
+    },
+    {
+      "id": "ca02b25733209693",
+      "name": "Saint Gobain Lacquered Glass Mint Green 6mm",
+      "model_no": "17376"
+    },
+    {
+      "id": "b7d017ca0cbc46c8",
+      "name": "Saint Gobain Lacquered Glass LEMON YELLOW 4mm",
+      "model_no": "17377"
+    },
+    {
+      "id": "cb77f24dd82e6b22",
+      "name": "Saint Gobain Lacquered Glass LEMON YELLOW 6mm",
+      "model_no": "17378"
+    },
+    {
+      "id": "bca96630a2985561",
+      "name": "Saint Gobain Lacquered Glass PETAL PINK 4mm",
+      "model_no": "17379"
+    },
+    {
+      "id": "5b88347e529f961a",
+      "name": "Saint Gobain Lacquered Glass PETAL PINK 6mm",
+      "model_no": "17380"
+    },
+    {
+      "id": "1391cf8e4f3c9002",
+      "name": "Saint Gobain Lacquered Glass KAFFE 4mm",
+      "model_no": "17381"
+    },
+    {
+      "id": "9962687ff3ea8427",
+      "name": "Saint Gobain Lacquered Glass KAFFE 6mm",
+      "model_no": "17382"
+    },
+    {
+      "id": "e7b18a96bc8601f7",
+      "name": "Saint Gobain Lacquered Glass aqua Blue 4mm",
+      "model_no": "17383"
+    },
+    {
+      "id": "1547fee26c26eeda",
+      "name": "Saint Gobain Lacquered Glass aqua Blue 6mm",
+      "model_no": "17384"
+    },
+    {
+      "id": "c8c0459be09a5a01",
+      "name": "Saint Gobain Tinted Glass grey 4mm",
+      "model_no": "9027"
+    },
+    {
+      "id": "8316d8b6e51a227f",
+      "name": "Laminated Clear Fabric Glass GL-2137 8mm (4 + 4)",
+      "model_no": null
+    },
+    {
+      "id": "1cbbed15cb3e8775",
+      "name": "Laminated Clear Fabric Glass GL-2137 10mm (5 + 5)",
+      "model_no": null
+    },
+    {
+      "id": "7e019ba60992f63e",
+      "name": "Laminated Clear Fabric Single Glass GL-2137 4mm",
+      "model_no": null
+    },
+    {
+      "id": "f7cf4110327a2e94",
+      "name": "Ratan cane - diamond natural brown (4 + 4) mm",
+      "model_no": null
+    }
+  ]
+}

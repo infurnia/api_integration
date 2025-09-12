@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "sku_category_id": "6b5e894fbb558b03",
+    "sku_category_type_id": "tile_finish",
+    "sku_division_id": "finish"
+  },
+  "skus": [
+    {
+      "id": "e9aaf322c89996be",
+      "name": "CNC1212",
+      "model_no": null
+    },
+    {
+      "id": "e2b8486fc469297a",
+      "name": "CNC9201",
+      "model_no": null
+    },
+    {
+      "id": "13d7f1fd22752a6d",
+      "name": "wallTiles-1",
+      "model_no": null
+    },
+    {
+      "id": "9f91b6a23b9b3175",
+      "name": "wallTiles-4",
+      "model_no": null
+    },
+    {
+      "id": "5c36e26c3397b20d",
+      "name": "wallTiles-5",
+      "model_no": null
+    },
+    {
+      "id": "85483a696117f476",
+      "name": "wallTiles-6",
+      "model_no": null
+    },
+    {
+      "id": "8d244c7eab34e832",
+      "name": "wallTiles-7",
+      "model_no": null
+    },
+    {
+      "id": "c2092d3ab1e60a7f",
+      "name": "wallTiles-2",
+      "model_no": null
+    },
+    {
+      "id": "ef1eb63ef4bfe957",
+      "name": "wallTiles-3",
+      "model_no": null
+    },
+    {
+      "id": "bf6bf5db0f765389",
+      "name": "PW02973",
+      "model_no": null
+    },
+    {
+      "id": "2edcce036e3aeb1f",
+      "name": "GP00119",
+      "model_no": null
+    },
+    {
+      "id": "821df7d55a8acca",
+      "name": "GP00120",
+      "model_no": null
+    },
+    {
+      "id": "11176febe139b942",
+      "name": "GP00778",
+      "model_no": null
+    },
+    {
+      "id": "9dae31b854cb4b8a",
+      "name": "GP00799",
+      "model_no": null
+    },
+    {
+      "id": "3e252c13442bc0a3",
+      "name": "GP00817",
+      "model_no": null
+    },
+    {
+      "id": "ff2d5fe88b25983c",
+      "name": "GP00852",
+      "model_no": null
+    },
+    {
+      "id": "385269ee07121dc3",
+      "name": "GP00860",
+      "model_no": null
+    },
+    {
+      "id": "7dc3a6987fe75ebc",
+      "name": "GP00865",
+      "model_no": null
+    },
+    {
+      "id": "9de07bfe14947dd1",
+      "name": "GP00871",
+      "model_no": null
+    },
+    {
+      "id": "25c9f7effff48168",
+      "name": "GP00872",
+      "model_no": null
+    },
+    {
+      "id": "60d7303043d8a35",
+      "name": "GP00874",
+      "model_no": null
+    },
+    {
+      "id": "7e166ed02691913f",
+      "name": "PW00016",
+      "model_no": null
+    },
+    {
+      "id": "27d74316909536cf",
+      "name": "PW00017",
+      "model_no": null
+    },
+    {
+      "id": "c77430705ca7114e",
+      "name": "PW00018",
+      "model_no": null
+    },
+    {
+      "id": "2f441b5bf684bc8a",
+      "name": "PW00036",
+      "model_no": null
+    },
+    {
+      "id": "851bfcbe07018a80",
+      "name": "PW00038",
+      "model_no": null
+    },
+    {
+      "id": "9da54e19b3441ae7",
+      "name": "PW00051",
+      "model_no": null
+    },
+    {
+      "id": "c9b2afefbc470a8a",
+      "name": "PW00052",
+      "model_no": null
+    },
+    {
+      "id": "b5dfe088197b74f",
+      "name": "PW00053",
+      "model_no": null
+    },
+    {
+      "id": "6c5d6480626cc9af",
+      "name": "PW00054",
+      "model_no": null
+    },
+    {
+      "id": "c609c64535c0501c",
+      "name": "PW00055",
+      "model_no": null
+    },
+    {
+      "id": "19cdff340d193e6",
+      "name": "PW00073",
+      "model_no": null
+    },
+    {
+      "id": "70bbc83838ef0e80",
+      "name": "PW00074",
+      "model_no": null
+    },
+    {
+      "id": "e1c5b81ea446abdb",
+      "name": "PW00075",
+      "model_no": null
+    },
+    {
+      "id": "d49fdc414f7507c3",
+      "name": "PW00076",
+      "model_no": null
+    },
+    {
+      "id": "51ea72d7aa8138a4",
+      "name": "PW00077",
+      "model_no": null
+    },
+    {
+      "id": "139ae8cdc1ec1bb1",
+      "name": "PW00078",
+      "model_no": null
+    },
+    {
+      "id": "9f226f344a50866",
+      "name": "PW00727",
+      "model_no": null
+    },
+    {
+      "id": "80acddc2b45a166f",
+      "name": "PW02461",
+      "model_no": null
+    },
+    {
+      "id": "dab747f4d4f47cc1",
+      "name": "PW02463",
+      "model_no": null
+    },
+    {
+      "id": "1a75748404e73ff2",
+      "name": "PW02600",
+      "model_no": null
+    },
+    {
+      "id": "3d15a55c551c360a",
+      "name": "PW02622",
+      "model_no": null
+    },
+    {
+      "id": "e21161c1d310b7c5",
+      "name": "PW02627",
+      "model_no": null
+    },
+    {
+      "id": "11d6110f57161818",
+      "name": "PW02637",
+      "model_no": null
+    },
+    {
+      "id": "7ed9fede1a9e94b",
+      "name": "PW02752",
+      "model_no": null
+    },
+    {
+      "id": "8dac465d9fb754fb",
+      "name": "PW02753",
+      "model_no": null
+    },
+    {
+      "id": "24a2965b6f26a1f8",
+      "name": "PW02754",
+      "model_no": null
+    },
+    {
+      "id": "a6f97a6fc85c42f0",
+      "name": "PW02778",
+      "model_no": null
+    },
+    {
+      "id": "65931f960305bbe2",
+      "name": "PW02914",
+      "model_no": null
+    },
+    {
+      "id": "2f30eae815044ddc",
+      "name": "PW02916",
+      "model_no": null
+    },
+    {
+      "id": "59b494a1c185b6a9",
+      "name": "PW02918",
+      "model_no": null
+    },
+    {
+      "id": "ebcf70862129da26",
+      "name": "PW02921",
+      "model_no": null
+    },
+    {
+      "id": "56ea052302d6ed61",
+      "name": "PW02924",
+      "model_no": null
+    },
+    {
+      "id": "19555f1840f6a913",
+      "name": "PW02928",
+      "model_no": null
+    },
+    {
+      "id": "a040339f8c53990",
+      "name": "PW02937",
+      "model_no": null
+    },
+    {
+      "id": "9ba482da3d6f2cc2",
+      "name": "PW02938",
+      "model_no": null
+    },
+    {
+      "id": "e5f3e2da4a948d9d",
+      "name": "PW02944",
+      "model_no": null
+    },
+    {
+      "id": "715710106bed86b",
+      "name": "PW02945",
+      "model_no": null
+    },
+    {
+      "id": "76a1c5cd36b17345",
+      "name": "PW02972",
+      "model_no": null
+    },
+    {
+      "id": "439d10b77f17efe2",
+      "name": "PW02974",
+      "model_no": null
+    },
+    {
+      "id": "279b096176149c2a",
+      "name": "PW02980",
+      "model_no": null
+    },
+    {
+      "id": "9cfd195813555282",
+      "name": "PW02981",
+      "model_no": null
+    },
+    {
+      "id": "e6cd18d08cd70b22",
+      "name": "PW03011",
+      "model_no": null
+    },
+    {
+      "id": "b9a057f93cd67d53",
+      "name": "PW03012",
+      "model_no": null
+    },
+    {
+      "id": "68b08df20b026a34",
+      "name": "PW03013",
+      "model_no": null
+    },
+    {
+      "id": "df611bf51847ccf9",
+      "name": "PW03014",
+      "model_no": null
+    },
+    {
+      "id": "a81edd3c04cc462c",
+      "name": "PW03015",
+      "model_no": null
+    },
+    {
+      "id": "aef4c24846c888dc",
+      "name": "PW03016",
+      "model_no": null
+    },
+    {
+      "id": "73451c53bd6e1762",
+      "name": "PW03215",
+      "model_no": null
+    },
+    {
+      "id": "b0611af339461738",
+      "name": "SPW01072",
+      "model_no": null
+    },
+    {
+      "id": "66d0e91ce37939c9",
+      "name": "SPW01073",
+      "model_no": null
+    },
+    {
+      "id": "13ec7cec6a1277b9",
+      "name": "SPW01074",
+      "model_no": null
+    },
+    {
+      "id": "e879007eeccde4a0",
+      "name": "SPW01075",
+      "model_no": null
+    },
+    {
+      "id": "ebdc2ad5cf8df9f3",
+      "name": "SPW01107",
+      "model_no": null
+    },
+    {
+      "id": "585ec5247eb3def",
+      "name": "SPW01110",
+      "model_no": null
+    },
+    {
+      "id": "2b43180d0b144832",
+      "name": "Amalfi Platinum Reactive PW03364",
+      "model_no": null
+    },
+    {
+      "id": "11bd5a8d42069452",
+      "name": "Pandanus Grey A",
+      "model_no": null
+    }
+  ]
+}

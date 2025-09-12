@@ -1,0 +1,195 @@
+{
+  "summary": {
+    "total_rows": 723,
+    "failed_mappings": 4,
+    "success_rate": "99.4%"
+  },
+  "failures": [
+    {
+      "row": 212,
+      "sku_name": "3926 HG SILVER CASPIO 1MM X 8FT X 4FT",
+      "group_name": "3926 HG SILVER CASPIO",
+      "raw_mapping": "6105(HG)-Indaco",
+      "parsed_tokens": [
+        "6105(HG)-Indaco"
+      ],
+      "resolved_count": 0,
+      "expected_count": 1,
+      "missing_tokens": [
+        "6105(HG)-Indaco"
+      ],
+      "resolution_traces": [
+        {
+          "raw": "6105(HG)-Indaco",
+          "normalized": "6105(hg)-indaco",
+          "method": "unresolved",
+          "resolved_id": null
+        }
+      ]
+    },
+    {
+      "row": 261,
+      "sku_name": "80121 DW_Ivory 0.8MM X 8FT X 4FT",
+      "group_name": "80121 DW_Ivory",
+      "raw_mapping": "10120-Winedge",
+      "parsed_tokens": [
+        "10120-Winedge"
+      ],
+      "resolved_count": 0,
+      "expected_count": 1,
+      "missing_tokens": [
+        "10120-Winedge"
+      ],
+      "resolution_traces": [
+        {
+          "raw": "10120-Winedge",
+          "normalized": "10120-winedge",
+          "method": "unresolved",
+          "resolved_id": null
+        }
+      ]
+    },
+    {
+      "row": 262,
+      "sku_name": "83379 SU_Delight Cherry 0.8MM X 8FT X 4FT",
+      "group_name": "83379 SU_Delight Cherry",
+      "raw_mapping": "2018-Richies",
+      "parsed_tokens": [
+        "2018-Richies"
+      ],
+      "resolved_count": 0,
+      "expected_count": 1,
+      "missing_tokens": [
+        "2018-Richies"
+      ],
+      "resolution_traces": [
+        {
+          "raw": "2018-Richies",
+          "normalized": "2018-richies",
+          "method": "unresolved",
+          "resolved_id": null
+        }
+      ]
+    },
+    {
+      "row": 268,
+      "sku_name": "158 UL TAUPE 1MM X 8FT X 4FT",
+      "group_name": "158 UL TAUPE",
+      "raw_mapping": "UNI-112008-Rehau",
+      "parsed_tokens": [
+        "UNI-112008-Rehau"
+      ],
+      "resolved_count": 0,
+      "expected_count": 1,
+      "missing_tokens": [
+        "UNI-112008-Rehau"
+      ],
+      "resolution_traces": [
+        {
+          "raw": "UNI-112008-Rehau",
+          "normalized": "uni-112008-rehau",
+          "method": "unresolved",
+          "resolved_id": null
+        }
+      ]
+    }
+  ],
+  "patterns": {
+    "N(X)-Indaco": [
+      {
+        "row": 212,
+        "sku_name": "3926 HG SILVER CASPIO 1MM X 8FT X 4FT",
+        "group_name": "3926 HG SILVER CASPIO",
+        "raw_mapping": "6105(HG)-Indaco",
+        "parsed_tokens": [
+          "6105(HG)-Indaco"
+        ],
+        "resolved_count": 0,
+        "expected_count": 1,
+        "missing_tokens": [
+          "6105(HG)-Indaco"
+        ],
+        "resolution_traces": [
+          {
+            "raw": "6105(HG)-Indaco",
+            "normalized": "6105(hg)-indaco",
+            "method": "unresolved",
+            "resolved_id": null
+          }
+        ]
+      }
+    ],
+    "N-Winedge": [
+      {
+        "row": 261,
+        "sku_name": "80121 DW_Ivory 0.8MM X 8FT X 4FT",
+        "group_name": "80121 DW_Ivory",
+        "raw_mapping": "10120-Winedge",
+        "parsed_tokens": [
+          "10120-Winedge"
+        ],
+        "resolved_count": 0,
+        "expected_count": 1,
+        "missing_tokens": [
+          "10120-Winedge"
+        ],
+        "resolution_traces": [
+          {
+            "raw": "10120-Winedge",
+            "normalized": "10120-winedge",
+            "method": "unresolved",
+            "resolved_id": null
+          }
+        ]
+      }
+    ],
+    "N-Richies": [
+      {
+        "row": 262,
+        "sku_name": "83379 SU_Delight Cherry 0.8MM X 8FT X 4FT",
+        "group_name": "83379 SU_Delight Cherry",
+        "raw_mapping": "2018-Richies",
+        "parsed_tokens": [
+          "2018-Richies"
+        ],
+        "resolved_count": 0,
+        "expected_count": 1,
+        "missing_tokens": [
+          "2018-Richies"
+        ],
+        "resolution_traces": [
+          {
+            "raw": "2018-Richies",
+            "normalized": "2018-richies",
+            "method": "unresolved",
+            "resolved_id": null
+          }
+        ]
+      }
+    ],
+    "X-N-Rehau": [
+      {
+        "row": 268,
+        "sku_name": "158 UL TAUPE 1MM X 8FT X 4FT",
+        "group_name": "158 UL TAUPE",
+        "raw_mapping": "UNI-112008-Rehau",
+        "parsed_tokens": [
+          "UNI-112008-Rehau"
+        ],
+        "resolved_count": 0,
+        "expected_count": 1,
+        "missing_tokens": [
+          "UNI-112008-Rehau"
+        ],
+        "resolution_traces": [
+          {
+            "raw": "UNI-112008-Rehau",
+            "normalized": "uni-112008-rehau",
+            "method": "unresolved",
+            "resolved_id": null
+          }
+        ]
+      }
+    ]
+  }
+}

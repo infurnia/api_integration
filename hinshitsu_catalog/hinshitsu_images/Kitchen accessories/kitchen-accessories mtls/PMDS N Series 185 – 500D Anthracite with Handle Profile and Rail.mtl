@@ -1,0 +1,15 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Steel_Brushed_Stainless
+Ka 0.000000 0.000000 0.000000
+Kd 0.717647 0.733333 0.745098
+Ks 0.330000 0.330000 0.330000
+
+newmtl _1
+Ka 0.000000 0.000000 0.000000
+Kd 0.972549 0.960784 0.901961
+Ks 0.330000 0.330000 0.330000
+map_Kd https://s3-ap-southeast-1.amazonaws.com/mydeziner-prod/3d-objects/kitchen-accessories/mtls/pmds-n-series-200h-500d-anthracite-with-handle-and-rail/_1.png
+

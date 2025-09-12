@@ -10,11 +10,24 @@ const fetch = require("node-fetch");
     CREDENTIALS
     set your credentials here
 */
-const ACCESS_TOKEN = process.env.ACCESS_TOKEN || "";
-const EMAIL = process.env.EMAIL || "";
-const SERVER_PATH = process.env.SERVER_PATH || "";
-const STORE_ID = process.env.STORE_ID || "";
-const BUSINESS_UNIT_ID = process.env.BUSINESS_UNIT_ID || "";
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN || "rzNhSy7czdt7o6AlZQAzQlbXRYVKme0wYwVIzSDGJXMsqV32-JzoASDFL1T95bGwYVNZHRnzVSPWfT";
+const EMAIL = process.env.EMAIL || "akash.dubey@infurnia.com";
+let SERVER_PATH = process.env.SERVER_PATH || "https://productionbackend.infurnia.com";
+const STORE_ID = process.env.STORE_ID || "34eb8eb39a5a179";
+const BUSINESS_UNIT_ID = process.env.BUSINESS_UNIT_ID || "fca03a5c5366933a";
+
+// Normalize server path (handle typos like httpd:// and add scheme if missing)
+function normalizeServerPath(sp){
+    if(!sp) return sp;
+    const original = sp;
+    sp = sp.trim();
+    sp = sp.replace(/^httpd:\/\//i,'https://').replace(/^httpp:\/\//i,'https://');
+    if(!/^https?:\/\//i.test(sp)) sp = 'https://' + sp.replace(/^\/*/, '');
+    sp = sp.replace(/\/$/, '');
+    if(original !== sp) console.warn(`[SERVER_PATH NORMALIZED] from="${original}" to="${sp}"`);
+    return sp;
+}
+SERVER_PATH = normalizeServerPath(SERVER_PATH);
 
 
 /*
@@ -29,6 +42,77 @@ const generate_id = () => {
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+// Rate limit / retry configuration (env overridable)
+const RETRY_ON_429 = process.env.RETRY_ON_429 !== 'false';
+const BACKOFF_BASE_MS = parseInt(process.env.BACKOFF_BASE_MS || '1500', 10); // initial backoff
+const BACKOFF_MAX_MS = parseInt(process.env.BACKOFF_MAX_MS || '20000', 10);   // capped exponential
+const BACKOFF_JITTER_MS = parseInt(process.env.BACKOFF_JITTER_MS || '400', 10);
+const RETRIES_BEFORE_LONG_WAIT = parseInt(process.env.RETRIES_BEFORE_LONG_WAIT || '6', 10); // after these retries, do a long wait
+const LONG_WAIT_MS = parseInt(process.env.LONG_WAIT_MS || '60000', 10); // 60s cooldown
+const MAX_TOTAL_RETRIES = parseInt(process.env.MAX_TOTAL_RETRIES || '0', 10); // 0 => infinite until success
+
+// Client side proactive rate limiting (keep comfortably below 100/min server cap)
+const RL_ENABLED = process.env.RL_ENABLED !== 'false';
+// More conservative default (60/min) to avoid edge bursts + server side soft limits returning non-JSON bodies
+let RL_MAX_PER_WINDOW = parseInt(process.env.RL_MAX_PER_WINDOW || '60', 10);
+const RL_WINDOW_MS = parseInt(process.env.RL_WINDOW_MS || '60000', 10);
+const RL_TRACE = process.env.RL_TRACE === 'true';
+// Enforce a minimum spacing between calls (helps avoid micro-bursts right after sleep)
+const RL_MIN_CALL_INTERVAL_MS = parseInt(process.env.RL_MIN_CALL_INTERVAL_MS || '80', 10);
+let __rl_last_call_ts = 0;
+let __rl_timestamps = [];
+
+async function rateLimitGate(){
+    if(!RL_ENABLED) return;
+    const now = Date.now();
+    // prune old
+    if(__rl_timestamps.length && (now - __rl_timestamps[0]) > RL_WINDOW_MS){
+        const cutoff = now - RL_WINDOW_MS;
+        // fast prune
+        let idx = 0; while(idx < __rl_timestamps.length && __rl_timestamps[idx] < cutoff) idx++;
+        if(idx>0) __rl_timestamps.splice(0, idx);
+    }
+    if(__rl_timestamps.length >= RL_MAX_PER_WINDOW){
+        const waitMs = RL_WINDOW_MS - (now - __rl_timestamps[0]);
+        if (waitMs > 0){
+            console.warn(`[rate-limit-client] quota ${__rl_timestamps.length}/${RL_MAX_PER_WINDOW} reached; sleeping ${(waitMs/1000).toFixed(2)}s`);
+            await sleep(waitMs + 25); // add a small buffer
+        }
+    }
+    // Minimum inter-call interval
+    const sinceLast = Date.now() - __rl_last_call_ts;
+    if (sinceLast < RL_MIN_CALL_INTERVAL_MS){
+        const pad = RL_MIN_CALL_INTERVAL_MS - sinceLast;
+        await sleep(pad);
+    }
+    __rl_last_call_ts = Date.now();
+    __rl_timestamps.push(__rl_last_call_ts);
+    if(RL_TRACE && (__rl_timestamps.length % 10 === 0)){
+        console.log(`[rate-limit-client] ${__rl_timestamps.length} calls in current window`);
+    }
+}
+
+function calcBackoff(attempt){
+    const pow = Math.min(attempt, 30); // guard overflow
+    const exp = Math.min(BACKOFF_BASE_MS * Math.pow(2, pow), BACKOFF_MAX_MS);
+    const jitter = Math.random() * BACKOFF_JITTER_MS;
+    return Math.round(exp + jitter);
+}
+
+async function handle429Wait(attempt){
+    if (!RETRY_ON_429) return false;
+    if (MAX_TOTAL_RETRIES && attempt >= MAX_TOTAL_RETRIES) return false;
+    if ((attempt+1) % RETRIES_BEFORE_LONG_WAIT === 0) {
+        console.warn(`[rate-limit] 429 persistence: long cooldown ${LONG_WAIT_MS}ms (attempt ${attempt+1})`);
+        await sleep(LONG_WAIT_MS);
+        return true;
+    }
+    const delay = calcBackoff(attempt);
+    console.warn(`[rate-limit] 429 received. retrying in ${delay}ms (attempt ${attempt+1}${MAX_TOTAL_RETRIES?`/${MAX_TOTAL_RETRIES}`:''})`);
+    await sleep(delay);
+    return true;
+}
+
 /*
     GENERAL FETCH
     this function is used to make api calls
@@ -42,48 +126,74 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     data_field: the field in the response object that contains the data
 */
 const general_fetch = async ({ url, full_url, method, headers, body, is_form_data, data_field }) => {
-	try {
-		if (!data_field) {
-			data_field = 'data';
-		}
-		if (full_url) {
-			url = full_url;
-		} else {
-			url = `${SERVER_PATH}/enterprise_api/${url}`;
-		}
-		if (!url) {
-			throw 'invalid url provided';
-		}
-		if(!method) {
-			method = 'POST';
-		}
-		if (!is_form_data) {
-			if (!headers) {
-				headers = {
-					'Content-Type': 'application/json',
-                    'infurnia-access-token': ACCESS_TOKEN,
-                    'infurnia-email': EMAIL,
-                    'infurnia-store-id': STORE_ID
-				};
-			}
-			if (body) {
-				body = JSON.stringify(body);
-			}
-		}
-		
-        var options = { method, headers, body };
-        var resp = await fetch(url, options);
-        resp = await resp.json();
-		
-        if (resp.response_code == 1 || resp.response_code == 0) {
-        	return resp[data_field];
-        }else {
-        	throw new Error('Server call failed with error -- ' + resp.error); 
+    let attempt = 0;
+    while (true) {
+        let respBody;
+        try {
+            if (!data_field) data_field = 'data';
+            if (full_url) {
+                url = full_url;
+            } else {
+                url = `${SERVER_PATH}/enterprise_api/${url}`;
+            }
+            if (!url) throw 'invalid url provided';
+            if (!method) method = 'POST';
+            if (!is_form_data) {
+                if (!headers) {
+                    headers = {
+                        'Content-Type': 'application/json',
+                        'infurnia-access-token': ACCESS_TOKEN,
+                        'infurnia-email': EMAIL,
+                        'infurnia-store-id': STORE_ID
+                    };
+                }
+                if (body) body = JSON.stringify(body);
+            }
+            const options = { method, headers, body };
+            await rateLimitGate();
+            const resp = await fetch(url, options);
+            const status = resp.status;
+            const contentType = resp.headers.get('content-type') || '';
+            let rawText = await resp.text();
+            let parsed;
+            if (/json/i.test(contentType) || /^[\[{]/.test(rawText.trim())) {
+                try { parsed = JSON.parse(rawText); } catch(parseErr){
+                    // fall through to heuristic handling
+                }
+            }
+            if (!parsed) {
+                // Heuristic: detect API limit / rate messages in plain text
+                if (/api limit|rate limit|too many/i.test(rawText)) {
+                    const proceed = await handle429Wait(attempt++);
+                    if (proceed) continue; else throw { response: { status: 429 }, rawText };
+                }
+                // If not JSON and not rate-limit hint treat as error
+                throw new Error('Non-JSON response received: ' + rawText.slice(0,120));
+            }
+            respBody = parsed;
+            if (status === 429) {
+                const proceed = await handle429Wait(attempt++);
+                if (proceed) continue; else throw { response: { status }, respBody };
+            }
+            if (respBody.response_code == 1 || respBody.response_code == 0) {
+                return respBody[data_field];
+            }
+            throw new Error('Server call failed with error -- ' + (respBody.error || respBody.message));
+        } catch (err) {
+            const status = err?.response?.status;
+            if (status === 429) {
+                const proceed = await handle429Wait(attempt++);
+                if (proceed) continue;
+            }
+            // Dynamic back-off: if repeated limit errors, shrink window allowance
+            if (/Non-JSON response.*API Limit/i.test(err?.message || '') && RL_MAX_PER_WINDOW > 30){
+                RL_MAX_PER_WINDOW = Math.max(30, Math.floor(RL_MAX_PER_WINDOW * 0.8));
+                console.warn(`[rate-limit-client] Adjusted RL_MAX_PER_WINDOW down to ${RL_MAX_PER_WINDOW} due to limit errors`);
+            }
+            return Promise.reject({ err, resp: respBody, info: 'Error in general_fetch ' + url });
         }
-	} catch(err) {
-		return Promise.reject({ err, resp, info: 'Error in general_fetch ' + url })
-	}
-} 
+    }
+}
 
 
 /*
@@ -95,32 +205,38 @@ const general_fetch = async ({ url, full_url, method, headers, body, is_form_dat
     data_field: the field in the response object that contains the data
 */
 const upload_file = async ({ data, url, data_field }) => {
-    try {
-        if (!data_field) {
-            data_field = 'data';
+    if (!data_field) data_field = 'data';
+    let attempt = 0;
+    while (true) {
+        try {
+            let config = {
+                url: `${SERVER_PATH}/enterprise_api/${url}`,
+                headers: {
+                    'infurnia-access-token': ACCESS_TOKEN,
+                    'infurnia-email': EMAIL,
+                    'infurnia-store-id': STORE_ID,
+                    ...(data ? data.getHeaders() : {})
+                },
+                data,
+                method: 'POST'
+            };
+            await rateLimitGate();
+            let resp = await axios(config);
+            resp = resp.data;
+            if (resp.response_code == 1 || resp.response_code == 0) {
+                return resp[data_field];
+            } else {
+                throw new Error('Server call failed with error -- ' + resp.error);
+            }
+        } catch (err) {
+            const status = err?.response?.status;
+            if (status === 429) {
+                const proceed = await handle429Wait(attempt++);
+                if (proceed) continue;
+            }
+            console.error('Error in upload_file ->', err);
+            return Promise.reject({ err, info: 'Error in upload_file ' + url });
         }
-
-        let config = {
-            url: `${SERVER_PATH}/enterprise_api/${url}`,
-            headers: {
-                'infurnia-access-token': ACCESS_TOKEN,
-                'infurnia-email': EMAIL,
-                'infurnia-store-id': STORE_ID,
-                ...(data ? data.getHeaders() : {})
-            },
-            data,
-            method: 'POST'
-        }
-        let resp = await axios(config);
-        resp = resp.data;
-        if (resp.response_code == 1 || resp.response_code == 0) {
-        	return resp[data_field];
-        }else {
-        	throw new Error('Server call failed with error -- ' + resp.error); 
-        }
-    } catch(err) {
-        console.error('Error in upload_file ->', err);
-        return Promise.reject({ err, info: 'Error in upload_file ' + url })
     }
 }
 
@@ -590,8 +706,10 @@ const remove_sku_category = async (id) => {
 const add_brand = async (name) => {
     try {
         const data = await general_fetch({ url: 'brand/add', body: { name } });
-        console.log('successfully added brand -> ', brand_name);
-        return data;
+    // data might be { brand: {...} } or direct brand object
+    const added = data?.brand || data;
+    console.log('successfully added brand -> ', added?.name || name);
+    return data;
     } catch(err) {
         console.error('Error in add_brand ->', err);
         return Promise.reject({ err, info: 'Error in add_brand' })

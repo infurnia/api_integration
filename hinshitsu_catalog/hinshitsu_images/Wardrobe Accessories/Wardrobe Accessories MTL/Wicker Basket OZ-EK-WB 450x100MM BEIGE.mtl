@@ -1,0 +1,32 @@
+# Blender 4.4.0 MTL File: 'None'
+# www.blender.org
+
+newmtl Material__2
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.502000 0.298000 0.219600
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+
+newmtl Material__3
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd https://s3-ap-southeast-1.amazonaws.com/mydeziner-prod/3d-objects/wardrobe-accessories/textures/BEIGE.png
+
+newmtl Material__4
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd https://s3-ap-southeast-1.amazonaws.com/mydeziner-prod/3d-objects/wardrobe-accessories/textures/Wole4.jpg

@@ -1,0 +1,30 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 09.10.2024 18:06:04
+
+newmtl Translucent_Glass_Sky_Reflection
+	Ns 0.000000
+	Ni 1.500000
+	d 0.140000
+	Tr 0.860000
+	Tf 0.140000 0.140000 0.140000 
+	illum 2
+	Ka 0.200000 0.200000 0.200000
+	Kd 0.800000 0.800000 0.800000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka images/Translucent_Glass_Sky_Reflection.jpg
+	map_Kd images/Translucent_Glass_Sky_Reflection.jpg
+
+newmtl Metal_Corrogated_Shiny
+	Ns 0.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.200000 0.200000 0.200000
+	Kd 0.800000 0.800000 0.800000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka images/Metal_Corrogated_Shiny.jpg
+	map_Kd images/Metal_Corrogated_Shiny.jpg

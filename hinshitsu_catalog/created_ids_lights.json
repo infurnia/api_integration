@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "sku_category_id": "23a9e9937de289a",
+    "sku_category_type_id": "light_accessory",
+    "sku_division_id": "accessory"
+  },
+  "skus": [
+    {
+      "id": "2eb0cd0813422810",
+      "name": "Rope-light-warmwhite-60-led Generic make",
+      "model_no": "2633"
+    },
+    {
+      "id": "aa92efbef29a24bc",
+      "name": "Rope-light-blue-60-led Generic Make",
+      "model_no": "10508"
+    },
+    {
+      "id": "3cf25c6be0e50500",
+      "name": "Syska spot-light-8watts-cool white - round recessed",
+      "model_no": "12078"
+    },
+    {
+      "id": "ecfd04d23fca735b",
+      "name": "Syska spot-light-12watts-cool white - round recessed",
+      "model_no": "12077"
+    },
+    {
+      "id": "56246b7a479a5d5f",
+      "name": "Syska spot-light-2watts-warm white - round recessed",
+      "model_no": "2607"
+    },
+    {
+      "id": "edd004d08c572e8c",
+      "name": "Syska spot-light-2watts-cool white - round recessed",
+      "model_no": "13785"
+    },
+    {
+      "id": "a2389f4e26232aa",
+      "name": "Strip-light-120-led-warmwhite Genric make",
+      "model_no": "2632"
+    },
+    {
+      "id": "5b27377fd3c1a960",
+      "name": "Strip-light-120-led-coolwhite Generic make",
+      "model_no": "2630"
+    },
+    {
+      "id": "6ee5b10ce3ccfdf0",
+      "name": "Rope-light-pink-60-led Generic Make",
+      "model_no": "13747"
+    },
+    {
+      "id": "10790ecb7f892276",
+      "name": "Rope-light-coolwhite-60-led Generic make",
+      "model_no": "13748"
+    },
+    {
+      "id": "c5d7a47c0c144d39",
+      "name": "Strip-light-120-led-natural white Generic make",
+      "model_no": "2631"
+    },
+    {
+      "id": "6be45f1d71091f57",
+      "name": "Syska spot-light-8watts-natural white - round recessed",
+      "model_no": "10725"
+    },
+    {
+      "id": "a33d5db3579fb325",
+      "name": "Syska spot-light-12watts-natural white - round recessed",
+      "model_no": "2489"
+    },
+    {
+      "id": "c84aa73c46ffb112",
+      "name": "Syska spot-light-2watts-natural white - round recessed",
+      "model_no": "13786"
+    },
+    {
+      "id": "8bf0fe3ca10c133e",
+      "name": "Syska spot-light-8watts-warm white - round recessed",
+      "model_no": "10686"
+    },
+    {
+      "id": "a20baffac57b2efa",
+      "name": "Syska spot-light-12watts-warm white - round recessed",
+      "model_no": "10678"
+    },
+    {
+      "id": "c2cbba3b82b71d7e",
+      "name": "Crompton spot-light-3watts-warm white - round surface",
+      "model_no": "2605"
+    },
+    {
+      "id": "15813d65452b17f9",
+      "name": "Crompton spot-light-3watts-cool white - round surface",
+      "model_no": "13924"
+    },
+    {
+      "id": "c4968392e17bb7d",
+      "name": "Crompton spot-light-3watts-natural white - round surface",
+      "model_no": "13925"
+    },
+    {
+      "id": "8c497b8587d49ec9",
+      "name": "Wipro Garnet Spot Light- 2W – cool white round recessed",
+      "model_no": "14049"
+    },
+    {
+      "id": "8e54325d274e5f85",
+      "name": "Wipro Garnet Mini Spot Light 3W- cool white round recessed",
+      "model_no": "14051"
+    },
+    {
+      "id": "b05731e48f92e5a",
+      "name": "Wipro Garnet Mini Spot Light 3W- neutral white round recessed",
+      "model_no": "14052"
+    },
+    {
+      "id": "e07ad9641c1a52f1",
+      "name": "Wipro Garnet Wave Slim Spot Light 10W- neutral white round recessed",
+      "model_no": "14055"
+    },
+    {
+      "id": "f4a3e973e0a24588",
+      "name": "Wipro Garnet Wave Slim Spot Light 15W- neutral white round recessed",
+      "model_no": "14058"
+    },
+    {
+      "id": "d15c07fc2c93a0d0",
+      "name": "Spot-light-12w-RDL-3in one",
+      "model_no": "15097"
+    },
+    {
+      "id": "f0da45fef6f5f0db",
+      "name": "Strip-light-240-led-warmwhite Genric make",
+      "model_no": "13952"
+    },
+    {
+      "id": "cc2959d785427383",
+      "name": "Strip-light-240-led-coolwhite Generic make",
+      "model_no": "13953"
+    },
+    {
+      "id": "4430c6080b0f7b5a",
+      "name": "Strip-light-240-led-natural white Generic make",
+      "model_no": "17242"
+    },
+    {
+      "id": "f2b287b9fd2dcf3f",
+      "name": "Crompton spot-light-2watts-warm white - round Spot",
+      "model_no": "17277"
+    },
+    {
+      "id": "7cb31e74c41dedc2",
+      "name": "Crompton spot-light-3watts-warm white - round Spot",
+      "model_no": "17278"
+    },
+    {
+      "id": "b47ceb93a2b8be85",
+      "name": "Crompton Panel-light-10watts-warm white-round Panel light for ceiling(4'' cutting)",
+      "model_no": "17279"
+    },
+    {
+      "id": "4b7e0bc9f02a8bc8",
+      "name": "Crompton Panel-light-10watts-Cool white-round Panel light for ceiling(4'' cutting)",
+      "model_no": "17280"
+    },
+    {
+      "id": "5314200d82acf0e4",
+      "name": "Crompton Panel-light-10watts-Natural white - round Panel light for ceiling(4'' cutting)",
+      "model_no": "17281"
+    },
+    {
+      "id": "aa6e85c633d80c26",
+      "name": "Crompton Panel-light-12watts-warm white-round Panel light for ceiling(5'' cutting)",
+      "model_no": "17282"
+    },
+    {
+      "id": "b7fbb4d5ad8f5db4",
+      "name": "Crompton Panel-light-12watts-Cool white-round Panel light for ceiling(5'' cutting)",
+      "model_no": "17283"
+    },
+    {
+      "id": "aaf2dc90ce31fcd",
+      "name": "Crompton Panel-light-12watts-Natural white - round Panel light for ceiling(5'' cutting)",
+      "model_no": "17284"
+    },
+    {
+      "id": "39755a8502ffba77",
+      "name": "Crompton spot Tiltable -light-3watts-warm white - round Spot Tiltable",
+      "model_no": "17285"
+    },
+    {
+      "id": "3800857420b7119a",
+      "name": "Orient spot-light-2watts-warm white - round Spot",
+      "model_no": "17286"
+    },
+    {
+      "id": "fd4a12b23a56f6fb",
+      "name": "Orient Panel-light-10watts-warm white-round Panel light for ceiling(4'' cutting)",
+      "model_no": "17287"
+    },
+    {
+      "id": "dffa5ee7e3009e9c",
+      "name": "Orient Panel-light-10watts-Cool white-round Panel light for ceiling(4'' cutting)",
+      "model_no": "17288"
+    },
+    {
+      "id": "d25dfcc12eb74e10",
+      "name": "Orient Panel-light-10watts-Natural white - round Panel light for ceiling(4'' cutting)",
+      "model_no": "17289"
+    },
+    {
+      "id": "a764456dfb2e409c",
+      "name": "Orient Panel-light-12watts-warm white-round Panel light for ceiling(5'' cutting)",
+      "model_no": "17290"
+    },
+    {
+      "id": "9e483494e5fa690f",
+      "name": "Orient Panel-light-12watts-Cool white-round Panel light for ceiling(5'' cutting)",
+      "model_no": "17291"
+    },
+    {
+      "id": "c5d1b968e71cb84e",
+      "name": "Orient Panel-light-12watts-Natural white - round Panel light for ceiling(5'' cutting)",
+      "model_no": "17292"
+    },
+    {
+      "id": "5d70981e478850e7",
+      "name": "Orient Panel-light-15watts-warm white-round Panel light for ceiling(6'' cutting)",
+      "model_no": "17293"
+    },
+    {
+      "id": "b062188b6d3ce724",
+      "name": "Orient Panel-light-15watts-Cool white-round Panel light for ceiling(6'' cutting)",
+      "model_no": "17294"
+    },
+    {
+      "id": "18296c5d524fa437",
+      "name": "Orient Panel-light-15watts-Natural white - round Panel light for ceiling(6'' cutting)",
+      "model_no": "17295"
+    },
+    {
+      "id": "3c59e5ab21268beb",
+      "name": "Gold Medal spot Tiltable -light-3watts-warm white - round Spot Tiltable",
+      "model_no": "17296"
+    },
+    {
+      "id": "2ef1e8bc300ff584",
+      "name": "Gold Medal spot-light-2watts-warm white - round Spot",
+      "model_no": "17297"
+    },
+    {
+      "id": "aa34544e57d50427",
+      "name": "Gold Medal spot-light-3watts-warm white - round Spot",
+      "model_no": "17298"
+    },
+    {
+      "id": "7a715eb1a2f79cd",
+      "name": "Gold Medal Panel-light-10watts-warm white-round Panel light for ceiling(5'' cutting)",
+      "model_no": "17299"
+    },
+    {
+      "id": "bdf4d68157f705ab",
+      "name": "Gold Medal Panel-light-10watts-Cool white-round Panel light for ceiling(5'' cutting)",
+      "model_no": "17300"
+    },
+    {
+      "id": "de29796cc8ac3b82",
+      "name": "Gold Medal Panel-light-10watts-Natural white - round Panel light for ceiling(5'' cutting)",
+      "model_no": "17301"
+    },
+    {
+      "id": "b5fc5007fd1bcede",
+      "name": "Gold Medal Panel-light-12watts-warm white-round Panel light for ceiling(6'' cutting)",
+      "model_no": "17302"
+    },
+    {
+      "id": "332339cfcd903f78",
+      "name": "Gold Medal Panel-light-12watts-Cool white-round Panel light for ceiling(6'' cutting)",
+      "model_no": "17303"
+    },
+    {
+      "id": "c8ea6ebc23f853c3",
+      "name": "Gold Medal Panel-light-12watts-Natural white - round Panel light for ceiling(6'' cutting)",
+      "model_no": "17304"
+    },
+    {
+      "id": "475b94dd29f41c7a",
+      "name": "Gold Medal Panel-light-15watts-warm white-round Panel light for ceiling(6'' cutting)",
+      "model_no": "17305"
+    },
+    {
+      "id": "c759d1b543ebb4d9",
+      "name": "Gold Medal Panel-light-15watts-Cool white-round Panel light for ceiling(6'' cutting)",
+      "model_no": "17306"
+    },
+    {
+      "id": "ce8901d109161f1c",
+      "name": "Gold Medal Panel-light-15watts-Natural white - round Panel light for ceiling(6'' cutting)",
+      "model_no": "17307"
+    },
+    {
+      "id": "ebe6368f3de0bf0e",
+      "name": "Gold Medal spot-light-3watts-warm white - round Spot-Surface Mounted",
+      "model_no": "17308"
+    }
+  ]
+}
